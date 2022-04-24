@@ -13,10 +13,10 @@ jobs:
     - name: 检出仓库代码
       uses: actions/checkout@master
 
-    - name: 安装Node.js 11.x 
+    - name: 安装Node.js 14.x 
       uses: actions/setup-node@master
       with:
-        node-version: "11.x"
+        node-version: "14.x"
 
     - name: 安装Hexo依赖
       run: |
