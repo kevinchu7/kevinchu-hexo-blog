@@ -49,3 +49,4 @@ jobs:
       run: |
         coscmd upload -rfs --delete ./public/ /
         tccli cdn PurgePathCache --cli-unfold-argument --Paths https://blog.kevinchu.top/ --FlushType flush
+        tccli cdn PurgePathCache --cli-unfold-argument --Paths https://static.kevinchu.top/ --FlushType flush
