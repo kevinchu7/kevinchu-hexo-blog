@@ -3,9 +3,12 @@
 ## TODO
 -[x] 优化github action自动部署流程
 -[x] 配置博客主题
--[ ] 接入评论
+-[x] 接入评论
 
 ## UPDATE SUMMARY
+
+### 2022-05-11
+- 接入utterances评论
 
 ### 2022-05-10
 - 配置主题参数
