@@ -145,7 +145,7 @@ color:
 
   # 顶部菜单背景色
   # Color of navigation bar background
-  navbar_bg_color: "#0441A2"
+  navbar_bg_color: "#0B70FF98"
   navbar_bg_color_dark: "#1f3144"
 
   # 顶部菜单字体色
@@ -190,7 +190,7 @@ color:
 
   # 超链接悬浮时字体色
   # Color of link when hovering
-  link_hover_color: "#30a9de"
+  link_hover_color: "#36C3FF"
   link_hover_color_dark: "#30a9de"
 
   # 超链接悬浮背景色
@@ -347,7 +347,7 @@ navbar:
     - { key: "category", link: "/categories/", icon: "iconfont icon-category-fill" }
     - { key: "tag", link: "/tags/", icon: "iconfont icon-tags-fill" }
     - { key: "about", link: "/about/", icon: "iconfont icon-user-fill" }
-    #- { key: "links", link: "/links/", icon: "iconfont icon-link-fill" }
+    - { key: "links", link: "/links/", icon: "iconfont icon-link-fill" }
 
 # 搜索功能，基于 hexo-generator-search 插件，若已安装其他搜索插件请关闭此功能，以避免生成多余的索引文件
 # Search feature, based on hexo-generator-search. If you have installed other search plugins, please disable this feature to avoid generating redundant index files
@@ -467,7 +467,7 @@ index:
   # 头图黑色蒙版的不透明度，available: 0 - 1.0， 1 是完全不透明
   # Opacity of the banner mask, 1.0 is completely opaque
   # Available: 0 - 1.0
-  banner_mask_alpha: 0.3
+  banner_mask_alpha: 0
 
   # 首页副标题的独立设置
   # Independent config of home page subtitle
@@ -720,11 +720,11 @@ post:
   # 评论插件
   # Comment plugin
   comments:
-    enable: false
+    enable: true
     # 指定的插件，需要同时设置对应插件的必要参数
     # The specified plugin needs to set the necessary parameters at the same time
     # Options: utterances | disqus | gitalk | valine | waline | changyan | livere | remark42 | twikoo | cusdis
-    type: disqus
+    type: utterances
 
 
 #---------------------------
@@ -740,8 +740,8 @@ post:
 # Based on GitHub Issues
 # See: https://utteranc.es
 utterances:
-  repo:
-  issue_term: pathname
+  repo: KevinChu1998/blog-comment-utterances
+  issue_term: title
   label: utterances
   theme: github-light
   theme_dark: github-dark
@@ -870,7 +870,7 @@ cusdis:
 # Archive Page
 #---------------------------
 archive:
-  banner_img: /img/default.png
+  banner_img: https://static.kevinchu.top/blog/assets/img/bg_004.jpg
   banner_img_height: 60
   banner_mask_alpha: 0.3
 
@@ -881,7 +881,7 @@ archive:
 #---------------------------
 category:
   enable: true
-  banner_img: /img/default.png
+  banner_img: https://static.kevinchu.top/blog/assets/img/bg_004.jpg
   banner_img_height: 60
   banner_mask_alpha: 0.3
 
@@ -910,8 +910,8 @@ category:
 #---------------------------
 tag:
   enable: true
-  banner_img: /img/default.png
-  banner_img_height: 80
+  banner_img: https://static.kevinchu.top/blog/assets/img/bg_004.jpg
+  banner_img_height: 60
   banner_mask_alpha: 0.3
   tagcloud:
     min_font: 15
@@ -927,7 +927,7 @@ tag:
 #---------------------------
 about:
   enable: true
-  banner_img: /img/default.png
+  banner_img: https://static.kevinchu.top/blog/assets/img/bg_005.jpg
   banner_img_height: 60
   banner_mask_alpha: 0.3
   avatar: /img/avatar.png
@@ -974,7 +974,7 @@ page404:
 #---------------------------
 links:
   enable: true
-  banner_img: /img/default.png
+  banner_img: https://static.kevinchu.top/blog/assets/img/bg_006.jpg
   banner_img_height: 60
   banner_mask_alpha: 0.3
   # 友链的成员项
@@ -1006,17 +1006,17 @@ links:
   # 友链下方自定义区域，支持 HTML，可插入例如申请友链的文字
   # Custom content at the bottom of the links
   custom:
-    enable: false
+    enable: true
     content: '<hr><p>在下方留言申请加入我的友链，按如下格式提供信息：</p><ul><li>博客名：Fluid</li><li>简介：Fluid 主题官方博客</li><li>链接：https://hexo.fluid-dev.com</li><li>图片：https://hexo.fluid-dev.com/img/favicon.png</li></ul>'
 
   # 评论插件
   # Comment plugin
   comments:
-    enable: false
+    enable: ture
     # 指定的插件，需要同时设置对应插件的必要参数
     # The specified plugin needs to set the necessary parameters at the same time
     # Options: utterances | disqus | gitalk | valine | waline | changyan | livere | remark42 | twikoo | cusdis
-    type: disqus
+    type: utterances
 
 
 #---------------------------
