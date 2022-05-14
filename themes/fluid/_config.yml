@@ -73,7 +73,7 @@ code:
       style: "default"
       style_dark: "tomorrow night"
 
-      # 设为 true 高亮将本地静态生成（并只支持部分 prismjs 插件），设为 false 高亮将在浏览器通过 js 生成
+      # 设为 true 高亮将本地静态生成（但只支持部分 prismjs 插件），设为 false 高亮将在浏览器通过 js 生成
       # If true, it will be generated locally (but some prismjs plugins are not supported). If false, it will be generated via JS in the browser
       preprocess: true
 
@@ -241,6 +241,11 @@ custom_css:
 # Analysis of website visitors
 web_analytics:  # 网页访问统计
   enable: false
+
+  # 遵循访客浏览器"请勿追踪"的设置，如果开启则不统计其访问
+  # Follow the "Do Not Track" setting of the visitor's browser
+  # See: https://www.w3.org/TR/tracking-dnt/
+  follow_dnt: true
 
   # 百度统计的 Key，值需要获取下方链接中 `hm.js?` 后边的字符串
   # Baidu analytics, get the string behind `hm.js?`
