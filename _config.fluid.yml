@@ -18,11 +18,11 @@
 
 # 用于浏览器标签的图标
 # Icon for browser tab
-favicon: https://static.kevinchu.top/blog/assets/img/logo.jpg
+favicon: https://static.kevinchu.top/blog/assets/img/avatar_03.jpg
 
 # 用于苹果设备的图标
 # Icon for Apple touch
-apple_touch_icon: https://static.kevinchu.top/blog/assets/img/logo.jpg
+apple_touch_icon: https://static.kevinchu.top/blog/assets/img/avatar_03.jpg
 
 # 浏览器标签页中的标题分隔符，效果： 文章名 - 站点名
 # Title separator in browser tab, eg: article - site
@@ -100,7 +100,7 @@ fun_features:
     # 在指定页面开启，不填则在所有页面开启
     # Enable in specified page, all pages by default
     # Options: home | post | tag | category | about | links | page | 404
-    scope: [home]
+    scope: []
 
   # 为文章内容中的标题添加锚图标
   # Add an anchor icon to the title on the post page
@@ -145,7 +145,7 @@ color:
 
   # 顶部菜单背景色
   # Color of navigation bar background
-  navbar_bg_color: "#2f4154"
+  navbar_bg_color: "#3C485897"
   navbar_bg_color_dark: "#1f3144"
 
   # 顶部菜单字体色
@@ -328,7 +328,7 @@ iconfont: //at.alicdn.com/t/font_1736178_lbnruvf0jn.css
 navbar:
   # 导航栏左侧的标题，为空则按 hexo config 中 `title` 显示
   # The title on the left side of the navigation bar. If empty, it is based on `title` in hexo config
-  blog_title: "Fluid"
+  blog_title: "KEVIN'S BLOG"
 
   # 导航栏毛玻璃特效，实验性功能，可能会造成页面滚动掉帧和抖动，部分浏览器不支持会自动不生效
   # Navigation bar frosted glass special animation. It is an experimental feature
@@ -351,8 +351,8 @@ navbar:
     - { key: "archive", link: "/archives/", icon: "iconfont icon-archive-fill" }
     - { key: "category", link: "/categories/", icon: "iconfont icon-category-fill" }
     - { key: "tag", link: "/tags/", icon: "iconfont icon-tags-fill" }
-    - { key: "about", link: "/about/", icon: "iconfont icon-user-fill" }
     - { key: "links", link: "/links/", icon: "iconfont icon-link-fill" }
+    - { key: "about", link: "/about/", icon: "iconfont icon-user-fill" }
 
 # 搜索功能，基于 hexo-generator-search 插件，若已安装其他搜索插件请关闭此功能，以避免生成多余的索引文件
 # Search feature, based on hexo-generator-search. If you have installed other search plugins, please disable this feature to avoid generating redundant index files
@@ -534,8 +534,8 @@ index:
 # Post Page
 #---------------------------
 post:
-  banner_img: /img/default.png
-  banner_img_height: 70
+  banner_img: https://static.kevinchu.top/blog/assets/img/bg_008.jpg
+  banner_img_height: 60
   banner_mask_alpha: 0.3
 
   # 文章在首页的默认封面图，当没有指定 index_img 时会使用该图片，若两者都为空则不显示任何图片
@@ -876,7 +876,7 @@ cusdis:
 # Archive Page
 #---------------------------
 archive:
-  banner_img: https://static.kevinchu.top/blog/assets/img/bg_004.jpg
+  banner_img: https://static.kevinchu.top/blog/assets/img/bg_011.jpg
   banner_img_height: 60
   banner_mask_alpha: 0.3
 
@@ -887,7 +887,7 @@ archive:
 #---------------------------
 category:
   enable: true
-  banner_img: https://static.kevinchu.top/blog/assets/img/bg_004.jpg
+  banner_img: https://static.kevinchu.top/blog/assets/img/bg_011.jpg
   banner_img_height: 60
   banner_mask_alpha: 0.3
 
@@ -916,7 +916,7 @@ category:
 #---------------------------
 tag:
   enable: true
-  banner_img: https://static.kevinchu.top/blog/assets/img/bg_004.jpg
+  banner_img: https://static.kevinchu.top/blog/assets/img/bg_011.jpg
   banner_img_height: 60
   banner_mask_alpha: 0.3
   tagcloud:
@@ -933,16 +933,17 @@ tag:
 #---------------------------
 about:
   enable: true
-  banner_img: https://static.kevinchu.top/blog/assets/img/bg_005.jpg
+  banner_img: https://static.kevinchu.top/blog/assets/img/bg_007.jpg
   banner_img_height: 60
   banner_mask_alpha: 0.3
-  avatar: https://static.kevinchu.top/blog/assets/img/logo.jpg
+  avatar: https://static.kevinchu.top/blog/assets/img/avatar_03.jpg
   name: "Kevin Chu"
-  intro: "HELLO WORLD"
+  intro: "Write the Code. Change the world.🛸🛸🛸"
   # 更多图标可从 https://hexo.fluid-dev.com/docs/icon/ 查找，`class` 代表图标的 css class，添加 `qrcode` 后，图标不再是链接而是悬浮二维码
   # More icons can be found from https://hexo.fluid-dev.com/docs/en/icon/  `class` is the css class of the icon. If adding `qrcode`, The icon is no longer a link, but a hovering QR code
   icons:
     - { class: "iconfont icon-github-fill", link: "https://github.com/KevinChu1998", tip: "GitHub" }
+    - { class: "iconfont icon-wechat-fill", qrcode: "https://static.kevinchu.top/blog/assets/img/wechat_qrcode.jpg" }
     # - { class: "iconfont icon-douban-fill", link: "https://douban.com", tip: "豆瓣" }
     # - { class: "iconfont icon-wechat-fill", qrcode: "/img/favicon.png" }
 
@@ -980,30 +981,36 @@ page404:
 #---------------------------
 links:
   enable: true
-  banner_img: https://static.kevinchu.top/blog/assets/img/bg_006.jpg
+  banner_img: https://static.kevinchu.top/blog/assets/img/bg_015.jpg
   banner_img_height: 60
   banner_mask_alpha: 0.3
   # 友链的成员项
   # Member item of page
   items:
     - {
-      title: "Fluid Blog",
-      intro: "主题博客",
-      link: "https://hexo.fluid-dev.com/",
-      avatar: "/img/favicon.png"
+      title: "Kevin'Blog-博客园",
+      intro: "Kevin的博客园博客",
+      link: "https://www.cnblogs.com/kevinchu1998",
+      avatar: "https://static.kevinchu.top/blog/assets/img/logo.jpg"
     }
-    - {
-      title: "Fluid Docs",
-      intro: "主题使用指南",
-      link: "https://hexo.fluid-dev.com/docs/",
-      avatar: "/img/favicon.png"
-    }
-    - {
-      title: "Fluid Repo",
-      intro: "主题 GitHub 仓库",
-      link: "https://github.com/fluid-dev/hexo-theme-fluid",
-      avatar: "/img/favicon.png"
-    }
+    # - {
+    #   title: "Fluid Blog",
+    #   intro: "主题博客",
+    #   link: "https://hexo.fluid-dev.com/",
+    #   avatar: "/img/favicon.png"
+    # }
+    # - {
+    #   title: "Fluid Docs",
+    #   intro: "主题使用指南",
+    #   link: "https://hexo.fluid-dev.com/docs/",
+    #   avatar: "/img/favicon.png"
+    # }
+    # - {
+    #   title: "Fluid Repo",
+    #   intro: "主题 GitHub 仓库",
+    #   link: "https://github.com/fluid-dev/hexo-theme-fluid",
+    #   avatar: "/img/favicon.png"
+    # }
 
   # 当成员头像加载失败时，替换为指定图片
   # When the member avatar fails to load, replace the specified image
@@ -1013,7 +1020,7 @@ links:
   # Custom content at the bottom of the links
   custom:
     enable: true
-    content: '<hr><p>在下方留言申请加入我的友链，按如下格式提供信息：</p><ul><li>博客名：Fluid</li><li>简介：Fluid 主题官方博客</li><li>链接：https://hexo.fluid-dev.com</li><li>图片：https://hexo.fluid-dev.com/img/favicon.png</li></ul>'
+    content: '<hr><p>在下方留言申请加入我的友链，按如下格式提供信息：</p><ul><li>博客名：xxx博客</li><li>简介：xxx的博客</li><li>链接：https://xxx.com</li><li>图片：https://xxx/favicon.png</li></ul>'
 
   # 评论插件
   # Comment plugin
