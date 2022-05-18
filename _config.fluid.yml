@@ -145,7 +145,7 @@ color:
 
   # 顶部菜单背景色
   # Color of navigation bar background
-  navbar_bg_color: "#3C485897"
+  navbar_bg_color: "#3C4858DA"
   navbar_bg_color_dark: "#1f3144"
 
   # 顶部菜单字体色
@@ -238,6 +238,7 @@ custom_js:
 # 指定自定义 .css 文件路径，用法和 custom_js 相同
 # The usage is the same as custom_js
 custom_css:
+  # - https://static.kevinchu.top/blog/assets/css/gallery.css
 
 # 网页访问统计
 # Analysis of website visitors
@@ -352,6 +353,7 @@ navbar:
     - { key: "category", link: "/categories/", icon: "iconfont icon-category-fill" }
     - { key: "tag", link: "/tags/", icon: "iconfont icon-tags-fill" }
     - { key: "links", link: "/links/", icon: "iconfont icon-link-fill" }
+    - { key: "gallery", link: "/gallery/", icon: "iconfont icon-images", name: "图库" }
     - { key: "about", link: "/about/", icon: "iconfont icon-user-fill" }
 
 # 搜索功能，基于 hexo-generator-search 插件，若已安装其他搜索插件请关闭此功能，以避免生成多余的索引文件
@@ -540,7 +542,7 @@ post:
 
   # 文章在首页的默认封面图，当没有指定 index_img 时会使用该图片，若两者都为空则不显示任何图片
   # Path of the default post cover when `index_img` is not set. If both are empty, no image will be displayed
-  default_index_img:
+  default_index_img: https://static.kevinchu.top/blog/assets/img/bg_012.jpg
 
   # 文章标题下方的元信息
   # Meta information below title
@@ -938,7 +940,7 @@ about:
   banner_mask_alpha: 0.3
   avatar: https://static.kevinchu.top/blog/assets/img/avatar_03.jpg
   name: "Kevin Chu"
-  intro: "Write the Code. Change the world.🛸🛸🛸"
+  intro: "Write the Code. Change the world.🛸"
   # 更多图标可从 https://hexo.fluid-dev.com/docs/icon/ 查找，`class` 代表图标的 css class，添加 `qrcode` 后，图标不再是链接而是悬浮二维码
   # More icons can be found from https://hexo.fluid-dev.com/docs/en/icon/  `class` is the css class of the icon. If adding `qrcode`, The icon is no longer a link, but a hovering QR code
   icons:
@@ -947,6 +949,10 @@ about:
     # - { class: "iconfont icon-douban-fill", link: "https://douban.com", tip: "豆瓣" }
     # - { class: "iconfont icon-wechat-fill", qrcode: "/img/favicon.png" }
 
+albums:
+  banner_img: https://static.kevinchu.top/blog/assets/img/bg_019.jpg
+  banner_img_height: 60
+  banner_mask_alpha: 0.3
 
 #---------------------------
 # 自定义页
