@@ -352,7 +352,7 @@ navbar:
     - { key: "archive", link: "/archives/", icon: "iconfont icon-archive-fill" }
     - { key: "category", link: "/categories/", icon: "iconfont icon-category-fill" }
     - { key: "tag", link: "/tags/", icon: "iconfont icon-tags-fill" }
-    - { key: "links", link: "/links/", icon: "iconfont icon-link-fill" }
+    - { key: "links", link: "/links/", icon: "iconfont icon-link-fill", name: "链接"}
     - { key: "gallery", link: "/gallery/", icon: "iconfont icon-images", name: "图库" }
     - { key: "about", link: "/about/", icon: "iconfont icon-user-fill" }
 
@@ -994,7 +994,13 @@ links:
   # Member item of page
   items:
     - {
-      title: "Kevin'Blog-博客园",
+      title: "Kevin's Homepage",
+      intro: "Kevin的个人主页",
+      link: "https://www.kevinchu.top",
+      avatar: "https://static.kevinchu.top/blog/assets/img/logo.jpg"
+    }
+    - {
+      title: "Kevin's Blog-博客园",
       intro: "Kevin的博客园博客",
       link: "https://www.cnblogs.com/kevinchu1998",
       avatar: "https://static.kevinchu.top/blog/assets/img/logo.jpg"
