@@ -13,6 +13,7 @@
 - 修改菜单栏，添加发现栏目
 - 修改主题页脚内容(themes\fluid\layout\_partials\footer.ejs)，添加运行时间显示
 - 编辑页脚显示内容
+- 更新workflow自动部署配置
 
 ### 2022-05-19
 - 修改菜单名称
