@@ -4,6 +4,8 @@
 -[x] 优化github action自动部署流程
 -[x] 配置博客主题
 -[x] 接入评论
+-[ ] 菜单栏整理优化
+-[ ] 接入看板娘
 
 ## UPDATE SUMMARY
 
