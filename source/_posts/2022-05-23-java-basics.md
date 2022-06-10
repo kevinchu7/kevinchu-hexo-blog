@@ -1,5 +1,5 @@
 ---
-title: Java基础-复习整理01
+title: Java基础复习整理-01
 index_img: https://static.kevinchu.top/blog/assets/img/cover_021.jpeg
 date: 2022-05-23 16:41:39
 tags:
