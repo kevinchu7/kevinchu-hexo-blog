@@ -115,11 +115,14 @@ touch /etc/docker/daemon.json
 ```
 >附：中国科学技术大学（LUG@USTC）的开源镜像：https://docker.mirrors.ustc.edu.cn 和网易的开源镜像：http://hub-mirror.c.163.com
 
+
 日志相关：
-```max-size```为文件最大大小
-```max-file```为最多保持几个文件
+
+max-size 为文件最大大小
+max-file 为最多保持几个文件
 
 除了 json-file 还支持很多 logging driver：
+
 日志驱动|描述
 -|-  
 none | 容器没有日志可用，docker logs 什么都不返回
@@ -173,7 +176,8 @@ systemctl stop docker
 ```
 
 - 创建新的docker目录，如```home/work/docker_root```
-> ```df -h``` 可查看磁盘目录空间大小
+>df -h 可查看磁盘目录空间大小
+
 ```SHELL
 mkdir -p /home/work/docker_root
 ```
