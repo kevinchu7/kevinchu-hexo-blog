@@ -22,7 +22,7 @@ shared-nothing架构与lambda架构
 
 - Druid设计三个原则
 
-1.快速查询（Fast Query） : 部分数据聚合（Partial Aggregate） + 内存华（In-Memory） + 索引（Index）
+1.快速查询（Fast Query） : 部分数据聚合（Partial Aggregate） + 内存化（In-Memory） + 索引（Index）
 2.水平拓展能力（Horizontal Scalability）:分布式数据（Distributed data）+并行化查询（Parallelizable Query）
 3.实时分析（Realtime Analytics）：Immutable Past , Append-Only Future
 
@@ -53,7 +53,7 @@ spring:
     username: root
     password: 
     type: com.alibaba.druid.pool.DruidDataSource
-    driver-class-name: com.mysql.jdbc.Driver
+    driver-class-name: com.mysql.cj.jdbc.Driver
     druid:
       stat-view-servlet:
         # 默认true 内置监控页面首页/druid/index.html
