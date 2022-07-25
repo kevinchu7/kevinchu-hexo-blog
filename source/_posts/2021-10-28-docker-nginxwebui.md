@@ -12,7 +12,7 @@ categories:
 NginxWebUI是一款方便实用的nginx 网页配置工具，可以使用 WebUI 配置 Nginx 的各项功能，包括端口转发，反向代理，ssl 证书配置，负载均衡等，最终生成「nginx.conf」配置文件并覆盖目标配置文件，完成 nginx 的功能配置。
 >NginxWebUI相关地址
 项目地址：https://gitee.com/cym1102/nginxWebUI
-官方网站：https://nginxwebui.gitee.io
+官方网站：https://www.nginxwebui.cn/
 
 ## 2 Docker部署NginxWebUI
 - 拉取镜像文件
