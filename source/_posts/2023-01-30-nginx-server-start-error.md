@@ -1,5 +1,5 @@
 ---
-title: nginx-server-start-error
+title: nginx启动报错"/var/run/nginx/nginx.pid" failed"
 index_img: https://static.kevinchu.top/blog/assets/img/cover_037.jpeg
 date: 2023-01-30 10:10:07
 tags:
