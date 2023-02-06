@@ -13,7 +13,7 @@ categories:
 
 - 检查rpm方式安装残留
 
-```
+```shell
 # 查包名
 rpm -qa|grep -i mysql
 # 删除命令
@@ -42,7 +42,7 @@ rpm -e --nodeps mariadb-devel-5.5.65-1.el7.x86_64
 
 - 检查yum方式安装残留
 
-```
+```shell
 #查看已安装的mysql
 rpm -qa | grep -i mysql
 #卸载mysql
@@ -59,17 +59,17 @@ yum remove 文件名
 ### 3.离线安装MySQL
 
 创建目录
-```
+```shell
 mkdir /usr/local/software/mysql 
 ```
 
 上传MySQL安装包(mysql-5.7.38-1.el7.x86_64.rpm-bundle.tar)至该目录下，并解压
-```
+```shell
 tar -xvf mysql-5.7.38-1.el7.x86_64.rpm-bundle.tar
 ```
 
 安装
-```
+```shell
 # 1.安装依赖 
 rpm -ivh --nodeps --force mysql-community-common-5.7.38-1.el7.x86_64.rpm
 # 2.安装libs
@@ -84,7 +84,7 @@ rpm -ivh --nodeps --force mysql-community-server-5.7.38-1.el7.x86_64.rpm
 
 启动服务，获取临时密码
 
-```
+```shell
 # 启动服务
 systemctl start mysqld 或者 service mysqld start
 # 获取密码
@@ -95,7 +95,7 @@ grep 'temporary password' /var/log/mysqld.log
 
 使用临时密码登录，然后修改密码
 
-```
+```mysql
 # 输入刚刚查到的临时密码(输入的时候密码会隐藏，不显示)，登录MySQL
 mysql -uroot -p
 # 登录以后，设置新密码
@@ -103,7 +103,7 @@ set password for root@localhost = password('新的密码');
 ```
 
 注意：如果密码级别与默认的级别要求不符时候会报```Your password does not satisfy the current policy requirements```, 此时可以修改级别与最小的默认密码位数,然后再重新设置密码：
-```
+```mysql
 set global validate_password_policy=0;
 set global validate_password_length=4;
 ```
@@ -115,7 +115,7 @@ MySQL开启远程访问权限有以下两种方法：
 
 - 授权法
 
-```
+```mysql
 # user为用户名，ip为可访问的IP地址，password为密码
 GRANT ALL PRIVILEGES ON *.* TO 'user'@'ip' IDENTIFIED BY 'password' WITH GRANT OPTION;
 
@@ -131,7 +131,7 @@ flush privileges;
 
 - 改表法
 
-```
+```mysql
 use mysql; 
 update user set host = '%' where user = 'root'; 
 ```
@@ -150,7 +150,7 @@ default-character-set=utf8
 ```
 ![](https://static.kevinchu.top/blog/public/20230206234752.png)
 
-```
+```mysql
 # 重启服务，查看字符编码集
 systemctl restart mysqld
 mysql -uroot -p
@@ -161,7 +161,7 @@ show variables like 'character%';
 
 ### 7.开放防火墙3306端口
 
-```
+```shell
 # 查看防火墙开放端口
 firewall-cmd --list-all
 # 防火墙开放3306端口
@@ -172,7 +172,7 @@ firewall-cmd --reload
 
 ### 8.其他配置
 
-```
+```shell
 # 1.设置安全选项：
 mysql_secure_installation
 
