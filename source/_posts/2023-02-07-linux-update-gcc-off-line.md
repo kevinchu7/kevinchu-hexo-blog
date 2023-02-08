@@ -35,7 +35,7 @@ categories:
 mkdir /usr/local/software
 ```
 
-### 2. 安装gcc、gcc-c++ 4.8.5
+### 2.安装gcc、gcc-c++ 4.8.5
 
 分别进入存放gcc、gcc-c++ 4.8.5 rpm的文件夹，执行安装命令：
 ```shell
