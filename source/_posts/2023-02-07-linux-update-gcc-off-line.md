@@ -83,7 +83,7 @@ make install
 #### 3.3 mpc安装
 (需先安装gmp、mpfr)
 
-```
+```shell
 tar -zxvf mpc-1.0.1.tar.gz
 
 cd mpc-1.0.1
