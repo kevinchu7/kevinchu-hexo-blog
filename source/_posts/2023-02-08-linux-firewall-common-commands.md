@@ -1,5 +1,5 @@
 ---
-title: linux防火墙常用命令
+title: Linux防火墙常用命令
 index_img: https://static.kevinchu.top/blog/assets/img/cover_041.jpeg
 date: 2023-02-08 14:06:40
 tags: 
