@@ -4,10 +4,12 @@ index_img: https://static.kevinchu.top/blog/assets/img/cover_027.jpeg
 date: 2022-06-23 00:14:25
 tags:
     - VScode
+    - C
     - C++
 categories:
     - 软件工具
 ---
+>本文已于2023-07-06 14:25:25更新
 
 ## 1  MinGW编译器下载和配置
 
@@ -41,16 +43,37 @@ cmd里输入```gcc -v```回车，结果如下：
 
 ### 2.1 VScode安装插件
 
+必要插件-C/C++:
 ![](https://static.kevinchu.top/blog/public/20220624004655.png)
+
+推荐-C/C++ Extension Pack:
+(包含了 vscode 编写 C/C++ 工程需要的插件C/C++、C/C++ Themes、CMake、CMake Tools等)
+![](https://static.kevinchu.top/blog/public/20230706112943.png)
 
 安装完后重启VScode。
 
 
 ### 2.2 配置环境参数
 
-- 1.创建文件夹存放C/C++项目
+- 1.创建C/C++项目文件夹
 
-- 2.在项目目录下新建名为```.vscode```的文件夹，里面创建三个配置文件c_cpp_properties.json，launch.json，tasks.json，内容参考：
+- 2.在项目文件夹下新建```.vscode```配置文件目录，在里面添加三个配置文件c_cpp_properties.json，launch.json，tasks.json，亦可通过以下方式快速创建：
+
+```launch.json```: Run->Add Configuration...->任选一模板
+![](https://static.kevinchu.top/blog/public/20230706114138.png)
+
+```tasks.json```: Terminal->Configure Tasks...->Create tasks.json file from template->任选一模板
+![](https://static.kevinchu.top/blog/public/20230706140153.png)
+![](https://static.kevinchu.top/blog/public/20230706140335.png)
+
+
+```c_cpp_properties.json```: 点开项目文件下的任一文件，在vscode右下角找到*Win32*按钮并点击->Edit Configuration (JSON)
+![](https://static.kevinchu.top/blog/public/20230706140927.png)
+![](https://static.kevinchu.top/blog/public/20230706141352.png)
+
+
+
+三个文件内容配置参考（清空默认内容，复制粘贴，修改mingw64路径）：
 
 c_cpp_properties.json
 ```JSON
@@ -145,6 +168,8 @@ tasks.json
 }
 
 ```
+
+
 
 
 ## 3 测试运行
