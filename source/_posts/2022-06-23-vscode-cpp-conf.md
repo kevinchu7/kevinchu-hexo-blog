@@ -59,21 +59,26 @@ cmd里输入```gcc -v```回车，结果如下：
 
 - 2.在项目文件夹下新建```.vscode```配置文件目录，在里面添加三个配置文件c_cpp_properties.json，launch.json，tasks.json，亦可通过以下方式快速创建：
 
-```launch.json```: Run->Add Configuration...->任选一模板
+
+***launch.json***: Run->Add Configuration...->任选一模板
 ![](https://static.kevinchu.top/blog/public/20230706114138.png)
 
-```tasks.json```: Terminal->Configure Tasks...->Create tasks.json file from template->任选一模板
-![](https://static.kevinchu.top/blog/public/20230706140153.png)
-![](https://static.kevinchu.top/blog/public/20230706140335.png)
 
-
-```c_cpp_properties.json```: 点开项目文件下的任一文件，在vscode右下角找到*Win32*按钮并点击->Edit Configuration (JSON)
-![](https://static.kevinchu.top/blog/public/20230706140927.png)
-![](https://static.kevinchu.top/blog/public/20230706141352.png)
+***tasks.json***: Terminal->Configure Tasks...->Create tasks.json file from template->任选一模板
+![](https://static.kevinchu.top/blog/public/20230706140153.png)![](https://static.kevinchu.top/blog/public/20230706140335.png)
 
 
 
+***c_cpp_properties.json***: 点开项目文件下的任一文件，在vscode右下角找到*Win32*按钮并点击->Edit Configuration (JSON)
+![](https://static.kevinchu.top/blog/public/20230706140927.png)![](https://static.kevinchu.top/blog/public/20230706141352.png)
+
+
+
+---
 三个文件内容配置参考（清空默认内容，复制粘贴，修改mingw64路径）：
+
+
+
 
 c_cpp_properties.json
 ```JSON
