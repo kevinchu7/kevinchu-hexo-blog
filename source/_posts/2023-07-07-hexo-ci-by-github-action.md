@@ -22,11 +22,11 @@ categories:
 
 ### 1.关于博客框架和主题
 
-### 1.1 Hexo框架
+#### 1.1 Hexo框架
 
 如你所见，本博客使用静态博客框架Hexo进行搭建和渲染，关于Hexo框架的详细介绍见官网: [**Hexo**](https://hexo.io/) 。
 
-### 1.2 Fluid主题
+#### 1.2 Fluid主题
 
 本博客使用了[**Fluid主题**](https://github.com/fluid-dev/hexo-theme-fluid)，自定义主题配置，结合少部分魔改，渲染形成了现在的页面样式风格。
 
