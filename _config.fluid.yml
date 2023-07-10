@@ -360,7 +360,11 @@ navbar:
       icon: 'iconfont icon-bug',
       submenu: [
         { key: '工具箱', link: 'https://tool.lu/' },
-        { key: '今日热榜', link: 'https://tophub.today/' }
+        { key: '今日热榜', link: 'https://tophub.today/' },
+        { key: 'C语言网', link: 'https://www.dotcpp.com/course/' },
+        { key: 'Hello算法', link: 'https://www.hello-algo.com/' },
+        { key: 'JavaGuide', link: 'https://javaguide.cn/' },
+        { key: '美团技术团队博客', link: 'https://tech.meituan.com/' }
       ]
   }
 
