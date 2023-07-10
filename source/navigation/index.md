@@ -24,6 +24,8 @@ comment: ''
 
 - [**🔗JavaGuide**](https://javaguide.cn/)
 
+- [**🔗Java全栈知识体系**](https://www.pdai.tech/)
+
 - [**🔗美团技术团队博客**](https://tech.meituan.com/)
 
 <br>
@@ -32,7 +34,7 @@ comment: ''
 
 <br>
 
-- [***🔗今日热榜***](https://tophub.today/)
+- [**🔗今日热榜**](https://tophub.today/)
 
 <br>
 
