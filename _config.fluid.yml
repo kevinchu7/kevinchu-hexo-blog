@@ -353,20 +353,16 @@ navbar:
     - { key: "category", link: "/categories/", icon: "iconfont icon-category-fill" }
     - { key: "tag", link: "/tags/", icon: "iconfont icon-tags-fill" }
     - { key: "links", link: "/links/", icon: "iconfont icon-link-fill", name: "链接"}
-    - { key: "gallery", link: "/gallery/", icon: "iconfont icon-images", name: "图库" }
+    # - { key: "gallery", link: "/gallery/", icon: "iconfont icon-images", name: "图库" }
     - { key: "about", link: "/about/", icon: "iconfont icon-user-fill" }
     - {
       key: '发现',
-      icon: 'iconfont icon-bug',
+      icon: 'iconfont icon-map',
       submenu: [
-        { key: '工具箱', link: 'https://tool.lu/' },
-        { key: '今日热榜', link: 'https://tophub.today/' },
-        { key: 'C语言网', link: 'https://www.dotcpp.com/course/' },
-        { key: 'Hello算法', link: 'https://www.hello-algo.com/' },
-        { key: 'JavaGuide', link: 'https://javaguide.cn/' },
-        { key: '美团技术团队博客', link: 'https://tech.meituan.com/' }
+        { key: '导航', link: '/navigation/' },
+        { key: '图库', link: '/gallery/' }
       ]
-  }
+    }
 
 # 搜索功能，基于 hexo-generator-search 插件，若已安装其他搜索插件请关闭此功能，以避免生成多余的索引文件
 # Search feature, based on hexo-generator-search. If you have installed other search plugins, please disable this feature to avoid generating redundant index files
@@ -954,7 +950,7 @@ about:
   banner_mask_alpha: 0.3
   avatar: https://static.kevinchu.top/blog/assets/img/avatar_03.jpg
   name: "Kevin Chu"
-  intro: "Write the Code. Change the world.🌏"
+  intro: "Write the Code. <strike>Change the world.</strike>🌏"
   # 更多图标可从 https://hexo.fluid-dev.com/docs/icon/ 查找，`class` 代表图标的 css class，添加 `qrcode` 后，图标不再是链接而是悬浮二维码
   # More icons can be found from https://hexo.fluid-dev.com/docs/en/icon/  `class` is the css class of the icon. If adding `qrcode`, The icon is no longer a link, but a hovering QR code
   icons:
