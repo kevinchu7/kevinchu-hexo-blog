@@ -4,6 +4,8 @@ banner_img: https://static.kevinchu.top/blog/assets/img/bg_018.jpg
 comment: ''
 ---
 
+<script src="https://cdn.jsdelivr.net/gh/wallleap/cdn/js/sakura.js"></script>
+
 #### 🔨 工具
 
 <br>
@@ -35,6 +37,16 @@ comment: ''
 <br>
 
 - [**🔗今日热榜**](https://tophub.today/)
+
+<br>
+
+#### 📱 综合
+
+<br>
+
+- [**🔗AK47导航**](https://www.ak47s.cn/)
+
+- [**🔗炫猿导航**](https://xydh.fun/)
 
 <br>
 
