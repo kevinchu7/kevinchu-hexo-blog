@@ -439,8 +439,10 @@ footer:
     Powered by&nbsp;<a href="https://cloud.tencent.com/" target="_blank" rel="nofollow noopener"><span>腾讯云</span></a>
     <span>|</span>
     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a>
-    <span>|</span>
+    <span>&</span>
     <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a>
+    <span>|</span>
+    <a href="https://blog.kevinchu.top/atom.xml" target="_blank"><i class="iconfont icon-rss">RSS</i></>
   '
 
   # 展示网站的 PV、UV 统计数
