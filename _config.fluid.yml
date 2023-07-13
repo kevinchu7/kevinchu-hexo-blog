@@ -442,7 +442,7 @@ footer:
     <span>&</span>
     <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a>
     <span>|</span>
-    <a href="https://blog.kevinchu.top/atom.xml" target="_blank"><i class="iconfont icon-rss">RSS</i></>
+    <a href="https://blog.kevinchu.top/atom.xml" target="_blank" rel="nofollow noopener"><i class="iconfont icon-rss"></i>RSS</a>
   '
 
   # 展示网站的 PV、UV 统计数
