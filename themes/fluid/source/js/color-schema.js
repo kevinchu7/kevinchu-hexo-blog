@@ -176,6 +176,10 @@
           }
         });
       }
+      if (document.documentElement.getAttribute('data-user-color-scheme')) {
+        var color = getComputedStyle(document.documentElement).getPropertyValue('--navbar-bg-color').trim()
+        document.querySelector('meta[name="theme-color"]').setAttribute('content', color)
+      }
     }
   }
 
@@ -226,15 +230,24 @@
     // 设置 utterances 评论主题
     var utterances = document.querySelector('.utterances-frame');
     if (utterances) {
-      var theme = window.UtterancesThemeLight;
-      if (schema === 'dark') {
-        theme = window.UtterancesThemeDark;
-      }
+      var utterancesTheme = schema === 'dark' ? window.UtterancesThemeDark : window.UtterancesThemeLight;
       const message = {
         type : 'set-theme',
-        theme: theme
+        theme: utterancesTheme
       };
       utterances.contentWindow.postMessage(message, 'https://utteranc.es');
+    }
+
+    // 设置 giscus 评论主题
+    var giscus = document.querySelector('iframe.giscus-frame');
+    if (giscus) {
+      var giscusTheme = schema === 'dark' ? window.GiscusThemeDark : window.GiscusThemeLight;
+      const message = {
+        setConfig: {
+          theme: giscusTheme,
+        }
+      };
+      giscus.contentWindow.postMessage({ 'giscus': message }, 'https://giscus.app');
     }
   }
 
