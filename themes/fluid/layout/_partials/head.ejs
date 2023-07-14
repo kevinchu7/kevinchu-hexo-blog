@@ -7,7 +7,7 @@ if (keywords instanceof Array) {
 }
 var description = page.description || page.excerpt || (is_post() && page.content) || config.description
 if (description) {
-  description = escape_html(strip_html(description).substring(0, 200).trim()).replace(/\n/g, ' ')
+  description = strip_html(description).substring(0, 200).trim().replace(/\n/g, ' ')
 }
 var ogImage = page.og_img || page.index_img
 var ogConfig = Object.assign({ image: ogImage && url_for(ogImage) }, theme.open_graph)
@@ -30,6 +30,10 @@ var ogConfig = Object.assign({ image: ogImage && url_for(ogImage) }, theme.open_
   <% } else { %>
     <meta name="description" content="<%= description %>">
   <% } %>
+  <% if ((theme.post.meta.views.enable && theme.post.meta.views.source === 'busuanzi')
+    || (theme.footer.statistics.enable && theme.footer.statistics.source === 'busuanzi')) { %>
+    <meta name="referrer" content="no-referrer-when-downgrade">
+  <% } %>
   <% if (theme.custom_head) { %>
     <%- theme.custom_head %>
   <% } %>
@@ -39,6 +43,7 @@ var ogConfig = Object.assign({ image: ogImage && url_for(ogImage) }, theme.open_
   <%- export_config() %>
   <%- js_ex(theme.static_prefix.internal_js, 'utils.js') %>
   <%- js_ex(theme.static_prefix.internal_js, 'color-schema.js') %>
+  <%- partial('_partials/plugins/analytics.ejs') %>
 
   <%- inject_point('head') %>
 </head>
