@@ -1,13 +1,14 @@
 ---
-title: Hexo结合GitHub Action实现博客自动部署更新(回忆本站搭建过程)
+title: Hexo结合GitHub Action实现博客自动部署更新
 index_img: https://static.kevinchu.top/blog/assets/img/cover_046.jpeg
 date: 2023-07-07 01:15:26
+archive: true
 tags:
     - Hexo
     - CI/CD
     - Github
 categories:
-    - 雕虫小技
+    - 博客建站
 ---
 >***我回来啦！***
 >

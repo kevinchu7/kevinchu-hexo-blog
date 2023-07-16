@@ -92,8 +92,10 @@ Fluid.events = {
       var right = bodyWidth - boardRight;
       posDisplay = right >= 50;
       topArrow.css({
-        'bottom': posDisplay && scrollDisplay ? '20px' : '-60px',
-        'right' : right - 64 + 'px'
+        'bottom': scrollDisplay ? '20px' : '-60px',
+        'right' : posDisplay ? right - 64 : 4 + 'px',
+        'min-width' : posDisplay ? 40 : 20 + 'px',
+        'min-height' : posDisplay ? 40 : 20 + 'px'
       });
     };
     setTopArrowPos();
@@ -104,7 +106,7 @@ Fluid.events = {
       var scrollHeight = document.body.scrollTop + document.documentElement.scrollTop;
       scrollDisplay = scrollHeight >= headerHeight;
       topArrow.css({
-        'bottom': posDisplay && scrollDisplay ? '20px' : '-60px'
+        'bottom': scrollDisplay ? '20px' : '-60px'
       });
     });
     // Click
