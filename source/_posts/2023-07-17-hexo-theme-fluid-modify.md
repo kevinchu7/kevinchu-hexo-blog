@@ -2,21 +2,20 @@
 title: Hexo博客Fluid主题魔改记录
 index_img: https://static.kevinchu.top/blog/assets/img/cover_048.jpeg
 date: 2023-07-17 00:36:47
+archive: true
 tags:
     - Hexo
 categories:
     - 博客建站
 ---
 
-# 引言
-这篇博客仅用于记录对本站使用的博客主题[**Fluid**](https://github.com/fluid-dev/hexo-theme-fluid)的魔改内容，以防遗忘。
+>这篇博客仅用于记录对本站使用的博客主题[**Fluid**](https://github.com/fluid-dev/hexo-theme-fluid)的魔改内容，以防遗忘。
+---
 
-# Fluid主题魔改记录
-
-## 1. 添加鼠标移动小星星特效
+## 1.添加鼠标移动小星星特效
 主题配置项```custom_js```引入[stars.js](https://static.kevinchu.top/blog/assets/js/stars.js)
 
-## 2. 博客底部添加运行时间
+## 2.博客底部添加运行时间
 修改```themes\fluid\layout\_partials\footer.ejs```，在第一行```<div class="footer-inner">```后面追加：
 ```javascript
   <div>
@@ -54,7 +53,7 @@ categories:
 ```
 
 
-## 3. 添加RSS链接
+## 3.添加RSS链接
 
 安装```hexo-generator-feed```插件:
 ```npm install hexo-generator-feed --save```
@@ -75,7 +74,7 @@ feed:
 ```<a href="https://blog.kevinchu.top/atom.xml" target="_blank" rel="nofollow noopener"><i class="iconfont icon-rss"></i>RSS</a>```
 
 
-## 4. 移动端支持显示回到顶部按钮
+## 4.移动端支持显示回到顶部按钮
 修改```themes\fluid\source\js\events.js```中的```registerScrollTopArrowEvent```，改为：
 ```javascript
 function() {

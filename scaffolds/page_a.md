@@ -10,5 +10,7 @@ index_img: https://static.kevinchu.top/blog/assets/img/cover_001.jpeg
 # 顶部图
 # banner_img: 
 # 排序，sticky数值越大，该文章越靠前
-sticky: 999   
+sticky: 999
+# 首页隐藏
+archive: false   
 ---
