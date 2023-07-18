@@ -238,7 +238,6 @@ custom_js:
 # 指定自定义 .css 文件路径，用法和 custom_js 相同
 # The usage is the same as custom_js
 custom_css:
-  # - https://static.kevinchu.top/blog/assets/css/gallery.css
 
 # 网页访问统计
 # Analysis of website visitors
@@ -601,7 +600,7 @@ post:
   # 在文章开头显示文章更新时间，该时间默认是 md 文件更新时间，可通过 front-matter 中 `updated` 手动指定（和 date 一样格式）
   # Update date is displayed at the beginning of the post. The default date is the update date of the md file, which can be manually specified by `updated` in front-matter (same format as date)
   updated:
-    enable: false
+    enable: true
 
     # 格式参照 ISO-8601 日期格式化
     # ISO-8601 date format
@@ -836,7 +835,9 @@ waline:
   wordLimit: 0
   pageSize: 10
   locale: 
-    placeholder: '哈，快找个位置随便坐~'
+    placeholder: '哈，快找个位置随便坐^-^'
+    nick: '你的名字'
+    sofa: '寂寞如雪，快来个人~'
   
 # 畅言 Changyan
 # 基于第三方的服务
@@ -1039,7 +1040,7 @@ links:
   # Custom content at the bottom of the links
   custom:
     enable: true
-    content: '<hr><p>远道而来的朋友，你好🐧！<br>你可以在下方留言来加入我的友链💖，提供的信息参考：</p><ul><li>博客名：xxx博客</li><li>简介：xxx的博客</li><li>链接：https://xxx.com</li><li>图片：https://xxx/favicon.png</li></ul><p>(PS：评论系统需要登录Github账号，国内加载可能会有点慢，请见谅！)<br>Anyway，祝你玩得开心🍊！</p>'
+    content: '<hr><p>远道而来的朋友，你好🐧！<br>你可以在下方留言来加入我的友链💖，提供的信息参考：</p><ul><li>博客名：xxx博客</li><li>简介：xxx的博客</li><li>链接：https://xxx.com</li><li>图片：https://xxx/favicon.png</li></ul><p>(PS：评论系统国内加载可能会有亿点儿慢，请见谅！)<br>Anyway，祝你玩得开心🍊！</p>'
 
   # 评论插件
   # Comment plugin
