@@ -2,6 +2,7 @@
 title: 浅析VO、DTO、DO、PO的概念、区别和用处（转载）
 index_img: https://static.kevinchu.top/blog/assets/img/cover_015.jpeg
 date: 2022-03-28 01:52:12
+updated: 2022-03-28 01:52:12
 tags:
     - SpringBoot
 categories:

@@ -2,6 +2,7 @@
 title: Docker安装与配置（CentOS）
 index_img: https://static.kevinchu.top/blog/assets/img/cover_026.jpeg
 date: 2021-06-20 15:12:10
+update: 2021-06-20 15:12:10
 tags:
     - Docker
     - 服务器

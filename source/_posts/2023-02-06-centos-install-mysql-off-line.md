@@ -2,6 +2,7 @@
 title: CentOS7离线安装MySQL5.7
 index_img: https://static.kevinchu.top/blog/assets/img/cover_039.jpeg
 date: 2023-02-06 13:46:56
+updated: 2023-02-06 13:46:56
 tags:
     - MySQL
     - Linux

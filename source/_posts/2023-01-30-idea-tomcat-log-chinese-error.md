@@ -2,6 +2,7 @@
 title: 解决idea启动tomcat时控制台及日志出现中文乱码问题
 index_img: https://static.kevinchu.top/blog/assets/img/cover_038.jpeg
 date: 2023-01-30 13:45:12
+updated: 2023-01-30 13:45:12
 tags:
     - IDEA
     - tomcat

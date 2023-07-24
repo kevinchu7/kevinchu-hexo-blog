@@ -2,6 +2,7 @@
 title: Docker部署NginxWebUI
 index_img: https://static.kevinchu.top/blog/assets/img/cover_008.jpeg
 date: 2021-10-28 17:27:27
+updated: 2021-10-28 17:27:27
 tags:
     - Docker
     - nginx

@@ -2,6 +2,7 @@
 title: SpringBoot整合druid和mybatis-plus
 index_img: https://static.kevinchu.top/blog/assets/img/cover_017.jpeg
 date: 2021-11-10 14:38:47
+updated: 2021-11-10 14:38:47
 tags:
     - SpringBoot
     - mybatis-plus

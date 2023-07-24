@@ -2,6 +2,7 @@
 title: 解决使用zepto报错
 index_img: https://static.kevinchu.top/blog/assets/img/cover_007.jpeg
 date: 2021-05-05 09:28:12
+update: 2021-05-05 09:28:12
 tags:
     - Javascript
 categories:

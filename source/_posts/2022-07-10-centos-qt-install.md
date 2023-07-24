@@ -2,6 +2,7 @@
 title: CentOS7安装Qt5.9.1
 index_img: https://static.kevinchu.top/blog/assets/img/cover_032.jpeg
 date: 2022-07-10 23:15:51
+updated: 2022-07-10 23:15:51
 tags: 
     - Linux
     - 服务器
