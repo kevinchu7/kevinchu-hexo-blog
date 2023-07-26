@@ -1,7 +1,7 @@
 ---
 title: {{ title }}
 date: {{ date }}
-update: {{ date }}
+updated: {{ date }}
 # 标签
 tags: 
 # 分类

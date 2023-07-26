@@ -2,7 +2,7 @@
 title: SpringBoot优雅地使用多线程进行异步调用
 index_img: https://static.kevinchu.top/blog/assets/img/cover_001.jpeg
 date: 2022-04-20 16:09:32
-update: 2022-04-20 16:09:32
+updated: 2022-04-20 16:09:32
 tags:
     - SpringBoot
     - Java

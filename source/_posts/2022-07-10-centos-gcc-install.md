@@ -2,7 +2,7 @@
 title: CentOS7安装gcc-5.4.0
 index_img: https://static.kevinchu.top/blog/assets/img/cover_029.jpeg
 date: 2022-07-10 23:07:34
-update: 2022-07-10 23:07:34
+updated: 2022-07-10 23:07:34
 tags:
     - C++
     - Linux

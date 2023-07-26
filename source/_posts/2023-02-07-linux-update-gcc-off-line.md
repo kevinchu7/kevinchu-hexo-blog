@@ -2,7 +2,7 @@
 title: Linux离线安装升级gcc至5.4.0版本
 index_img: https://static.kevinchu.top/blog/assets/img/cover_040.jpeg
 date: 2023-02-07 09:52:33
-update: 2023-02-07 09:52:33
+updated: 2023-02-07 09:52:33
 tags:
     - gcc
     - Linux

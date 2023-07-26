@@ -2,7 +2,7 @@
 title: Docker部署Jenkins
 index_img: https://static.kevinchu.top/blog/assets/img/cover_013.jpeg
 date: 2022-03-05 09:30:13
-update: 2022-03-05 09:30:13
+updated: 2022-03-05 09:30:13
 tags:
     - Docker
     - Jenkins

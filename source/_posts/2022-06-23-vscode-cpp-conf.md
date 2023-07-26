@@ -2,7 +2,7 @@
 title: VScode配置C/C++环境(windows)
 index_img: https://static.kevinchu.top/blog/assets/img/cover_027.jpeg
 date: 2022-06-23 00:14:25
-update: 2022-06-23 00:14:25
+updated: 2022-06-23 00:14:25
 tags:
     - VScode
     - C

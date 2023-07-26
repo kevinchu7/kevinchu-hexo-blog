@@ -2,7 +2,7 @@
 title: SpringBoot使用线程池的一种方式
 index_img: https://static.kevinchu.top/blog/assets/img/cover_006.jpeg
 date: 2021-04-26 22:04:52
-update: 2021-04-26 22:04:52
+updated: 2021-04-26 22:04:52
 tags:
     - Java
     - SpringBoot

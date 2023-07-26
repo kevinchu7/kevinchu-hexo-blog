@@ -2,7 +2,7 @@
 title: 解决redis与ehcache缓存冲突的问题
 index_img: https://static.kevinchu.top/blog/assets/img/cover_003.jpeg
 date: 2021-03-10 19:05:40
-update: 2021-03-10 19:05:40
+updated: 2021-03-10 19:05:40
 tags:
     - redis
     - springboot

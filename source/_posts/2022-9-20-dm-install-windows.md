@@ -2,7 +2,7 @@
 title: win10安装达梦数据库(DM8)
 index_img: https://static.kevinchu.top/blog/assets/img/cover_036.jpeg
 date: 2022-09-20 09:52:43
-update: 2022-09-20 09:52:43
+updated: 2022-09-20 09:52:43
 tags:
     - 达梦数据库
 categories:

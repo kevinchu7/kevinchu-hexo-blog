@@ -2,7 +2,7 @@
 title: Docker安装redis
 index_img: https://static.kevinchu.top/blog/assets/img/cover_033.jpeg
 date: 2022-07-21 11:11:22
-update: 2022-07-21 11:11:22
+updated: 2022-07-21 11:11:22
 tags:
     - Docker
     - redis

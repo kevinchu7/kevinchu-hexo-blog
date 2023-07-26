@@ -2,7 +2,7 @@
 title: Hexo博客Fluid主题魔改记录
 index_img: https://static.kevinchu.top/blog/assets/img/cover_048.jpeg
 date: 2023-07-17 00:36:47
-update: 2023-07-17 00:36:47
+updated: 2023-07-18 00:36:47
 archive: true
 tags:
     - Hexo
