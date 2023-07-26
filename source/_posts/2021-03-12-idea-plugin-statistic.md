@@ -2,7 +2,7 @@
 title: IDEA-代码量统计
 index_img: https://static.kevinchu.top/blog/assets/img/cover_004.jpeg
 date: 2021-03-12 11:09:09
-updated: 2021-03-12 11:09:09
+update: 2021-03-12 11:09:09
 tags:
     - IDEA
 categories:

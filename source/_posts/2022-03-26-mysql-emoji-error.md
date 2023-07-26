@@ -2,7 +2,7 @@
 title: MySQL存储emoji表情踩坑
 index_img: https://static.kevinchu.top/blog/assets/img/cover_014.jpeg
 date: 2022-03-26 15:54:21
-updated: 2022-03-26 15:54:21
+update: 2022-03-26 15:54:21
 tags:
     - MySQL
 categories:

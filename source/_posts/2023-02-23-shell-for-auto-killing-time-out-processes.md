@@ -2,7 +2,7 @@
 title: 使用shell脚本定时清理运行超时的进程
 index_img: https://static.kevinchu.top/blog/assets/img/cover_043.jpeg
 date: 2023-02-23 11:37:07
-updated: 2023-02-23 11:37:07
+update: 2023-02-23 11:37:07
 tags:
     - Linux
     - 服务器

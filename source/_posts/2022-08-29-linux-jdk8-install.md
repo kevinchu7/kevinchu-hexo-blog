@@ -2,7 +2,7 @@
 title: CentOS7安装配置JDK1.8(压缩包方式)
 index_img: https://static.kevinchu.top/blog/assets/img/cover_034.jpeg
 date: 2022-08-29 09:46:04
-updated: 2022-08-29 09:46:04
+update: 2022-08-29 09:46:04
 tags:
     - Linux
     - Java

@@ -2,7 +2,7 @@
 title: 二叉树遍历-Java实现
 index_img: https://static.kevinchu.top/blog/assets/img/cover_025.jpeg
 date: 2022-06-20 10:04:55
-updated: 2022-06-20 10:04:55
+update: 2022-06-20 10:04:55
 tags:
     - Java
     - 算法

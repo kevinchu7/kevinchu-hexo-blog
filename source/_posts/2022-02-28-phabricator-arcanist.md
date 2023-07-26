@@ -2,7 +2,7 @@
 title: Phabricator Arcanist代码审核配置
 index_img: https://static.kevinchu.top/blog/assets/img/cover_012.jpeg
 date: 2022-02-28 00:06:07
-updated: 2022-02-28 00:06:07
+update: 2022-02-28 00:06:07
 tags:
     - Phabricator
 categories:

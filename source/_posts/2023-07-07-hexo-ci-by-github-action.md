@@ -3,7 +3,7 @@ title: Hexo结合GitHub Action实现博客自动部署更新
 index_img: https://static.kevinchu.top/blog/assets/img/cover_046.jpeg
 archive: false
 date: 2023-07-07 01:15:26
-updated: 2023-07-07 01:15:26
+update: 2023-07-07 01:15:26
 tags:
     - Hexo
     - CI/CD

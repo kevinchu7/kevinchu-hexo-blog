@@ -2,7 +2,7 @@
 title: Java8 Stream API学习理解
 index_img: https://static.kevinchu.top/blog/assets/img/cover_022.jpeg
 date: 2022-06-07 08:29:54
-updated: 2022-06-07 08:29:54
+update: 2022-06-07 08:29:54
 tags:
     - Java
 categories:
