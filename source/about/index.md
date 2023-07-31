@@ -5,6 +5,7 @@ layout: "about"
 #### 🤖关于我
 后端入门级玩家👨‍💻 | Pokemon精英训练师⚡️
 
+<img src="https://static.kevinchu.top/blog/assets/img/pokemon-psyduck.gif" alt="psyduck">
 
 #### 🖥️关于本站
 建立本站以记录学习、积累经验、归纳知识、~~分享生活~~、~~捣鼓折腾~~......
@@ -44,5 +45,3 @@ layout: "about"
 >- 2020-08-17　　🚲起点
 基于Hexo框架搭建了第一个博客，采用Butterfly主题，托管于GitHub Pages。
 
-
-![](https://static.kevinchu.top/blog/assets/img/pikachu.gif)
