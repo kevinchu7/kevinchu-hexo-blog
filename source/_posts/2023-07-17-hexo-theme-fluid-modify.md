@@ -2,7 +2,7 @@
 title: Hexo博客Fluid主题魔改记录
 index_img: https://static.kevinchu.top/blog/assets/img/cover_048.jpeg
 date: 2023-07-17 00:36:47
-updated: 2023-07-18 00:36:47
+updated: 2023-07-31 16:50:30
 archive: true
 tags:
     - Hexo
@@ -71,7 +71,7 @@ feed:
     limit: 20
 ```
 
-展示位置随意，比如放在博客底部信息里，在主题配置项```footer.content```里追加:
+展示位置随意，比如放在博客底部信息里，在主题配置项```footer.content```里追加：
 ```<a href="https://blog.kevinchu.top/atom.xml" target="_blank" rel="nofollow noopener"><i class="iconfont icon-rss"></i>RSS</a>```
 
 
@@ -122,3 +122,24 @@ function() {
     });
   }
 ```
+
+## 5.导航栏标题添加霓虹灯特效
+修改```themes\fluid\source\css\_pages\_base\_widget\header.styl```，在里面追加样式(注意缩进)：
+```
+.navbar-title
+  outline none
+  --c lightseagreen
+  text-shadow 0 0 10px var(--c),0 0 20px var(--c),0 0 40px var(--c),0 0 80px var(--c),0 0 160px var(--c)
+  animation animate 5s linear infinite
+
+@keyframes animate{
+  to{
+      filter: hue-rotate(360deg)
+  }
+}  
+```
+然后修改```themes\fluid\layout\_partials\header\navigation.ejs```，
+找到对应导航栏标题的标签内容：
+```<strong><%= theme.navbar.blog_title || config.title %></strong>```
+给其添加上class属性，修改为：
+```<strong class="navbar-title"><%= theme.navbar.blog_title || config.title %></strong>```
