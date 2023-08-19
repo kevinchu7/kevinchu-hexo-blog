@@ -138,6 +138,8 @@ comment: ''
 
 - [**🔗C语言网**](https://www.dotcpp.com/course/)
 
+- [**🔗C语言中文网**](http://c.biancheng.net/)
+
 - [**🔗Hello算法**](https://www.hello-algo.com/)
 
 - [**🔗JavaGuide**](https://javaguide.cn/)

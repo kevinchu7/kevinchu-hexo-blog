@@ -1014,6 +1014,12 @@ links:
       link: "https://www.cnblogs.com/kevinchu1998",
       avatar: "https://static.kevinchu.top/blog/assets/img/logo.jpg"
     }
+    - {
+      title: "Owenzjg的小窝",
+      intro: "生活与编程",
+      link: "https://blog.owenzjg.com",
+      avatar: "https://blog.owenzjg.com/favicon.jpg"
+    }
     # - {
     #   title: "Fluid Blog",
     #   intro: "主题博客",
