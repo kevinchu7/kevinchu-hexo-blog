@@ -143,3 +143,47 @@ function() {
 ```<strong><%= theme.navbar.blog_title || config.title %></strong>```
 给其添加上class属性，修改为：
 ```<strong class="navbar-title"><%= theme.navbar.blog_title || config.title %></strong>```
+
+
+## 6.导航栏添加和风天气插件
+先去[和风天气官网](https://widget.qweather.com/)创建一个天气简约插件的代码（需要注册账号），插件样式可根据需要自定义，生成过的插件信息也可在控制台查到
+
+然后修改`themes\fluid\layout\_partials\header\navigation.ejs`：
+找到导航栏标题`a`标签（`class`属性为`navbar-brand`），在其下方添加刚刚生成的天气插件代码，同时修改下，将天气插件代码第一行的`div`标签用`span`标签包裹起来，并设置一个`class`属性比如`weather-plugin`，
+```html
+    <span class="weather-plugin"><div id="he-plugin-simple"></div></span>
+    <script>
+        WIDGET = {
+            "CONFIG": {
+                "modules": "01234",
+                "background": "5",
+                "tmpColor": "FFFFFF",
+                "tmpSize": "16",
+                "cityColor": "FFFFFF",
+                "citySize": "16",
+                "aqiColor": "FFFFFF",
+                "aqiSize": "16",
+                "weatherIconSize": "24",
+                "alertIconSize": "18",
+                "padding": "10px 10px 10px 10px",
+                "shadow": "0",
+                "language": "auto",
+                "borderRadius": "10",
+                "fixed": "false",
+                "vertical": "top",
+                "horizontal": "left",
+                "key": "your key"
+            }
+        }
+    </script>
+    <script src="https://widget.qweather.net/simple/static/js/he-simple-common.js?v=2.0"></script>
+```
+
+修改`themes\fluid\source\css\_pages\_base\_widget\header.styl`，在里面追加对应的样式代码（限制可见宽度）：
+```css
+.weather-plugin
+  @media (max-width: 992px)
+    display none
+  @media (min-width: 992px)
+    display block
+```
