@@ -155,7 +155,7 @@ function() {
     <script>
         WIDGET = {
             "CONFIG": {
-                "modules": "01234",
+                "modules": "10243",
                 "background": "5",
                 "tmpColor": "FFFFFF",
                 "tmpSize": "16",
