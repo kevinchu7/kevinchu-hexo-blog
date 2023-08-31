@@ -5,8 +5,7 @@ date: 2022-06-23 00:14:25
 updated: 2022-06-23 00:14:25
 tags:
     - VScode
-    - C
-    - C++
+    - C/C++
 categories:
     - 软件工具
 ---

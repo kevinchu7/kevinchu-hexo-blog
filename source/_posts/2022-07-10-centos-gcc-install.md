@@ -4,7 +4,7 @@ index_img: https://static.kevinchu.top/blog/assets/img/cover_029.jpeg
 date: 2022-07-10 23:07:34
 updated: 2022-07-10 23:07:34
 tags:
-    - C++
+    - C/C++
     - Linux
     - 服务器
 categories:

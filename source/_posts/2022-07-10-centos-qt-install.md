@@ -7,7 +7,7 @@ tags:
     - Linux
     - 服务器
     - Qt
-    - C++
+    - C/C++
 categories:
     - 软件工具
 ---
