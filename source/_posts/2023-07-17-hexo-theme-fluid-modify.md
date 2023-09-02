@@ -2,7 +2,7 @@
 title: Hexo博客Fluid主题魔改记录
 index_img: https://static.kevinchu.top/blog/assets/img/cover_048.jpeg
 date: 2023-07-17 00:36:47
-updated: 2023-07-31 16:50:30
+updated: 2023-09-01 21:50:30
 archive: true
 tags:
     - Hexo
@@ -15,6 +15,7 @@ categories:
 
 ## 1.添加鼠标移动小星星特效
 主题配置项```custom_js```引入[stars.js](https://static.kevinchu.top/blog/assets/js/stars.js)
+
 
 ## 2.博客底部添加运行时间
 修改```themes\fluid\layout\_partials\footer.ejs```，在第一行```<div class="footer-inner">```后面追加：
@@ -123,6 +124,7 @@ function() {
   }
 ```
 
+
 ## 5.导航栏标题添加霓虹灯特效
 修改```themes\fluid\source\css\_pages\_base\_widget\header.styl```，在里面追加样式(注意缩进)：
 ```
@@ -149,7 +151,7 @@ function() {
 先去[和风天气官网](https://widget.qweather.com/)创建一个天气简约插件的代码（需要注册账号），插件样式可根据需要自定义，生成过的插件信息也可在控制台查到
 
 然后修改`themes\fluid\layout\_partials\header\navigation.ejs`：
-找到导航栏标题`a`标签（`class`属性为`navbar-brand`），在其下方添加刚刚生成的天气插件代码，同时修改下，将天气插件代码第一行的`div`标签用`span`标签包裹起来，并设置一个`class`属性比如`weather-plugin`，
+找到导航栏标题`a`标签（`class`属性为`navbar-brand`），在其下方添加刚刚生成的天气插件代码，同时修改下，将天气插件代码第一行的`div`标签用`span`标签包裹起来，并设置一个`class`属性比如`weather-plugin`：
 ```html
     <span class="weather-plugin"><div id="he-plugin-simple"></div></span>
     <script>
@@ -187,3 +189,42 @@ function() {
   @media (min-width: 992px)
     display block
 ```
+
+
+## 7.替换Mac风格代码块
+在主题文件`themes\fluid\source\css`目录下新建样式文件，如`macpanel.styl`，内容参考：
+```css
+.highlight
+    background: #21252b
+    border-radius: 5px
+    box-shadow: 0 10px 30px 0 rgba(0, 0, 0, .4)
+    padding-top: 30px
+
+    &::before
+      background: #fc625d
+      border-radius: 50%
+      box-shadow: 20px 0 #fdbc40, 40px 0 #35cd4b
+      content: ' '
+      height: 12px
+      left: 12px
+      margin-top: -20px
+      position: absolute
+      width: 12px
+```
+
+修改主题配置文件`_config.fluid.yml`，找到`custom_css`配置项，增加刚刚新建的样式文件：
+```yml
+custom_css:
+  - /css/macpanel
+```
+
+继续修改`_config.fluid.yml`，找到`code.highlightjs`配置项，将代码高亮风格修改为：
+```yml
+    highlightjs:
+      # 在链接中挑选 style 填入
+      # Select a style in the link
+      # See: https://highlightjs.org/static/demo/
+      style: "github dark dimmed"
+      style_dark: "dark"
+```
+>注：如果选用其他代码高亮风格，有可能会造成代码背景是偏白色的，与黑色的Mac栏不搭。

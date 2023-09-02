@@ -63,8 +63,8 @@ code:
       # 在链接中挑选 style 填入
       # Select a style in the link
       # See: https://highlightjs.org/static/demo/
-      style: "github gist"
-      style_dark: "github dark"
+      style: "github dark dimmed"
+      style_dark: "dark"
 
     prismjs:
       # 在下方链接页面右侧的圆形按钮挑选 style 填入，也可以直接填入 css 链接
@@ -238,6 +238,7 @@ custom_js:
 # 指定自定义 .css 文件路径，用法和 custom_js 相同
 # The usage is the same as custom_js
 custom_css:
+  - /css/macpanel
 
 # 网页访问统计
 # Analysis of website visitors
