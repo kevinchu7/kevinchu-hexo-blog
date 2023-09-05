@@ -185,13 +185,13 @@ color:
 
   # 文章超链接字体色
   # Color of post link
-  post_link_color: "#0366d6"
-  post_link_color_dark: "#1589e9"
+  post_link_color: "#1e80ff"
+  post_link_color_dark: "#60A1F5"
 
   # 超链接悬浮时字体色
   # Color of link when hovering
-  link_hover_color: "#30a9de"
-  link_hover_color_dark: "#30a9de"
+  link_hover_color: "#0CDCCB"
+  link_hover_color_dark: "#64E8DD"
 
   # 超链接悬浮背景色
   # Color of link background when hovering
@@ -334,7 +334,7 @@ navbar:
   # 导航栏毛玻璃特效，实验性功能，可能会造成页面滚动掉帧和抖动，部分浏览器不支持会自动不生效
   # Navigation bar frosted glass special animation. It is an experimental feature
   ground_glass:
-    enable: false
+    enable: true
 
     # 模糊像素，只能为数字，数字越大模糊度越高
     # Number of blurred pixel. the larger the number, the higher the blur
@@ -343,7 +343,7 @@ navbar:
     # 不透明度，数字越大透明度越低，注意透明过度可能看不清菜单字体
     # Ratio of opacity, 1.0 is completely opaque
     # available: 0 - 1.0
-    alpha: 0.7
+    alpha: 0.81
 
   # 导航栏菜单，可自行增减，key 用来关联 languages/*.yml，如不存在关联则显示 key 本身的值；icon 是 css class，可以省略；增加 name 可以强制显示指定名称
   # Navigation bar menu. `key` is used to associate languages/*.yml. If there is no association, the value of `key` itself will be displayed; if `icon` is a css class, it can be omitted; adding `name` can force the display of the specified name
@@ -934,11 +934,11 @@ tag:
   banner_img_height: 60
   banner_mask_alpha: 0.3
   tagcloud:
-    min_font: 15
-    max_font: 30
+    min_font: 25
+    max_font: 50
     unit: px
-    start_color: "#11B08E"
-    end_color: "#1A4DF5"
+    start_color: "#75b0f4"
+    end_color: "#225DF5"
 
 
 #---------------------------
