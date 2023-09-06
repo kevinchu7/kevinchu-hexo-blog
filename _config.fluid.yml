@@ -838,7 +838,7 @@ waline:
   pageSize: 10
   locale: 
     placeholder: '哈，快找个位置随便坐^-^'
-    nick: '你的名字'
+    nick: '昵称(必填)'
     sofa: '寂寞如雪，快来个人~'
   
 # 畅言 Changyan
