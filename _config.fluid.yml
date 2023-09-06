@@ -64,7 +64,7 @@ code:
       # Select a style in the link
       # See: https://highlightjs.org/static/demo/
       style: "github dark dimmed"
-      style_dark: "dark"
+      style_dark: "tokyo night dark"
 
     prismjs:
       # 在下方链接页面右侧的圆形按钮挑选 style 填入，也可以直接填入 css 链接
@@ -185,13 +185,13 @@ color:
 
   # 文章超链接字体色
   # Color of post link
-  post_link_color: "#1e80ff"
-  post_link_color_dark: "#60A1F5"
+  post_link_color: "#2751FB"
+  post_link_color_dark: "#5298F4"
 
   # 超链接悬浮时字体色
   # Color of link when hovering
-  link_hover_color: "#0CDCCB"
-  link_hover_color_dark: "#64E8DD"
+  link_hover_color: "#5298F4"
+  link_hover_color_dark: "#51EDE0E4"
 
   # 超链接悬浮背景色
   # Color of link background when hovering
@@ -937,8 +937,8 @@ tag:
     min_font: 25
     max_font: 50
     unit: px
-    start_color: "#75b0f4"
-    end_color: "#225DF5"
+    start_color: "#9CC7F9"
+    end_color: "#0E4BE3"
 
 
 #---------------------------

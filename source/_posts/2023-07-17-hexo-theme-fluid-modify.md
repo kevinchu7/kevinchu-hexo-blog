@@ -218,7 +218,7 @@ custom_css:
   - /css/macpanel
 ```
 
-继续修改`_config.fluid.yml`，找到`code.highlightjs`配置项，将代码高亮风格修改为：
+继续修改`_config.fluid.yml`，找到`code.highlightjs`配置项，将代码高亮风格修改暗色风格（dark系列），如：
 ```yml
     highlightjs:
       # 在链接中挑选 style 填入
