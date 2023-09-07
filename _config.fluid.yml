@@ -185,13 +185,13 @@ color:
 
   # 文章超链接字体色
   # Color of post link
-  post_link_color: "#2751FB"
+  post_link_color: "#0A6BEA"
   post_link_color_dark: "#5298F4"
 
   # 超链接悬浮时字体色
   # Color of link when hovering
   link_hover_color: "#5298F4"
-  link_hover_color_dark: "#51EDE0E4"
+  link_hover_color_dark: "#4EDBCFDF"
 
   # 超链接悬浮背景色
   # Color of link background when hovering
@@ -239,6 +239,7 @@ custom_js:
 # The usage is the same as custom_js
 custom_css:
   - /css/macpanel
+  - //at.alicdn.com/t/c/font_4241027_d512ai5ovgn.css
 
 # 网页访问统计
 # Analysis of website visitors
@@ -356,12 +357,12 @@ navbar:
     # - { key: "gallery", link: "/gallery/", icon: "iconfont icon-images", name: "图库" }
     - { key: "about", link: "/about/", icon: "iconfont icon-user-fill" }
     - {
-      key: '发现',
-      icon: 'iconfont icon-map',
+      key: '更多',
+      icon: 'iconfont icon-paper-plane',
       submenu: [
-        { key: '导航', link: '/navigation/' },
-        { key: '图库', link: '/gallery/' },
-        { key: '虫洞', link: 'https://foreverblog.cn/go.html'}
+        { key: '导航', link: '/navigation/', icon: 'iconfont icon-map' },
+        { key: '图库', link: '/gallery/', icon: 'iconfont icon-images' },
+        { key: '虫洞', link: 'https://foreverblog.cn/go.html', icon: 'iconfont icon-star-of-david' }
       ]
     }
 
