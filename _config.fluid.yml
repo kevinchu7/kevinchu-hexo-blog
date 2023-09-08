@@ -239,7 +239,7 @@ custom_js:
 # The usage is the same as custom_js
 custom_css:
   - /css/macpanel
-  - //at.alicdn.com/t/c/font_4241027_d512ai5ovgn.css
+  - //at.alicdn.com/t/c/font_4241027_j8xjy563jwl.css
 
 # 网页访问统计
 # Analysis of website visitors
@@ -350,21 +350,31 @@ navbar:
   # Navigation bar menu. `key` is used to associate languages/*.yml. If there is no association, the value of `key` itself will be displayed; if `icon` is a css class, it can be omitted; adding `name` can force the display of the specified name
   menu:
     - { key: "home", link: "/", icon: "iconfont icon-home-fill" }
-    - { key: "archive", link: "/archives/", icon: "iconfont icon-archive-fill" }
-    - { key: "category", link: "/categories/", icon: "iconfont icon-category-fill" }
-    - { key: "tag", link: "/tags/", icon: "iconfont icon-tags-fill" }
-    - { key: "links", link: "/links/", icon: "iconfont icon-link-fill", name: "链接"}
-    # - { key: "gallery", link: "/gallery/", icon: "iconfont icon-images", name: "图库" }
-    - { key: "about", link: "/about/", icon: "iconfont icon-user-fill" }
     - {
-      key: '更多',
-      icon: 'iconfont icon-paper-plane',
+      key: '文章',
+      icon: 'iconfont icon-books',
       submenu: [
-        { key: '导航', link: '/navigation/', icon: 'iconfont icon-map' },
-        { key: '图库', link: '/gallery/', icon: 'iconfont icon-images' },
-        { key: '虫洞', link: 'https://foreverblog.cn/go.html', icon: 'iconfont icon-star-of-david' }
+        { key: "archive", link: "/archives/", icon: "iconfont icon-archive-fill" },
+        { key: "category", link: "/categories/", icon: "iconfont icon-category-fill" },
+        { key: "tag", link: "/tags/", icon: "iconfont icon-tags-fill" }
       ]
     }
+    - {
+      key: '工具',
+      icon: 'iconfont icon-briefcase',
+      submenu: [
+        { key: '导航', link: '/navigation/', icon: 'iconfont icon-map' },
+        { key: '图库', link: '/gallery/', icon: 'iconfont icon-images' }
+      ]
+    }
+    # - { key: "archive", link: "/archives/", icon: "iconfont icon-archive-fill" }
+    # - { key: "category", link: "/categories/", icon: "iconfont icon-category-fill" }
+    # - { key: "tag", link: "/tags/", icon: "iconfont icon-tags-fill" }
+    - { key: "links", link: "/links/", icon: "iconfont icon-link-fill", name: "友链"}
+    # - { key: "gallery", link: "/gallery/", icon: "iconfont icon-images", name: "图库" }
+    - { key: "about", link: "/about/", icon: "iconfont icon-user-fill" }
+    - { key: "虫洞", link: "https://foreverblog.cn/go.html", icon: "iconfont icon-burst" }
+    - { key: "开往", link: "https://www.travellings.cn/go.html", icon: "iconfont icon-train-subway" }
 
 # 搜索功能，基于 hexo-generator-search 插件，若已安装其他搜索插件请关闭此功能，以避免生成多余的索引文件
 # Search feature, based on hexo-generator-search. If you have installed other search plugins, please disable this feature to avoid generating redundant index files
