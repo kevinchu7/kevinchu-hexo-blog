@@ -1059,7 +1059,7 @@ links:
   # Custom content at the bottom of the links
   custom:
     enable: true
-    content: '<hr><p>远道而来的朋友，你好🐧！<br>你可以在下方留言来加入我的友链💖，提供的信息参考：</p><ul><li>名称：xxx博客</li><li>简介：xxx的博客</li><li>链接：https://xxx.com</li><li>图片：https://xxx/favicon.png</li></ul><p>(PS：评论系统国内加载可能会有亿点儿慢，请见谅！)<br>Anyway，祝你玩得开心🍊！</p>'
+    content: '<hr><p>远道而来的朋友，你好🐧！<br>你可以在下方留言来加入我的友链💖，提供的信息参考：</p><ul><li>名称：xxx博客</li><li>简介：xxxxxx</li><li>链接：https://xxx.com</li><li>图片：https://xxx/favicon.png</li></ul><p>本站信息请阅读评论区置顶👇🏻！<br>(PS：评论系统国内加载可能会有亿点儿慢，请见谅！)<br>Anyway，祝你玩得开心🍊！</p>'
 
   # 评论插件
   # Comment plugin

@@ -85,6 +85,17 @@ comment: ''
         display: none;
     }
 }
+
+.widget-border {
+    display: flex;  
+    flex-wrap: wrap;
+    justify-content: center;      
+}
+
+.widget-item {
+    max-width: 180px;
+}
+
 </style>
 <script src="https://static.kevinchu.top/blog/assets/js/sakura.js"></script>
 
@@ -118,7 +129,7 @@ comment: ''
 </script>
 </div>
 
----
+
 
 #### 🔨 工具
 
@@ -168,10 +179,67 @@ comment: ''
 
 - [**🔗炫猿导航**](https://xydh.fun/)
 
+
+
+
+<br>
+
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/sakana-widget@2.5.0/lib/sakana.min.css"
+/>
+
+<div class="widget-border">
+<div id="pokemon-pikachu-widget" class="widget-item"></div>
+<div id="pokemon-psyduck-widget" class="widget-item"></div>
+<div id="pokemon-slowpoke-widget" class="widget-item"></div>
+<div id="pokemon-bulbasaur-widget" class="widget-item"></div>
+</div>
+
+<script>
+  function initSakanaWidget() {
+    const map = new Map([
+        ['pokemon-pikachu','https://static.kevinchu.top/blog/assets/img/pokemon-pikachu.png'],
+        ['pokemon-psyduck','https://static.kevinchu.top/blog/assets/img/pokemon-psyduck.png'],
+        ['pokemon-slowpoke','https://static.kevinchu.top/blog/assets/img/pokemon-slowpoke.png'],
+        ['pokemon-bulbasaur','https://static.kevinchu.top/blog/assets/img/pokemon-bulbasaur.png'],
+        ['pokemon-charmander','https://static.kevinchu.top/blog/assets/img/pokemon-charmander.png'],
+        ['pokemon-squirtle','https://static.kevinchu.top/blog/assets/img/pokemon-squirtle.png'],
+        ['pokemon-eevee','https://static.kevinchu.top/blog/assets/img/pokemon-eevee.png'],
+        ['pokemon-jigglypuff','https://static.kevinchu.top/blog/assets/img/pokemon-jigglypuff.png'],
+        ['pokemon-cubone','https://static.kevinchu.top/blog/assets/img/pokemon-cubone.png'],
+        ['pokemon-snorlax','https://static.kevinchu.top/blog/assets/img/pokemon-snorlax.png']
+    ]);
+
+    function registerSakana(name, img){
+        const widget = SakanaWidget.getCharacter('chisato');
+        widget.image = img;
+        SakanaWidget.registerCharacter(name, widget);
+    }
+
+    map.forEach((val,key) => {
+        registerSakana(key,val);
+    })
+    
+    new SakanaWidget({ character: 'pokemon-pikachu' }).mount('#pokemon-pikachu-widget');
+    new SakanaWidget({ character: 'pokemon-psyduck' }).mount('#pokemon-psyduck-widget');
+    new SakanaWidget({ character: 'pokemon-slowpoke' }).mount('#pokemon-slowpoke-widget');
+    new SakanaWidget({ character: 'pokemon-bulbasaur' }).mount('#pokemon-bulbasaur-widget');
+
+  }
+</script>
+
+<script
+  async
+  onload="initSakanaWidget()"
+  src="https://cdn.jsdelivr.net/npm/sakana-widget@2.5.0/lib/sakana.min.js"
+></script>
+
 <br>
 
 ---
 
-[***🛸 更多内容，敬请期待！ 👀***](https://www.baidu.com/)
+[***📌更新中，敬请期待！***](https://www.baidu.com/)
+
 
 

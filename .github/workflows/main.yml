@@ -1,0 +1,52 @@
+name: Hexo-Blog-CI
+
+on: 
+  push:
+    branches:
+      - master
+      
+jobs:
+  build: 
+    runs-on: ubuntu-latest 
+
+    steps:
+    - name: 检出仓库代码
+      uses: actions/checkout@master
+
+    - name: 安装Node.js 14.x 
+      uses: actions/setup-node@master
+      with:
+        node-version: "14.x"
+
+    - name: 安装Hexo依赖
+      run: |
+        npm install hexo-cli -g
+        npm install
+
+    - name: 构建Hexo
+      run: |
+        hexo clean
+        hexo generate
+    
+    - name: 安装腾讯云依赖
+      run: |
+        sudo pip install coscmd
+        sudo pip install tccli
+
+    - name: 配置腾讯云依赖
+      env:
+        SECRET_ID: ${{ secrets.TCLOUD_API_ID }}
+        SECRET_KEY: ${{ secrets.TCLOUD_API_KEY }}
+        BUCKET: ${{ secrets.TCLOUD_COS_BUCKET_NAME }}
+        REGION: ${{ secrets.TCLOUD_COS_REGION }}
+      run: |
+        coscmd config -a $SECRET_ID -s $SECRET_KEY -b $BUCKET -r $REGION
+        tccli configure set secretId $SECRET_ID
+        tccli configure set secretKey $SECRET_KEY
+        tccli configure set region $REGION
+
+    - name: 上传到腾讯云COS并刷新CDN
+      run: |
+        coscmd upload -rfs --delete ./public/ /
+        tccli cdn PurgePathCache --cli-unfold-argument --Paths https://blog.kevinchu.top/ --FlushType flush
+        tccli cdn PurgePathCache --cli-unfold-argument --Paths https://static.kevinchu.top/ --FlushType flush
