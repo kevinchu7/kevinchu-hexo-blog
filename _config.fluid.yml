@@ -239,7 +239,7 @@ custom_js:
 # The usage is the same as custom_js
 custom_css:
   - /css/macpanel
-  - //at.alicdn.com/t/c/font_4241027_j8xjy563jwl.css
+  - //at.alicdn.com/t/c/font_4241027_yvefgc8b65.css
 
 # 网页访问统计
 # Analysis of website visitors
@@ -356,7 +356,7 @@ navbar:
       submenu: [
         { key: "archive", link: "/archives/", icon: "iconfont icon-archive-fill" },
         { key: "category", link: "/categories/", icon: "iconfont icon-category-fill" },
-        { key: "tag", link: "/tags/", icon: "iconfont icon-tags-fill" }
+        { key: "tag", link: "/tags/", icon: "iconfont icon-tag" }
       ]
     }
     - {
