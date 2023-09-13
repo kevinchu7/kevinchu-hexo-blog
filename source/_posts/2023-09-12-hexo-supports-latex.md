@@ -1,5 +1,5 @@
 ---
-title: Hexo支持LaTeX公式渲染
+title: Hexo支持LaTeX数学公式渲染
 index_img: https://static.kevinchu.top/blog/assets/img/cover_010.jpeg
 archive: false
 date: 2023-09-12 19:16:59
@@ -7,6 +7,8 @@ updated: 2023-09-12 19:16:59
 tags:
     - Hexo
     - LaTeX
+    - MathJax
+    - KaTeX
 categories:
     - 博客建站
 ---
@@ -122,30 +124,33 @@ MathJax = {
 更多配置参考：[KaTeX的官方文档](https://katex.org/docs/autorender)
 
 
-## 3 LaTeX公式写法
+## 3 LaTeX数学公式写法
 
-### 3.1.引用方式
+### 3.1.插入方式
 
-| **写法** | **引用方式** |
+| **类型** | **写法** |
 | :--------: | :-------: |
-|  `$...$`  | 行内引用 |
-| `$$...$$` | 独行引用 |
+| 行中公式 | `$...$` |
+| 独立公式 | `$$...$$` |
 
 示例：
 
-这是文内引用：$\frac{n!}{k!(n-k)!} = \binom{n}{k}$
+这是行中公式（默认左对齐）：$\frac{n!}{k!(n-k)!} = \binom{n}{k}$
 
-这是独行引用（行间引用）：$$\frac{n!}{k!(n-k)!} = \binom{n}{k}$$
+这是独立公式（默认居中对齐）：$$\frac{n!}{k!(n-k)!} = \binom{n}{k}$$
 
 
 ### 3.2 语法
 
+LaTeX语法参考：
+- [**LaTeX公式手册**](https://blog.csdn.net/bwqiang/article/details/106029183)
+- [**LaTeX公式编辑器帮助文档**](https://www.latexlive.com/help)
+- [**KaTeX官网教程**](https://katex.org/docs/supported.html)
+- [**Wikibooks教程**](https://en.wikibooks.org/wiki/LaTeX/Mathematics)
 
-LaTeX语法参考这篇博客：[**LaTeX公式手册(全网最全)**](https://blog.csdn.net/bwqiang/article/details/106029183)
 
-其他LaTeX教程：[**Wikibooks**](https://en.wikibooks.org/wiki/LaTeX/Mathematics)
-
-好用的LaTeX在线工具：[**LaTeX公式编辑器**](https://www.latexlive.com)
+好用的LaTeX在线工具：
+- [**LaTeX公式编辑器**](https://www.latexlive.com)
 
 
 <script>
@@ -158,3 +163,4 @@ MathJax = {
 <script id="MathJax-script" async
   src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
 </script>
+
