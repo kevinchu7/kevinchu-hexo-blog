@@ -2,7 +2,7 @@
 title: Hexo博客Fluid主题魔改记录
 index_img: https://static.kevinchu.top/blog/assets/img/cover_048.jpeg
 date: 2023-07-17 00:36:47
-updated: 2023-09-01 21:50:30
+updated: 2023-09-14 10:50:30
 archive: true
 tags:
     - Hexo
@@ -212,7 +212,7 @@ function() {
       width: 12px
 ```
 
-修改主题配置文件`_config.fluid.yml`，找到`custom_css`配置项，增加刚刚新建的样式文件：
+修改主题配置文件`_config.fluid.yml`，找到`custom_css`配置项，引入刚刚新建的样式文件（此处引入`.styl`文件无需加后缀）：
 ```yml
 custom_css:
   - /css/macpanel
@@ -228,3 +228,8 @@ custom_css:
       style_dark: "dark"
 ```
 >注：如果选用其他代码高亮风格，有可能会造成代码背景是偏白色的，与黑色的Mac栏不搭。
+
+
+## 8.添加礼花打字特效
+
+主题配置项```custom_js```引入[typing-effect.js](https://static.kevinchu.top/blog/assets/js/typing-effect.js)

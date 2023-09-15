@@ -140,6 +140,8 @@ comment: ''
 
 - [**🔗UU在线工具**](https://uutool.cn/)
 
+- [**🔗BeautifyTools**](https://beautifytools.com/)
+
 <br>
 
 #### 💻 学习网站
