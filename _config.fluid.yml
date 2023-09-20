@@ -774,7 +774,7 @@ post:
 # Based on GitHub Issues
 # See: https://utteranc.es
 utterances:
-  repo: KevinChu1998/blog-comment-utterances
+  repo: kevinchu7/blog-comment-utterances
   issue_term: pathname
   label: utterances
   theme: github-light
@@ -969,7 +969,7 @@ about:
   # 更多图标可从 https://hexo.fluid-dev.com/docs/icon/ 查找，`class` 代表图标的 css class，添加 `qrcode` 后，图标不再是链接而是悬浮二维码
   # More icons can be found from https://hexo.fluid-dev.com/docs/en/icon/  `class` is the css class of the icon. If adding `qrcode`, The icon is no longer a link, but a hovering QR code
   icons:
-    - { class: "iconfont icon-github-fill", link: "https://github.com/KevinChu1998", tip: "GitHub" }
+    - { class: "iconfont icon-github-fill", link: "https://github.com/kevinchu7", tip: "GitHub" }
     - { class: "iconfont icon-qq-fill", link: "https://wpa.qq.com/msgrd?v=3&uin=1063995931&site=qq&menu=yes", tip: "QQ" }
     - { class: "iconfont icon-wechat-fill", qrcode: "https://static.kevinchu.top/blog/assets/img/wechat_qrcode.jpg"}
     - { class: "iconfont icon-mail", link: "mailto:1063995931@qq.com", tip: "邮箱" }
