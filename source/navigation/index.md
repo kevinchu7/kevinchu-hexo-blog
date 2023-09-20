@@ -129,7 +129,7 @@ banner_img: https://static.kevinchu.top/blog/assets/img/bg_018.jpg
 </div>
 
 
-#### 🔨 工具合集
+#### 🔨 工具
 
 <br>
 
@@ -143,7 +143,7 @@ banner_img: https://static.kevinchu.top/blog/assets/img/bg_018.jpg
 
 <br>
 
-#### 💻 学习网站
+#### 💻 技术
 
 <br>
 
@@ -163,15 +163,27 @@ banner_img: https://static.kevinchu.top/blog/assets/img/bg_018.jpg
 
 <br>
 
-#### 📱 头版头条
+#### 📱 新闻
 
 <br>
 
 - [**🔗今日热榜**](https://tophub.today/)
 
+- [**🔗慧语简报**](https://news.topurl.cn/)
+
 <br>
 
-#### 🔍 综合导航
+#### 🎇 创意
+
+<br>
+
+- [**🔗神奇海螺试验场**](https://lab.magiconch.com/)
+
+- [**🔗The Useless Web**](https://theuselessweb.com/)
+
+<br>
+
+#### 🔍 导航
 
 <br>
 
