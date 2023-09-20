@@ -10,6 +10,8 @@ categories:
     - 软件工具
 ---
 
+>Github加速必备，配合代理工具食用更佳🚀。
+
 ## 1.设置全局http代理和https代理
 ```shell
 git config --global http.proxy 127.0.0.1:7890

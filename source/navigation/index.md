@@ -159,8 +159,6 @@ banner_img: https://static.kevinchu.top/blog/assets/img/bg_018.jpg
 
 - [**🔗美团技术团队博客**](https://tech.meituan.com/)
 
-- [**🔗开发者头条**](https://toutiao.io/)
-
 <br>
 
 #### 📱 新闻
