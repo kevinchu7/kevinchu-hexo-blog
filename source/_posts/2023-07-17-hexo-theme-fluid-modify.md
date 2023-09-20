@@ -2,7 +2,7 @@
 title: Hexo博客Fluid主题魔改记录
 index_img: https://static.kevinchu.top/blog/assets/img/cover_048.jpeg
 date: 2023-07-17 00:36:47
-updated: 2023-09-14 10:50:30
+updated: 2023-09-20 14:12:30
 archive: true
 tags:
     - Hexo
@@ -233,3 +233,18 @@ custom_css:
 ## 8.添加礼花打字特效
 
 主题配置项```custom_js```引入[typing-effect.js](https://static.kevinchu.top/blog/assets/js/typing-effect.js)
+
+
+## 9.解决移动端部分页面评论未加载完成时内部元素出现滚动条的问题
+
+例如：文章页面当评论加载尚未完成时，移动端就有可能短暂出现内部滚动条：
+![](https://static.kevinchu.top/blog/public/20230920141826.png)
+
+解决方法比较简单，就是找到对应出现滚动条的标签，给它加上样式`overflow:hidden`。例如，对于文章页面，可以修改`themes\fluid\source\css\_pages\_post\post-page.styl`文件，调整移动端的`.post-content`，具体修改项：
+```css
+@media (max-width: 424px)
+  .post-content, post-custom
+    padding-left 1rem
+    padding-right 1rem
+    overflow hidden //加上这一行
+```
