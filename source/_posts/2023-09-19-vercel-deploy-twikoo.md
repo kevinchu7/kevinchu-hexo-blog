@@ -20,7 +20,7 @@ categories:
 [Twikoo](https://twikoo.js.org/)是一个简洁、安全、免费的静态网站评论系统。
 
 与waline相比，
-优势：支持KaTeX公式；
+优势：差不多；
 不足：不支持IE，私有部署需要配置图床。
 
 

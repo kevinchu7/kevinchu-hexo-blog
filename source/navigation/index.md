@@ -189,6 +189,8 @@ banner_img: https://static.kevinchu.top/blog/assets/img/bg_018.jpg
 
 <br>
 
+- [**🔗宝可梦杂交大师**](https://pokemon.alexonsager.net/zh/)
+
 - [**🔗神奇海螺试验场**](https://lab.magiconch.com/)
 
 - [**🔗The Useless Web**](https://theuselessweb.com/)   
