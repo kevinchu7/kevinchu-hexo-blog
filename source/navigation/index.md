@@ -141,6 +141,8 @@ banner_img: https://static.kevinchu.top/blog/assets/img/bg_018.jpg
 
 - [**🔗BeautifyTools**](https://beautifytools.com/)
 
+- [**🔗draw.io**](https://www.draw.io/)
+
 <br>
 
 #### 💻 技术
@@ -171,16 +173,6 @@ banner_img: https://static.kevinchu.top/blog/assets/img/bg_018.jpg
 
 <br>
 
-#### 🎇 创意
-
-<br>
-
-- [**🔗神奇海螺试验场**](https://lab.magiconch.com/)
-
-- [**🔗The Useless Web**](https://theuselessweb.com/)
-
-<br>
-
 #### 🔍 导航
 
 <br>
@@ -188,6 +180,18 @@ banner_img: https://static.kevinchu.top/blog/assets/img/bg_018.jpg
 - [**🔗AK47导航**](https://www.ak47s.cn/)
 
 - [**🔗炫猿导航**](https://xydh.fun/)
+
+- [**🔗沙雕导航网**](https://shadiao.pro/)
+
+<br>
+
+#### 👾 搞怪 
+
+<br>
+
+- [**🔗神奇海螺试验场**](https://lab.magiconch.com/)
+
+- [**🔗The Useless Web**](https://theuselessweb.com/)   
 
 <br>
 
