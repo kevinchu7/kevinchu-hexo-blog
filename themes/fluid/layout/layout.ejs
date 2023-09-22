@@ -9,6 +9,10 @@ var colorSchema = theme.dark_mode && theme.dark_mode.enable && theme.dark_mode.d
 <%- partial('_partials/head.ejs') %>
 
 <body>
+  <% if (theme.loading.enable) { %>
+    <%- partial('_partials/loading.ejs') %>
+  <% } %>
+  
   <%- inject_point('bodyBegin') %>
 
   <header>
