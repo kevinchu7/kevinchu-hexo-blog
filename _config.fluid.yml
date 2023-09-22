@@ -117,7 +117,7 @@ fun_features:
   # 加载进度条
   # Progress bar when loading
   progressbar:
-    enable: true
+    enable: false
     height_px: 3
     color: "#5298F4"
     # See: https://github.com/rstacruz/nprogress
