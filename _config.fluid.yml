@@ -241,7 +241,7 @@ custom_js:
 # The usage is the same as custom_js
 custom_css:
   - /css/macpanel
-  - //at.alicdn.com/t/c/font_4241027_yvefgc8b65.css
+  - //at.alicdn.com/t/c/font_4241027_kx7ma21v2i8.css
 
 # 网页访问统计
 # Analysis of website visitors
@@ -554,7 +554,8 @@ index:
   # If the posts are sorted by `sticky`, an icon is displayed in front of the post title
   post_sticky:
     enable: true
-    icon: "iconfont icon-top"
+    icon: "iconfont icon-TOP"
+    # icon: "iconfont icon-top"
 
 
 #---------------------------
