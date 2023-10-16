@@ -117,7 +117,7 @@ fun_features:
   # 加载进度条
   # Progress bar when loading
   progressbar:
-    enable: false
+    enable: true
     height_px: 3
     color: "#5298F4"
     # See: https://github.com/rstacruz/nprogress
@@ -1134,6 +1134,6 @@ static_prefix:
 
 # 加载动画
 loading:
-  enable: true
+  enable: false
   # 动画时长，从动画开始播放计算，不包含页面加载时间，单位ms
-  play_time: 500
+  play_time: 250
