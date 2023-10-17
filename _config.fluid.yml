@@ -1035,6 +1035,12 @@ links:
       link: "https://blog.owenzjg.com",
       avatar: "https://blog.owenzjg.com/favicon.jpg"
     }
+    - {
+      title: "杜老师说",
+      intro: "师者，传道，授业，解惑！",
+      link: "https://dusays.com",
+      avatar: "https://cdn.dusays.com/avatar.png"
+    }
     # - {
     #   title: "Fluid Blog",
     #   intro: "主题博客",
