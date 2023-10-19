@@ -55,7 +55,7 @@ public class StreamTest {
 ![](https://static.kevinchu.top/blog/public/20231020012401.png)
 
 
-## 解决方法
+## 2.解决方法
 
 ```Java
 Map<String, String> studentMap = studentList.stream()
