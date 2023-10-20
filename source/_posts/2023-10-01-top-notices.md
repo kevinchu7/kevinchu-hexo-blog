@@ -26,7 +26,7 @@ excerpt: 欢迎来到我的博客😎，祝你玩得开心！
 
 ## 2023-10-21
 {% note info %}
-🎉"K-MUSIC"现已上线啦！
+🎉“K-MUSIC”现已上线啦！
 {% endnote %}
 博主大晚上不睡觉竟在搞这个破玩意儿，点击[**此处**](https://music.kevinchu.top)即刻体验。
 
