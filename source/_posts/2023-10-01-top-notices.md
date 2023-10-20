@@ -5,7 +5,7 @@ banner_img: https://static.kevinchu.top/blog/assets/img/bg_000.jpg
 sticky: 999
 archive: false
 date: 2023-10-01 10:15:37
-updated: 2023-10-09 01:23:10
+updated: 2023-10-21 05:04:10
 excerpt: 欢迎来到我的博客😎，祝你玩得开心！
 ---
 # 写在前面
@@ -15,14 +15,20 @@ excerpt: 欢迎来到我的博客😎，祝你玩得开心！
 
 朋友，你好。
 
-欢迎来到我的博客，这里日常分享一些~~技术文章~~、知识总结和建站经验，偶尔记录一点生活碎片。
+欢迎来到我的博客，这里日常分享一些~~技术文章~~、知识总结和建站经验，偶尔记录一点个人生活碎片。
 
-你可以在[友链](https://blog.kevinchu.top/links/)页面留言添加友链，也可以在[关于](https://blog.kevinchu.top/about/)页面找到我的联系方式。
+你可以在[**友链**](https://blog.kevinchu.top/links/)页面留言来添加友链，也可以在[**关于**](https://blog.kevinchu.top/about/)页面找到我的联系方式。
 
 祝你玩得开心！
 
 ---
 # 一些无聊的公告
+
+## 2023-10-21
+{% note info %}
+🎉"K-MUSIC"现已上线啦！
+{% endnote %}
+博主大晚上不睡觉竟在搞这个破玩意儿，点击[**此处**](https://music.kevinchu.top)即刻体验。
 
 
 ## 2023-10-09

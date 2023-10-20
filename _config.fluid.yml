@@ -241,7 +241,7 @@ custom_js:
 # The usage is the same as custom_js
 custom_css:
   - /css/macpanel
-  - //at.alicdn.com/t/c/font_4276126_g9ka2djyc2p.css
+  - //at.alicdn.com/t/c/font_4276126_oypdem1ivsg.css
   - https://static.kevinchu.top/blog/assets/css/waline-custom.css
 
 # 网页访问统计
@@ -363,10 +363,11 @@ navbar:
       ]
     }
     - {
-      key: '工具',
+      key: '收藏',
       icon: 'iconfont icon-briefcase',
       submenu: [
         { key: '导航', link: '/navigation/', icon: 'iconfont icon-map' },
+        { key: '音乐', link: 'https://music.kevinchu.top', icon: 'iconfont icon-music', target: "_blank"},
         { key: '图库', link: '/gallery/', icon: 'iconfont icon-images' }
       ]
     }
