@@ -1042,6 +1042,12 @@ links:
       link: "https://dusays.com",
       avatar: "https://cdn.dusays.com/avatar.png"
     }
+    - {
+      title: "xiaoger",
+      intro: "个人学习和分享壁纸的博客",
+      link: "https://xiaoger.top",
+      avatar: "https://image.xiaoger.top/xiaoger/config/xiaoger.jpg"
+    }
     # - {
     #   title: "Fluid Blog",
     #   intro: "主题博客",
