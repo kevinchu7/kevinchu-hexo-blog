@@ -1048,6 +1048,12 @@ links:
       link: "https://xiaoger.top",
       avatar: "https://image.xiaoger.top/xiaoger/config/xiaoger.jpg"
     }
+    - {
+      title: "运维小弟",
+      intro: "分享DevOps、容器化技术、云原生等运维优秀实践经验",
+      link: "https://srebro.cn",
+      avatar: "https://srebro.cn/wp-content/uploads/2023/10/logo-mini.png"
+    }
     # - {
     #   title: "Fluid Blog",
     #   intro: "主题博客",
