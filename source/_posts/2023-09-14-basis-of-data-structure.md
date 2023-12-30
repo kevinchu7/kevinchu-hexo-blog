@@ -1,5 +1,5 @@
 ---
-title: 【数据结构】（一）数据结构基础
+title: 数据结构基础
 index_img: https://static.kevinchu.top/blog/assets/img/cover_005.jpeg
 archive: false
 date: 2023-09-14 19:51:38
@@ -10,7 +10,6 @@ tags:
 categories:
     - 学习记录
 ---
-# （一）数据结构基础
 
 ## 1 数据结构基础
 
