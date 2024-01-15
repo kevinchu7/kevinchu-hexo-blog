@@ -161,6 +161,10 @@ banner_img: https://static.kevinchu.top/blog/assets/img/bg_018.jpg
 
 - [**🔗美团技术团队博客**](https://tech.meituan.com/)
 
+- [**🔗LeetCode**](https://leetcode.cn/)
+
+- [**🔗牛客网**](https://www.nowcoder.com/)
+
 <br>
 
 #### 📱 新闻

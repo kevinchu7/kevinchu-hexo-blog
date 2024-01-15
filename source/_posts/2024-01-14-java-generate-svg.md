@@ -80,7 +80,7 @@ public class BatikTest {
         // 画布设置大小（可选，设置画布大小可以在窗口缩小时显示滚动条以查看完整内容）
         svgGenerator.setSVGCanvasSize(new java.awt.Dimension(800, 600));
         // 内容绘制逻辑
-        svgGenerator.drawString("Hello Batik!",300,100);
+        svgGenerator.drawString("Hello Batik!", 300, 100);
         svgGenerator.drawOval(300, 150, 100, 100);
         svgGenerator.drawRect(300, 150, 100, 100);
         svgGenerator.drawLine(300, 150, 400, 250);
