@@ -375,10 +375,16 @@ navbar:
     # - { key: "category", link: "/categories/", icon: "iconfont icon-category-fill" }
     # - { key: "tag", link: "/tags/", icon: "iconfont icon-tags-fill" }
     - { key: "links", link: "/links/", icon: "iconfont icon-link-fill", name: "友链"}
-    # - { key: "gallery", link: "/gallery/", icon: "iconfont icon-images", name: "图库" }
+    - { key: "留言", link: "/messagebd/", icon: "iconfont icon-comment" }
     - { key: "about", link: "/about/", icon: "iconfont icon-user-fill" }
-    - { key: "虫洞", link: "https://foreverblog.cn/go.html", icon: "iconfont icon-burst" }
-    - { key: "开往", link: "https://www.travellings.cn/go.html", icon: "iconfont icon-train-subway" }
+    - {
+      key: '传送',
+      icon: 'iconfont icon-rocket',
+      submenu: [
+        { key: "虫洞", link: "https://foreverblog.cn/go.html", icon: "iconfont icon-burst" },
+        { key: "开往", link: "https://www.travellings.cn/go.html", icon: "iconfont icon-train-subway" }
+      ]
+    }
 
 # 搜索功能，基于 hexo-generator-search 插件，若已安装其他搜索插件请关闭此功能，以避免生成多余的索引文件
 # Search feature, based on hexo-generator-search. If you have installed other search plugins, please disable this feature to avoid generating redundant index files
