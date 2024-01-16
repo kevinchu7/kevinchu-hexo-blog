@@ -96,7 +96,6 @@ banner_img: https://static.kevinchu.top/blog/assets/img/bg_018.jpg
 }
 
 </style>
-<script src="https://static.kevinchu.top/blog/assets/js/sakura.js"></script>
 
 <div class="hitokoto-wrap">
 <div class="hitokoto-border hitokoto-left"></div>
@@ -187,6 +186,8 @@ banner_img: https://static.kevinchu.top/blog/assets/img/bg_018.jpg
 
 - [**🔗沙雕导航网**](https://shadiao.pro/)
 
+- [**🔗摸鱼导航**](https://moyu.games/)
+
 <br>
 
 #### 👾 搞怪 
@@ -205,7 +206,7 @@ banner_img: https://static.kevinchu.top/blog/assets/img/bg_018.jpg
 
 <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/sakana-widget@2.5.0/lib/sakana.min.css"
+  href="https://cdn.jsdelivr.net/npm/sakana-widget@2.7.0/lib/sakana.min.css"
 />
 
 <div class="widget-border">
@@ -240,10 +241,10 @@ banner_img: https://static.kevinchu.top/blog/assets/img/bg_018.jpg
         registerSakana(key,val);
     })
     
-    new SakanaWidget({ character: 'pokemon-pikachu' }).mount('#pokemon-pikachu-widget');
-    new SakanaWidget({ character: 'pokemon-psyduck' }).mount('#pokemon-psyduck-widget');
-    new SakanaWidget({ character: 'pokemon-slowpoke' }).mount('#pokemon-slowpoke-widget');
-    new SakanaWidget({ character: 'pokemon-bulbasaur' }).mount('#pokemon-bulbasaur-widget');
+    new SakanaWidget({ character: 'pokemon-charmander', controls: false, rod: false }).mount('#pokemon-pikachu-widget');
+    new SakanaWidget({ character: 'pokemon-bulbasaur', controls: false, rod: false }).mount('#pokemon-psyduck-widget');
+    new SakanaWidget({ character: 'pokemon-squirtle', controls: false, rod: false }).mount('#pokemon-slowpoke-widget');
+    new SakanaWidget({ character: 'pokemon-jigglypuff', controls: false, rod: false }).mount('#pokemon-bulbasaur-widget');
 
   }
 </script>
@@ -251,8 +252,9 @@ banner_img: https://static.kevinchu.top/blog/assets/img/bg_018.jpg
 <script
   async
   onload="initSakanaWidget()"
-  src="https://cdn.jsdelivr.net/npm/sakana-widget@2.5.0/lib/sakana.min.js"
+  src="https://cdn.jsdelivr.net/npm/sakana-widget@2.7.0/lib/sakana.min.js"
 ></script>
+
 
 <br>
 

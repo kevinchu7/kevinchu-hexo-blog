@@ -17,12 +17,21 @@ excerpt: 欢迎来到我的博客😎，祝你玩得开心！
 
 欢迎来到我的博客，这里日常分享一些~~技术文章~~、知识总结和建站经验，偶尔记录一点个人生活碎片。
 
-你可以在[**友链**](https://blog.kevinchu.top/links/)页面留言来添加友链，也可以在[**关于**](https://blog.kevinchu.top/about/)页面找到我的联系方式。
+你可以在[**友链**](https://blog.kevinchu.top/links/)页面申请添加友链，也可以在[**关于**](https://blog.kevinchu.top/about/)页面找到我的联系方式。
+
+欢迎前来[**留言**](https://blog.kevinchu.top/messagebd/)。
 
 祝你玩得开心！
 
 ---
 # 一些无聊的公告
+
+## 2024-01-16
+{% note info %}
+🎉本站的留言板块终于上线！
+{% endnote %}
+欢迎前来留言，点击[**此处**](https://blog.kevinchu.top/messagebd/)直达。
+
 
 ## 2023-10-21
 {% note info %}
