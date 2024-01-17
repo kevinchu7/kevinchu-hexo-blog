@@ -61,7 +61,7 @@ banner_img: https://static.kevinchu.top/blog/assets/img/bg_018.jpg
 .news {
     position: relative;
     top: 0px;
-    max-width: 85%;
+    max-width: 88%;
     text-align: center;
     margin: 30px auto;
 }
@@ -85,6 +85,11 @@ banner_img: https://static.kevinchu.top/blog/assets/img/bg_018.jpg
 
     .hitokoto-border {
         display: none;
+    }
+
+    .news {
+        max-width: 93%;
+        margin: 30px auto;
     }
 
 }
