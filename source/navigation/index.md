@@ -3,25 +3,21 @@ title: 导航
 banner_img: https://static.kevinchu.top/blog/assets/img/bg_018.jpg
 ---
 <style>
-
 .hitokoto-wrap {
     position: relative;
-    top: -30px;
     width: 730px;
     max-width: 80%;
     border: 2px solid #797979;
     border-top: none;
     text-align: center;
-    margin: 80px auto;
+    margin: 30px auto;
 }
 
 .hitokoto-wrap h1 {
     font-size: 20px;
     position: relative;
-    margin-top: -20px;
     display: inline-block;
     letter-spacing: 4px;
-    /* color: #797979 */
 }
 
 .hitokoto-wrap h1:hover {
@@ -33,11 +29,10 @@ banner_img: https://static.kevinchu.top/blog/assets/img/bg_018.jpg
     width: 70%;
     margin: auto;
     line-height: 30px;
-    /* color: #797979; */
 }
 
 .hitokoto-wrap p#hitokoto {
-    top: 5px;
+    margin: 15px auto;
     position: relative;
     font-size: 25px;
 }
@@ -63,6 +58,14 @@ banner_img: https://static.kevinchu.top/blog/assets/img/bg_018.jpg
     left: 0;
 }
 
+.news {
+    position: relative;
+    top: 0px;
+    max-width: 83%;
+    text-align: center;
+    margin: 30px auto;
+}
+
 @media (max-width: 685px) {
     .hitokoto-border {
         width: 18%;
@@ -71,18 +74,19 @@ banner_img: https://static.kevinchu.top/blog/assets/img/bg_018.jpg
 
 @media (max-width: 500px) {
     .hitokoto-wrap {
-        margin-top: 60px;
-        margin-bottom: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
         border-top: 2px solid #797979;
     }
 
     .hitokoto-wrap h1 {
-        margin: 20px 6px;
+        margin: 15px 6px;
     }
 
     .hitokoto-border {
         display: none;
     }
+
 }
 
 .widget-border {
@@ -127,6 +131,11 @@ banner_img: https://static.kevinchu.top/blog/assets/img/bg_018.jpg
 </script>
 </div>
 
+<div class="news">
+<img src="https://v2.alapi.cn/api/zaobao?token=3weHli3Xb3lhYlNA&format=image">
+</div>
+
+--- 
 
 #### 🔨 工具
 
@@ -203,7 +212,6 @@ banner_img: https://static.kevinchu.top/blog/assets/img/bg_018.jpg
 <br>
 
 
-
 <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/sakana-widget@2.7.0/lib/sakana.min.css"
@@ -254,9 +262,6 @@ banner_img: https://static.kevinchu.top/blog/assets/img/bg_018.jpg
   onload="initSakanaWidget()"
   src="https://cdn.jsdelivr.net/npm/sakana-widget@2.7.0/lib/sakana.min.js"
 ></script>
-
-
-<br>
 
 ---
 
