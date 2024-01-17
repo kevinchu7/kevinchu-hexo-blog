@@ -61,7 +61,7 @@ banner_img: https://static.kevinchu.top/blog/assets/img/bg_018.jpg
 .news {
     position: relative;
     top: 0px;
-    max-width: 83%;
+    max-width: 85%;
     text-align: center;
     margin: 30px auto;
 }
@@ -132,7 +132,7 @@ banner_img: https://static.kevinchu.top/blog/assets/img/bg_018.jpg
 </div>
 
 <div class="news">
-<img src="https://v2.alapi.cn/api/zaobao?token=3weHli3Xb3lhYlNA&format=image">
+<img src="https://api.03c3.cn/api/zb?type=img">
 </div>
 
 --- 
