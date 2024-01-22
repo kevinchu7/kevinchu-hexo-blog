@@ -1060,6 +1060,12 @@ links:
       link: "https://srebro.cn",
       avatar: "https://srebro.cn/wp-content/uploads/2023/10/logo-mini.png"
     }
+    - {
+      title: "Camill",
+      intro: "Camill的博客",
+      link: "https://camill.love",
+      avatar: "https://www.camill.love/img/myself.jpg"
+    }
     # - {
     #   title: "Fluid Blog",
     #   intro: "主题博客",
