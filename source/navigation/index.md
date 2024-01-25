@@ -3,93 +3,78 @@ title: 导航
 banner_img: https://static.kevinchu.top/blog/assets/img/bg_018.jpg
 ---
 <style>
+.custom-module {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+}
+
+.module-title{
+    font-size: 20px;
+    position: relative;
+    display: inline-block;
+    letter-spacing: 4px;
+    margin: 20px;
+}
+
 .hitokoto-wrap {
     position: relative;
     width: 730px;
     max-width: 80%;
     border: 2px solid #797979;
-    border-top: none;
     text-align: center;
-    margin: 30px auto;
+    margin: 0px auto;
 }
 
-.hitokoto-wrap h1 {
-    font-size: 20px;
-    position: relative;
-    display: inline-block;
-    letter-spacing: 4px;
-}
-
-.hitokoto-wrap h1:hover {
+.module-title span:hover {
     cursor:pointer;
     font-weight: bolder;
+    border-bottom : 1px solid #797979;
 }
 
 .hitokoto-wrap p {
-    width: 70%;
+    width: 75%;
     margin: auto;
-    line-height: 30px;
+    line-height: 40px;
 }
 
 .hitokoto-wrap p#hitokoto {
-    margin: 15px auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
     position: relative;
     font-size: 25px;
+    text-align: center;
+    /* text-indent: 2em;  */
 }
 
 .hitokoto-wrap p#info {
     font-size: 15px;
     margin: 15px auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
     text-align: right;
-}
-
-.hitokoto-border {
-    position: absolute;
-    height: 2px;
-    width: 27%;
-    background-color: #797979;
-}
-
-.hitokoto-right {
-    right: 0;
-}
-
-.hitokoto-left {
-    left: 0;
 }
 
 .news {
     position: relative;
-    top: 0px;
-    max-width: 88%;
+    width: 730px;
+    max-width: 80%;
     text-align: center;
-    margin: 30px auto;
+    margin: 0 auto;
+    border: 2px solid #797979;
 }
 
 @media (max-width: 685px) {
-    .hitokoto-border {
-        width: 18%;
-    }
+
 }
 
 @media (max-width: 500px) {
     .hitokoto-wrap {
-        margin-top: 10px;
-        margin-bottom: 10px;
-        border-top: 2px solid #797979;
-    }
-
-    .hitokoto-wrap h1 {
-        margin: 15px 6px;
-    }
-
-    .hitokoto-border {
-        display: none;
+        max-width: 88%;
     }
 
     .news {
-        max-width: 93%;
-        margin: 30px auto;
+        max-width: 88%;
     }
 
 }
@@ -105,11 +90,9 @@ banner_img: https://static.kevinchu.top/blog/assets/img/bg_018.jpg
 }
 
 </style>
-
+<div class="custom-module">
+<h1  class="module-title">📖每日一言<span id="refresh" style="font-size:10px">（刷新）</span></h1>
 <div class="hitokoto-wrap">
-<div class="hitokoto-border hitokoto-left"></div>
-<div class="hitokoto-border hitokoto-right"></div>
-<h1 id="refresh">🔉每日一言</h1>
 <p id="hitokoto"></p>
 <p id="info"></p>
 <script>
@@ -134,13 +117,30 @@ banner_img: https://static.kevinchu.top/blog/assets/img/bg_018.jpg
     }
     fetchHitokoto();
 </script>
+
 </div>
 
-<div class="news">
-<img src="https://api.03c3.cn/api/zb?type=img">
-</div>
 
 --- 
+
+
+<h1 class="module-title">📺60s读懂世界</h1>
+
+<div class="news">
+<img src="https://api.jun.la/60s.php?format=image">
+</div>
+
+
+
+--- 
+
+
+<h1 class="module-title">🌏站点导航</h1>
+
+
+</div>
+
+</br>
 
 #### 🔨 工具
 
@@ -268,7 +268,9 @@ banner_img: https://static.kevinchu.top/blog/assets/img/bg_018.jpg
   src="https://cdn.jsdelivr.net/npm/sakana-widget@2.7.0/lib/sakana.min.js"
 ></script>
 
+
 ---
+
 
 [***📌更新中，敬请期待！***]()
 
