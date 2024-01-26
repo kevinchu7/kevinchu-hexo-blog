@@ -156,27 +156,33 @@ banner_img: https://static.kevinchu.top/blog/assets/img/bg_018.jpg
 
 - [**🔗draw.io**](https://www.draw.io/)
 
+- [**🔗炸了么**](https://zhale.me/)
+
+- [**🔗SpeedTest**](https://www.speedtest.cn/)
+
 <br>
 
 #### 💻 技术
 
 <br>
 
+- [**🔗HelloGitHub**](https://hellogithub.com/)
+
 - [**🔗C语言网**](https://www.dotcpp.com/course/)
 
 - [**🔗C语言中文网**](http://c.biancheng.net/)
-
-- [**🔗Hello算法**](https://www.hello-algo.com/)
 
 - [**🔗JavaGuide**](https://javaguide.cn/)
 
 - [**🔗Java全栈知识体系**](https://www.pdai.tech/)
 
-- [**🔗美团技术团队博客**](https://tech.meituan.com/)
+- [**🔗Hello算法**](https://www.hello-algo.com/)
 
 - [**🔗LeetCode**](https://leetcode.cn/)
 
 - [**🔗牛客网**](https://www.nowcoder.com/)
+
+- [**🔗美团技术团队博客**](https://tech.meituan.com/)
 
 <br>
 
