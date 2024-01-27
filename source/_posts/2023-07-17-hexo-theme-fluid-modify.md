@@ -117,7 +117,7 @@ function() {
       posDisplay = right >= 50;
       topArrow.css({
         'bottom': scrollDisplay ? '20px' : '-60px',
-        'right' : posDisplay ? right - 64 : 4 + 'px',
+        'right' : posDisplay ? right - 64 : 8 + 'px',
         'min-width' : posDisplay ? 40 : 28 + 'px',
         'min-height' : posDisplay ? 40 : 28 + 'px'
       });
