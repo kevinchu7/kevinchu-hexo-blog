@@ -25,7 +25,7 @@ comment: 'waline'
 
 <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/sakana-widget@2.7.0/lib/sakana.min.css"
+  href="https://static.kevinchu.top/blog/assets/css/sakana-widget-2.7.0.css"
 />
 
 <p style="text-align: center;">🍺欢迎！快来说点什么吧~</p>
@@ -73,5 +73,5 @@ comment: 'waline'
 <script
   async
   onload="initSakanaWidget()"
-  src="https://cdn.jsdelivr.net/npm/sakana-widget@2.7.0/lib/sakana.min.js"
+  src="https://static.kevinchu.top/blog/assets/js/sakana-widget-2.7.0.js"
 ></script>

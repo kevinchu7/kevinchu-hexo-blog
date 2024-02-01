@@ -135,7 +135,7 @@ banner_img: https://static.kevinchu.top/blog/assets/img/bg_018.jpg
 --- 
 
 
-<h1 class="module-title">🌏站点导航</h1>
+<h1 class="module-title">🌏网站导航</h1>
 
 
 </div>
@@ -153,6 +153,8 @@ banner_img: https://static.kevinchu.top/blog/assets/img/bg_018.jpg
 - [**🔗UU在线工具**](https://uutool.cn/)
 
 - [**🔗BeautifyTools**](https://beautifytools.com/)
+
+- [**🔗CodePen**](https://codepen.io/)
 
 - [**🔗draw.io**](https://www.draw.io/)
 
@@ -225,7 +227,7 @@ banner_img: https://static.kevinchu.top/blog/assets/img/bg_018.jpg
 
 <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/sakana-widget@2.7.0/lib/sakana.min.css"
+  href="https://static.kevinchu.top/blog/assets/css/sakana-widget-2.7.0.css"
 />
 
 <div class="widget-border">
@@ -271,7 +273,7 @@ banner_img: https://static.kevinchu.top/blog/assets/img/bg_018.jpg
 <script
   async
   onload="initSakanaWidget()"
-  src="https://cdn.jsdelivr.net/npm/sakana-widget@2.7.0/lib/sakana.min.js"
+  src="https://static.kevinchu.top/blog/assets/js/sakana-widget-2.7.0.js"
 ></script>
 
 
