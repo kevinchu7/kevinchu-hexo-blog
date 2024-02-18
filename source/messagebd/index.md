@@ -7,7 +7,7 @@ comment: 'waline'
 <style>
 .page-content,
 .post-content {
-    overflow-y: hidden;
+    overflow: hidden;
 }
 
 .widget-border {
