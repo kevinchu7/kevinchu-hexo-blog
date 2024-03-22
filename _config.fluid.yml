@@ -1078,6 +1078,12 @@ links:
       link: "https://halo.qq-channel.cn",
       avatar: "https://halo.qq-channel.cn/upload/retouch_2024022200335413.png"
     }
+    - {
+      title: "XiaoWangのBlog",
+      intro: "上进的运维工程师",
+      link: "https://wanghaiyang.cc",
+      avatar: "https://wanghaiyang.cc/static/img/fcc0e12eea3b4eb8accccef7b979d09d.touxiang.webp"
+    }
     # - {
     #   title: "Fluid Blog",
     #   intro: "主题博客",
