@@ -1084,6 +1084,12 @@ links:
       link: "https://wanghaiyang.cc",
       avatar: "https://wanghaiyang.cc/static/img/fcc0e12eea3b4eb8accccef7b979d09d.touxiang.webp"
     }
+    - {
+      title: "Lafcadia's Blog",
+      intro: "神秘主义的屋舍",
+      link: "https://chuishen.xyz",
+      avatar: "https://chuishen.xyz/img/logo.png"
+    }
     # - {
     #   title: "Fluid Blog",
     #   intro: "主题博客",
