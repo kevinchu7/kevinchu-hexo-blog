@@ -858,7 +858,7 @@ waline:
   wordLimit: 0
   pageSize: 10
   locale: 
-    placeholder: '哈，快找个位置随便坐^-^'
+    placeholder: '快找个位置随便坐^-^（填写邮箱📬可以在评论被回复后收到邮件通知哦~评论系统国内加载可能有亿点儿慢🤣，请见谅哈！）'
     nick: '昵称(必填)'
     sofa: '寂寞如雪，快来个人~'
   
