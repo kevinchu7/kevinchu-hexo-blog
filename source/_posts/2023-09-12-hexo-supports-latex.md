@@ -25,7 +25,7 @@ Hexo官方还对Hexo 5.0以上版本推出了[hexo-math](https://github.com/hexo
 ## 2 引入LaTeX自动渲染脚本实现LaTaX公式渲染
 
 ### 2.1 使用方式
-选择你想要使用的引擎（MathJax或KaTeX选其一），直接在markdown文章内容中添加引入对应引擎自动渲染js的代码即可（任意位置，建议放在内容首部或尾部），引入代码参考2.1和2.3。
+选择你想要使用的引擎（MathJax或KaTeX选其一），直接在markdown文章内容中添加引入对应引擎自动渲染js的代码即可（任意位置，建议放在内容首部或尾部），引入代码参考2.2和2.3。
 
 >如果觉得这种方法不够优雅，也可以使用Hexo 5.0的注入器或者各个主题自带的注入器将代码注入到需要的页面。另一种思路是，建一个带引入代码的文章模板，需要写带有LaTeX公式的博客时，直接通过该模板创建文章。
 
@@ -99,7 +99,7 @@ MathJax = {
 
 ### 2.3 引入KaTeX自动渲染js
 
-引入KaTeX自动渲染脚本代码：
+引入KaTeX自动渲染脚本代码（和2.2MathJax二者选其一即可）：
 ```html
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css" integrity="sha384-GvrOXuhMATgEsSwCs4smul74iXGOixntILdUW9XmUC6+HX0sLNAK3q71HotJqlAn" crossorigin="anonymous">
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js" integrity="sha384-cpW21h6RZv/phavutF+AuVYrr+dA8xD9zs6FwLpaCct6O9ctzYFfFr4dgmgccOTx" crossorigin="anonymous"></script>
