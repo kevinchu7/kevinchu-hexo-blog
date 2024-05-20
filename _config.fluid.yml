@@ -1049,7 +1049,7 @@ links:
       avatar: "https://cdn.dusays.com/avatar.png"
     }
     - {
-      title: "xiaoger",
+      title: "xiaoger（⚠️失联中...)",
       intro: "个人学习和分享壁纸的博客",
       link: "https://xiaoger.top",
       avatar: "https://image.xiaoger.top/xiaoger/config/xiaoger.jpg"
@@ -1073,7 +1073,7 @@ links:
       avatar: "https://bu.dusays.com/2022/12/28/63ac2812183aa.png"
     }
     - {
-      title: "归途的秘密基地",
+      title: "归途的秘密基地（⚠️失联中...)",
       intro: "科技，无限想象！",
       link: "https://halo.qq-channel.cn",
       avatar: "https://halo.qq-channel.cn/upload/retouch_2024022200335413.png"
@@ -1089,6 +1089,12 @@ links:
       intro: "神秘主义的屋舍",
       link: "https://chuishen.xyz",
       avatar: "https://chuishen.xyz/img/logo.png"
+    }
+    - {
+      title: "免费节点",
+      intro: "免费公益SSR/V2ray/Shadowrocket/Clash节点/小火箭订阅链接|科学上网|免费梯子",
+      link: "https://clashgithub.com",
+      avatar: "https://clashgithub.com/wp-content/uploads/avatar.png"
     }
     # - {
     #   title: "Fluid Blog",
