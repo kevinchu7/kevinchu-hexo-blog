@@ -2,7 +2,7 @@
 title: Hexo博客Fluid主题魔改记录
 index_img: https://static.kevinchu.top/blog/assets/img/cover_048.jpeg
 date: 2023-07-17 00:36:47
-updated: 2023-09-22 21:12:30
+updated: 2024-05-21 00:12:30
 archive: false
 tags:
     - Hexo
@@ -19,7 +19,7 @@ categories:
 - [3-添加RSS链接](#3-添加rss链接)
 - [4-移动端支持显示回到顶部按钮](#4-移动端支持显示回到顶部按钮)
 - [5-导航栏标题添加霓虹灯特效](#5-导航栏标题添加霓虹灯特效)
-- [6-导航栏添加和风天气插件](#6-导航栏添加和风天气插件)
+- [6-导航栏添加和风天气插件(已失效，该插件已于2024年05月01日停止服务)](#6-导航栏添加和风天气插件已失效该插件已于2024年05月01日停止服务)
 - [7-替换Mac风格代码块](#7-替换mac风格代码块)
 - [8-添加礼花打字特效](#8-添加礼花打字特效)
 - [9-解决移动端部分页面评论未加载完成时内部元素出现滚动条的问题](#9-解决移动端部分页面评论未加载完成时内部元素出现滚动条的问题)
@@ -169,7 +169,10 @@ function() {
 ```<strong class="navbar-title"><%= theme.navbar.blog_title || config.title %></strong>```
 
 
-## 6-导航栏添加和风天气插件
+## 6-导航栏添加和风天气插件(已失效，该插件已于2024年05月01日停止服务)
+(⚠️现已失效！该插件产品已于2024年5月1日停止服务)
+![](https://static.kevinchu.top/blog/public/20240521004236.png)
+
 先去[和风天气官网](https://widget.qweather.com/)创建一个天气简约插件的代码（需要注册账号），插件样式可根据需要自定义，生成过的插件信息也可在控制台查到
 
 然后修改`themes\fluid\layout\_partials\header\navigation.ejs`：

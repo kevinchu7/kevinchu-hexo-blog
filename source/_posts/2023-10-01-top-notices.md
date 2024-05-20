@@ -5,7 +5,7 @@ banner_img: https://static.kevinchu.top/blog/assets/img/bg_000.jpg
 sticky: 999
 archive: false
 date: 2023-10-01 10:15:37
-updated: 2023-10-21 05:04:10
+updated: 2024-05-21 00:57:10
 excerpt: 欢迎来到我的博客😎，这里不定期分享一些技术文章、知识总结和建站经验，祝你玩得开心🥝！
 ---
 <style>
@@ -92,6 +92,13 @@ excerpt: 欢迎来到我的博客😎，这里不定期分享一些技术文章�
 
 ---
 # 一些无聊的公告
+
+## 2024-05-21 
+{% note success %}
+🔊和风天气插件失效，导致本站近期加载速度受影响，目前该问题已经修复。
+{% endnote %}
+![](https://static.kevinchu.top/blog/public/20240521004236.png)
+吐槽一下：这波有点体验很糟糕哇，虽然说白嫖了很久服务，但是突然停止服务了也不邮件通知下用户么？博主近期比较忙，今天偶然上线了一下才发现问题😭。
 
 ## 2024-01-16
 {% note info %}
