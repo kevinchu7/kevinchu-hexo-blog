@@ -1096,6 +1096,12 @@ links:
       link: "https://clashgithub.com",
       avatar: "https://clashgithub.com/wp-content/uploads/avatar.png"
     }
+    - {
+      title: "LineXic书屋",
+      intro: "念念不忘，必有回响",
+      link: "https://linexic.top",
+      avatar: "https://linexic.top/logo.png"
+    }
     # - {
     #   title: "Fluid Blog",
     #   intro: "主题博客",
