@@ -1102,6 +1102,12 @@ links:
       link: "https://linexic.top",
       avatar: "https://linexic.top/logo.png"
     }
+    - {
+      title: "viisaus（小欧同学）",
+      intro: "静水深流，笃志前行♨️♨️♨️",
+      link: "https://viisaus.tech",
+      avatar: "https://viisaus.tech/image/header.png"
+    }
     # - {
     #   title: "Fluid Blog",
     #   intro: "主题博客",
