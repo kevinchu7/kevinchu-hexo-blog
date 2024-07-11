@@ -1,8 +1,9 @@
 ---
-title: Linux离线安装升级gcc至5.4.0版本
-index_img: https://static.kevinchu.top/blog/assets/img/cover_040.jpeg
-date: 2023-02-07 09:52:33
-updated: 2023-02-07 09:52:33
+title: Linux离线安装升级gcc至5.4.0版本（链接已更新）
+index_img: https://static.kevinchu.top/blog/assets/img/cover_025.jpeg
+date: 2024-07-07 09:52:33
+updated: 2024-07-07 09:52:33
+sticky: 998
 tags:
     - gcc
     - Linux
@@ -11,12 +12,16 @@ categories:
     - 软件工具
 ---
 
+>本文介绍一种离线安装gcc5.4.0的方法，适用于无网环境机器部署。步骤是先离线安装4.8.5版本gcc，然后编译升级至5.4.0。博主亲测，多次安装成功。
+>
+> ——>>部分失效下载链接现已更新😁<<——
+
 ### 1.前期准备
 
 #### 1.1 安装文件下载
 
 (1) gcc 4.8.5和gcc-c++ 4.8.5的rpm安装文件
-- gcc_gcc-c++_4.8.5_rpm([阿里网盘](https://www.aliyundrive.com/s/dbnERGpXtXK) 提取码: 7ej1)
+- gcc_gcc-c++_4.8.5_rpm([百度网盘](https://pan.baidu.com/s/1lUS_skshAnjf9BwOufTXJw) 提取码: 9527)
 
 (2) gcc-5.4.0依赖项
 - gmp-4.3.2.tar.gz([下载地址](https://ftp.gnu.org/gnu/gmp/))

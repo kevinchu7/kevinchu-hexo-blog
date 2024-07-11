@@ -1,6 +1,6 @@
 ---
 title: 【杂谈】两个领导相遇，先介绍谁
-index_img: https://static.kevinchu.top/blog/assets/img/cover_025.jpeg
+index_img: https://static.kevinchu.top/blog/assets/img/cover_046.jpeg
 archive: false
 date: 2024-03-31 22:13:59
 updated: 2024-03-31 22:13:59
