@@ -9,7 +9,7 @@ comment: ''
 {% gi 6 3-2-1 %}
   ![](https://static.kevinchu.top/blog/assets/img/bg_007.jpg)
   ![](https://static.kevinchu.top/blog/assets/img/bg_008.jpg)
-  ![](https://static.kevinchu.top/blog/assets/img/bg_009.jpg)
+  ![](https://static.kevinchu.top/blog/assets/img/bg_009_.jpg)
   ![](https://static.kevinchu.top/blog/assets/img/bg_015.jpg)
   ![](https://static.kevinchu.top/blog/assets/img/bg_011.jpg)
   ![](https://static.kevinchu.top/blog/assets/img/bg_012.jpg)
