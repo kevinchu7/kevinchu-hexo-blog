@@ -1037,22 +1037,10 @@ links:
       avatar: "https://static.kevinchu.top/blog/assets/img/logo.jpg"
     }
     - {
-      title: "Owenzjg的小窝",
-      intro: "生活与编程",
-      link: "https://blog.owenzjg.com",
-      avatar: "https://blog.owenzjg.com/favicon.jpg"
-    }
-    - {
       title: "杜老师说",
       intro: "师者，传道，授业，解惑！",
       link: "https://dusays.com",
       avatar: "https://cdn.dusays.com/avatar.png"
-    }
-    - {
-      title: "xiaoger（⚠️失联中...)",
-      intro: "个人学习和分享壁纸的博客",
-      link: "https://xiaoger.top",
-      avatar: "https://image.xiaoger.top/xiaoger/config/xiaoger.jpg"
     }
     - {
       title: "运维小弟",
@@ -1071,12 +1059,6 @@ links:
       intro: "分享设计与科技生活",
       link: "https://blog.zhheo.com",
       avatar: "https://bu.dusays.com/2022/12/28/63ac2812183aa.png"
-    }
-    - {
-      title: "归途的秘密基地（⚠️失联中...)",
-      intro: "科技，无限想象！",
-      link: "https://halo.qq-channel.cn",
-      avatar: "https://halo.qq-channel.cn/upload/retouch_2024022200335413.png"
     }
     - {
       title: "XiaoWangのBlog",
@@ -1107,6 +1089,30 @@ links:
       intro: "静水深流，笃志前行♨️♨️♨️",
       link: "https://viisaus.tech",
       avatar: "https://www.viisaus.tech/image/header.jpg"
+    }
+    - {
+      title: "秋风起",
+      intro: "时间会冲淡一切",
+      link: "https://5x0.cn/",
+      avatar: "https://5x0.cn/usr/uploads/favicon.png"
+    }
+    - {
+      title: "【⚠️失联】Owenzjg的小窝",
+      intro: "生活与编程",
+      link: "https://blog.owenzjg.com",
+      avatar: "https://blog.owenzjg.com/favicon.jpg"
+    }
+    - {
+      title: "【⚠️失联】xiaoger",
+      intro: "个人学习和分享壁纸的博客",
+      link: "https://xiaoger.top",
+      avatar: "https://image.xiaoger.top/xiaoger/config/xiaoger.jpg"
+    }
+    - {
+      title: "【⚠️失联】归途的秘密基地",
+      intro: "科技，无限想象！",
+      link: "https://halo.qq-channel.cn",
+      avatar: "https://halo.qq-channel.cn/upload/retouch_2024022200335413.png"
     }
     # - {
     #   title: "Fluid Blog",
