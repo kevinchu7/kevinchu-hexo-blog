@@ -195,7 +195,7 @@ Fluid.events = {
     ░    ░   ░ ░   ░ ░ ░ ▒  ░ ░   ░                             
     ░          ░  ░    ░ ░        ░                             
          ░                                                                  
-                    ————BY: https://blog.kevinchu.top
+                          👉🏻: https://blog.kevinchu.top
     `);
   }
 };

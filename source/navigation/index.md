@@ -127,7 +127,8 @@ banner_img: https://static.kevinchu.top/blog/assets/img/bg_018.jpg
 <h1 class="module-title">📺60s读懂世界</h1>
 
 <div class="news">
-<img src="https://api.jun.la/60s.php?format=image">
+<img src="https://v2.alapi.cn/api/zaobao?format=image&token=3weHli3Xb3lhYlNA">
+<!-- <img src="https://api.jun.la/60s.php?format=image"> -->
 </div>
 
 

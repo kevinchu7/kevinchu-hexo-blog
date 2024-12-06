@@ -1073,12 +1073,6 @@ links:
       avatar: "https://chuishen.xyz/img/logo.png"
     }
     - {
-      title: "免费节点",
-      intro: "免费公益SSR/V2ray/Shadowrocket/Clash节点/小火箭订阅链接|科学上网|免费梯子",
-      link: "https://clashgithub.com",
-      avatar: "https://clashgithub.com/wp-content/uploads/avatar.png"
-    }
-    - {
       title: "LineXic书屋",
       intro: "念念不忘，必有回响",
       link: "https://linexic.top",
@@ -1091,28 +1085,45 @@ links:
       avatar: "https://www.viisaus.tech/image/header.jpg"
     }
     - {
-      title: "秋风起",
-      intro: "时间会冲淡一切",
-      link: "https://5x0.cn/",
-      avatar: "https://5x0.cn/usr/uploads/favicon.png"
+      title: "Jasper Hsu",
+      intro: "技术话题分享，向向往的生活靠近",
+      link: "https://xuchangwei.com",
+      avatar: "https://xuchangwei.com/favicon.ico"
     }
     - {
       title: "【⚠️失联】Owenzjg的小窝",
       intro: "生活与编程",
       link: "https://blog.owenzjg.com",
-      avatar: "https://blog.owenzjg.com/favicon.jpg"
+      avatar: ""
+      # avatar: "https://blog.owenzjg.com/favicon.jpg"
     }
     - {
       title: "【⚠️失联】xiaoger",
       intro: "个人学习和分享壁纸的博客",
       link: "https://xiaoger.top",
-      avatar: "https://image.xiaoger.top/xiaoger/config/xiaoger.jpg"
+      avatar: ""
+      # avatar: "https://image.xiaoger.top/xiaoger/config/xiaoger.jpg"
     }
     - {
       title: "【⚠️失联】归途的秘密基地",
       intro: "科技，无限想象！",
       link: "https://halo.qq-channel.cn",
-      avatar: "https://halo.qq-channel.cn/upload/retouch_2024022200335413.png"
+      avatar: ""
+      # avatar: "https://halo.qq-channel.cn/upload/retouch_2024022200335413.png"
+    }
+    - {
+      title: "【⚠️失联】免费节点",
+      intro: "免费公益SSR/V2ray/Shadowrocket/Clash节点/小火箭订阅链接|科学上网|免费梯子",
+      link: "https://clashgithub.com",
+      avatar: ""
+      # avatar: "https://clashgithub.com/wp-content/uploads/avatar.png"
+    }
+    - {
+      title: "【⚠️失联】秋风起",
+      intro: "时间会冲淡一切",
+      link: "https://5x0.cn/",
+      avatar: ""
+      # avatar: "https://5x0.cn/usr/uploads/favicon.png"
     }
     # - {
     #   title: "Fluid Blog",
