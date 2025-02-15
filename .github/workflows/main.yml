@@ -13,11 +13,6 @@ jobs:
     - name: 检出仓库代码
       uses: actions/checkout@master
 
-    - name: Set up Python 3.8.x
-      uses: actions/setup-python@v2
-      with:
-        python-version: '3.8.x'
-
     - name: 安装Node.js 14.x 
       uses: actions/setup-node@master
       with:
@@ -35,7 +30,7 @@ jobs:
     
     - name: 安装腾讯云依赖
       run: |
-        sudo pip install coscmd
+        sudo pip install https://github.com/tencentyun/coscmd/archive/refs/heads/master.zip
         sudo pip install tccli
 
     - name: 配置腾讯云依赖

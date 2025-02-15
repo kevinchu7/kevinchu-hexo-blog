@@ -105,75 +105,12 @@ jobs:
 ```
 
 **2025年更新：**
-由于github action默认的python版本升高，已不在支持```SafeConfigParser```这个类，使用coscmd工具时会报错```cannot import name 'SafeConfigParser' from 'configparser'```，所以工作流要加一步，设置python版本：
-```YML
-    - name: Set up Python 2.7
-      uses: actions/setup-python@v2
-      with:
-        python-version: '2.7'
-```
+由于github action默认的python版本升高，3.12版本python已不在支持```SafeConfigParser```这个类，使用coscmd工具时会报错```cannot import name 'SafeConfigParser' from 'configparser'```。
 
-新的main.yml示例：
-```yml
-name: Hexo-Blog-CI
+参考官方仓库issues里给出建议，对配置文件做以下修改：
+- 修改前：```sudo pip install coscmd```
+- 修改后：```sudo pip install https://github.com/tencentyun/coscmd/archive/refs/heads/master.zip```
 
-on: 
-  push:
-    branches:
-      - master
-      
-jobs:
-  build: 
-    runs-on: ubuntu-latest 
-
-    steps:
-    - name: 检出仓库代码
-      uses: actions/checkout@master
-
-    - name: Set up Python 2.7
-      uses: actions/setup-python@v2
-      with:
-        python-version: '2.7'  
-
-    - name: 安装Node.js 14.x 
-      uses: actions/setup-node@master
-      with:
-        node-version: '14.x'
-
-    - name: 安装Hexo依赖
-      run: |
-        npm install hexo-cli -g
-        npm install
-
-    - name: 构建Hexo
-      run: |
-        hexo clean
-        hexo generate
-    
-    - name: 安装腾讯云依赖
-      run: |
-        sudo pip install coscmd
-        sudo pip install tccli
-
-    - name: 配置腾讯云依赖
-      env:
-        SECRET_ID: ${{ secrets.TCLOUD_API_ID }} # 腾讯云API ID(使用secrets，避免明文)
-        SECRET_KEY: ${{ secrets.TCLOUD_API_KEY }} # 腾讯云API ID(同上)
-        BUCKET: ${{ secrets.TCLOUD_COS_BUCKET_NAME }} # 腾讯云COS存储桶名称(同上)
-        REGION: ${{ secrets.TCLOUD_COS_REGION }} # 腾讯云COS存储桶地区(同上)
-      run: |
-        coscmd config -a $SECRET_ID -s $SECRET_KEY -b $BUCKET -r $REGION
-        tccli configure set secretId $SECRET_ID
-        tccli configure set secretKey $SECRET_KEY
-        tccli configure set region $REGION
-
-    - name: 上传到腾讯云COS并刷新CDN
-      run: |
-        coscmd upload -rfs --delete ./public/ /
-        tccli cdn PurgePathCache --cli-unfold-argument --Paths https://博客CDN地址/ --FlushType flush
-        tccli cdn PurgePathCache --cli-unfold-argument --Paths https://静态资源CDN地址/ --FlushType flush
-
-```
 
 ### 3.其他
 
