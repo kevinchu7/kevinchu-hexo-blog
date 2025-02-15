@@ -858,7 +858,7 @@ waline:
   wordLimit: 0
   pageSize: 10
   locale: 
-    placeholder: '快找个位置随便坐^-^（填写邮箱📬可以在评论被回复后收到邮件通知哦~评论系统国内加载可能有亿点儿慢🤣，请见谅哈！）'
+    placeholder: '快找个位置随便坐^-^（填写邮箱📬可以在评论被回复后收到邮件通知哦~）'
     nick: '昵称(必填)'
     sofa: '寂寞如雪，快来个人~'
   
@@ -1049,12 +1049,6 @@ links:
       avatar: "https://srebro.cn/wp-content/uploads/2023/10/logo-mini.png"
     }
     - {
-      title: "Camill",
-      intro: "Camill的博客",
-      link: "https://camill.love",
-      avatar: "https://www.camill.love/img/myself.jpg"
-    }
-    - {
       title: "张洪Heo",
       intro: "分享设计与科技生活",
       link: "https://blog.zhheo.com",
@@ -1089,6 +1083,19 @@ links:
       intro: "技术话题分享，向向往的生活靠近",
       link: "https://xuchangwei.com",
       avatar: "https://xuchangwei.com/favicon.ico"
+    }
+    - {
+      title: "XingJiのBlog",
+      intro: "迄今所有人生都大写着失败，但不妨碍我继续向前✨",
+      link: "https://love.xingji.fun",
+      avatar: "https://i.p-i.vip/47/20240920-66ed7b168c38c.jpg"
+    }
+    - {
+      title: "【⚠️失联】Camill",
+      intro: "Camill的博客",
+      link: "https://camill.love",
+      avatar: ""
+      # avatar: "https://www.camill.love/img/myself.jpg"
     }
     - {
       title: "【⚠️失联】Owenzjg的小窝",
@@ -1152,7 +1159,7 @@ links:
   # Custom content at the bottom of the links
   custom:
     enable: true
-    content: '<hr><p>远道而来的朋友，你好🐧！<br>你可以在下方留言来加入我的友链💖，提供的信息参考：</p><ul><li>名称：xxx博客</li><li>简介：xxxxxx</li><li>链接：https://xxx.com</li><li>图片：https://xxx/favicon.png</li></ul><p>本站信息请阅读评论区置顶👇🏻！<br>(PS：评论系统国内加载可能会有亿点儿慢，请见谅！)<br>Anyway，祝你玩得开心🍊！</p>'
+    content: '<hr><p>远道而来的朋友，你好🐧！<br>你可以在下方留言来加入我的友链💖，提供的信息参考：</p><ul><li>名称：xxx博客</li><li>简介：xxxxxx</li><li>链接：https://xxx.com</li><li>图片：https://xxx/favicon.png</li></ul><p>本站信息请阅读评论区置顶👇🏻！<br>(PS：评论区偶尔出现加载卡顿的情况，请见谅哈~)<br>Anyway，祝你玩得开心🍊！</p>'
 
   # 评论插件
   # Comment plugin
