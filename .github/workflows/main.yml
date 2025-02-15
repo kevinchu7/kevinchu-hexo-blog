@@ -13,10 +13,15 @@ jobs:
     - name: 检出仓库代码
       uses: actions/checkout@master
 
+    - name: Set up Python 3.10
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.10'
+
     - name: 安装Node.js 14.x 
       uses: actions/setup-node@master
       with:
-        node-version: "14.x"
+        node-version: '14.x'
 
     - name: 安装Hexo依赖
       run: |
