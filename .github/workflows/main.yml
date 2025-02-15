@@ -13,10 +13,10 @@ jobs:
     - name: 检出仓库代码
       uses: actions/checkout@master
 
-    - name: Set up Python 2.7
+    - name: Set up Python 3.0
       uses: actions/setup-python@v2
       with:
-        python-version: '2.7'
+        python-version: '3.0'
 
     - name: 安装Node.js 14.x 
       uses: actions/setup-node@master
