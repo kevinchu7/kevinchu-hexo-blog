@@ -2,7 +2,7 @@
 title: Docker安装与配置（CentOS）
 index_img: https://static.kevinchu.top/blog/assets/img/cover_026.jpeg
 date: 2021-06-20 15:12:10
-updated: 2021-06-20 15:12:10
+updated: 2025-02-12 19:20:10
 tags:
     - Docker
     - 服务器
@@ -54,15 +54,45 @@ sudo yum-config-manager \
 ```SHELL
 sudo yum install docker-ce docker-ce-cli containerd.io
 ```
->docker-ce、docker-ce-cli、containerd.io三者区别官方解释：
->containerd.io - daemon to interface with the OS API (in this case, LXC - Linux Containers), essentially decouples Docker from the OS, also provides container services for non-Docker container managers
-docker-ce - Docker daemon, this is the part that does all the management work, requires the other two on Linux
-docker-ce-cli - CLI tools to control the daemon, you can install them on their own if you want to control a remote Docker daemon
->
->containerd.io - 与 OS API 接口的守护进程（在本例中为 LXC - Linux Containers），本质上将 Docker 与 OS 分离，还为非 Docker 容器管理器提供容器服务
-docker-ce - Docker 守护进程，这是完成所有管理工作的部分，在 Linux 上需要另外两个
-docker-ce-cli - 用于控制守护进程的 CLI 工具，如果您想控制远程 Docker 守护进程，可以自行安装它们
+PS: docker-ce、docker-ce-cli和containerd.io是Docker架构中的关键组件，三者关系：
 
+**(1)docker-ce（Docker Community Edition，即Docker社区版，核心引擎）**
+
+Docker引擎是容器的核心管理组件，包含以下核心模块：
+- Docker守护进程（dockerd）：常驻后台的服务，负责监听API请求（如创建/删除容器）。
+- REST API：提供标准接口供客户端（如CLI或其他工具）与守护进程交互。
+- 镜像构建工具：支持通过Dockerfile构建镜像。
+
+docker-ce本身不直接操作容器，而是依赖containerd.io处理底层容器操作（如启动容器、管理存储卷等）。
+
+**(2)docker-ce-cli（Docker的命令行工具）**
+提供docker命令（如docker run、docker build等），是用户与Docker引擎交互的入口。
+它通过REST API向docker-ce发送指令（如创建容器等），并接收返回结果。
+
+CLI工具本身不依赖containerd.io，但需要docker-ce正常运行才能执行命令（例如：如果Docker引擎未启动，docker ps会直接报错）。
+
+**(3)containerd.io（容器运行时工具）**
+负责容器的底层操作，是Docker引擎的底层依赖，包括：
+- 镜像管理（拉取、存储、挂载镜像）。
+- 容器生命周期管理（创建、启动、停止、删除容器）。
+- 存储卷和网络配置（与操作系统内核交互）。
+
+containerd.io是通用的容器运行时工具，Kubernetes等其他工具也可直接使用它（无需Docker）。
+
+**(4)协作流程**
+```plaintext
+用户输入命令
+   │
+   ↓
+docker-ce-cli（CLI工具） → 通过 REST API → docker-ce（引擎）
+                                       │
+                                       ↓
+                                containerd.io（容器运行时）
+                                       │
+                                       ↓
+                                     runc（实际创建容器进程）
+
+```
 
 ## 3 启动Docker
 
@@ -106,24 +136,21 @@ vi /etc/docker/daemon.json
 mkdir -p /etc/docker/ 
 touch /etc/docker/daemon.json
 ```
-
+示例配置：
 ```JSON
 {
-    "registry-mirrors":["https://pwg3dujk.mirror.aliyuncs.com"],
+    "registry-mirrors":["https://mirror.ccs.tencentyun.com"],
     "log-driver":"json-file",
     "log-opts": {"max-size":"500m", "max-file":"5"}
 }
 ```
->附：中国科学技术大学（LUG@USTC）的开源镜像：https://docker.mirrors.ustc.edu.cn 和网易的开源镜像：http://hub-mirror.c.163.com
+上述以腾讯云镜像源为例，参考[文档](https://cloud.tencent.com/document/product/213/8623)
 
+日志相关选项：
+max-size：为文件最大大小
+max-file：为最多保持几个文件
 
-日志相关：
-
-max-size 为文件最大大小
-max-file 为最多保持几个文件
-
-除了 json-file 还支持很多 logging driver：
-
+除了json-file还支持很多logging driver：
 日志驱动|描述
 -|-  
 none | 容器没有日志可用，docker logs 什么都不返回
@@ -148,13 +175,15 @@ sudo systemctl restart docker
 ```
 
 ## 5 安装docker-compose
-- 下载对应版本docker-compose文件进行安装
+- 在线下载对应版本docker-compose文件进行安装
+(建议点击[此处](https://github.com/docker/compose/releases)去github查看版本号)
 ```SHELL
 sudo curl -L https://github.com/docker/compose/releases/download/1.29.2/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
 ```
-- github访问太慢可以用daocloud下载
+- 也可以去[github](https://github.com/docker/compose/releases)下载文件上传到服务器上进行安装
+找到带有```docker-compose-linux-x86_64```的版本，把这个包下载下来上传到服务器/usr/local/bin目录下面，再将其名称修改为```docker-compose```
 ```SHELL
-sudo curl -L https://get.daocloud.io/docker/compose/releases/download/1.25.1/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
+mv docker-compose-linux-x86_64 docker-compose
 ```
 
 - 添加可执行权限
@@ -167,8 +196,10 @@ sudo chmod +x /usr/local/bin/docker-compose
 docker-compose --version
 ```
 
-## 6 修改Docker默认存储位置
->三种方法修改docker的默认存储位置，参考博文：https://blog.csdn.net/BigData_Mining/article/details/104921479
+## 6 修改Docker默认存储位置（可选）
+>有很多方法修改docker的默认存储位置，可以参考博文：
+>- https://blog.csdn.net/BigData_Mining/article/details/104921479 
+>- https://blog.csdn.net/weixin_44756008/article/details/143593515
 
 ### 6.1 直接复制
 - 停掉docker服务
@@ -178,18 +209,27 @@ systemctl stop docker
 
 - 创建新的docker目录，如```home/work/docker_root```
 >df -h 可查看磁盘目录空间大小
-
 ```SHELL
 mkdir -p /home/work/docker_root
 ```
-- 迁移/var/lib/docker目录下面的文件到 /home/docker/lib下面
+- 把/var/lib/docker目录下面的文件复制到新目录下面
 ```SHELL
 cp -R /var/lib/docker/* /home/work/docker_root
 ```
-- 修改docker配置(```/etc/systemd/system/docker.service.d/docker-options.conf```)
-将文件中的–-data--root改为新的目录地址
-
-
+- 修改docker配置文件(```/etc/docker/daemon.json```)
+在文件中添加或修改以下内容，使之指向新的目录：
+```
+"data-root": "/home/work/docker_root"
+```
+- 启动服务
+```SHELL
+systemctsystemctl status docker
+```
+可用```docker info```查看Docker Root Dir是否修改成功
+- 确认稳定无误后，可以删除原先路径内容
+```SHELL
+sudo rm -rf /var/lib/docker
+```
 
 ### 6.2 软链接方式实现
 
