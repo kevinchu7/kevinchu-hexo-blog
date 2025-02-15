@@ -117,19 +117,38 @@ services:
 
 waline评论系统后台是带有数据导入/导出功能的（登录后台->左上角管理菜单->导入导出），
 
-但是，不知道是有bug还是别的什么原因，我尝试注册新账号并导入之前系统里导出的json文件，结果总会报错，会出现用户数据丢失的问题。
+但是，从别的后台导出的数据文件，如果想要导入到与之前有不同数据库结构的后台，结果很有可能报错，会出现用户与评论关联数据丢失的问题。
 
-如果你的Vercerl服务已经挂了（以前的评论后台无法访问）或者想要解决类似上面这样的数据导入出错的问题，其实也比较简单，咱可以直接从leancloud的数据库里拿啊🤣（leancloud应该不太会挂）。
+如果想要解决类似上面这样的数据导入出错的问题或者说你的Vercerl服务已经挂了（以前的评论后台无法访问），其实也比较简单，咱可以直接从leancloud的数据库里拿啊🤣（leancloud应该不太会挂）。
 
-具体操作：
-（1）以SQLite数据库为例，下载一个新的[waline.sqlite](https://github.com/walinejs/waline/blob/main/assets/waline.sqlite)，使用数据库编辑软件（如Navicat）打开该文件，可以看到有三张初始空表：
+
+以SQLite数据库为例，因为数据表id字段与leancloud数据库里的objectId类型匹配不上，需要稍作调整，具体操作：
+
+（1）下载一个新的[waline.sqlite](https://github.com/walinejs/waline/blob/main/assets/waline.sqlite)，使用数据库编辑软件（如Navicat）打开该文件，可以看到有三张初始空表（wl_Comment、wl_Counter、wl_Users）：
 
 ![](https://static.kevinchu.top/blog/public/20250215172252.png)
 
-（2）登录leancloud，进入waline的应用，点击数据存储->结构化数据，找到三张对应的表（Comment、Counter、Users），分别点进去点右上角下载查询结果，以csv的形式把三张表数据下载下来。然后，使用数据库软件（如Navicat）将三张表的数据导入进waline.sqlite里。
+编辑表格wl_Users，临时新增一个```objectId```字段，类型text；
+编辑表格wl_Comment，临时新增一个```userObjectId```字段，类型text。
+
+（2）登录leancloud，进入waline的应用，点击数据存储->结构化数据，找到三张对应的表（Comment、Counter、Users），分别点进去点右上角下载查询结果，以csv的形式把三张表数据下载下来：
 ![](https://static.kevinchu.top/blog/public/20250215174612.png)
 
+然后，使用数据库软件（如Navicat）将三张表的数据导入进waline.sqlite对应的表里。
 
-（3）将该waline.sqlite上传至服务器，替换到原有的waline.sqlite文件，然后```docker restart waline```重启容器。
+注意导入users数据时候，```objectId```数据要导入到前面临时新增的```objectId```字段里去；
+注意导入comment数据时候，```userId```数据要导入到前面临时新增的```userObjectId```字段里去。
+
+接着，执行sql，将comment表里的user_id与与user表id关联起来：
+```SQL
+UPDATE wl_Comment 
+SET user_id = ( SELECT id FROM wl_Users WHERE objectId = wl_Comment.userObjectId LIMIT 1 ) 
+WHERE
+	EXISTS ( SELECT 1 FROM wl_Users WHERE objectId = wl_Comment.userObjectId );
+```
+
+再然后，删除上一步中wl_Users、wl_Comment两张表里临时新增的字段，save文件。
+
+（3）将该waline.sqlite上传至服务器，替换掉原有的waline.sqlite文件，然后```docker restart waline```重启容器。
 
 至此，waline数据迁移完成🎉。如果是博客使用的话，不要忘了去博客配置文件里更新评论系统的服务url。

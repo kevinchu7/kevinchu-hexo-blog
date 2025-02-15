@@ -82,7 +82,7 @@ docker exec -it nginx service nginx reload
 ```BASH
 docker restart nginx
 ```
-参考这篇[踩坑文章]()。
+参考这篇[踩坑文章](https://blog.kevinchu.top/2025/02/09/docker-mount-file-cannot-change/)。
 
 ### 7.2.IP细节
 
