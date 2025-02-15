@@ -105,12 +105,12 @@ jobs:
 ```
 
 **2025年更新：**
-由于github action默认的python版本升高，3.12版本后已不在支持```SafeConfigParser```这个类，使用coscmd工具时会报错```cannot import name 'SafeConfigParser' from 'configparser'```，所以工作流要加一步，设置python版本：
+由于github action默认的python版本升高，已不在支持```SafeConfigParser```这个类，使用coscmd工具时会报错```cannot import name 'SafeConfigParser' from 'configparser'```，所以工作流要加一步，设置python版本：
 ```YML
-    - name: Set up Python 3.10
+    - name: Set up Python 2.7
       uses: actions/setup-python@v2
       with:
-        python-version: '3.10'
+        python-version: '2.7'
 ```
 
 新的main.yml示例：
@@ -130,10 +130,10 @@ jobs:
     - name: 检出仓库代码
       uses: actions/checkout@master
 
-    - name: Set up Python 3.10
+    - name: Set up Python 2.7
       uses: actions/setup-python@v2
       with:
-        python-version: '3.10'  
+        python-version: '2.7'  
 
     - name: 安装Node.js 14.x 
       uses: actions/setup-node@master
