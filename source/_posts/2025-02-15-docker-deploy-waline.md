@@ -1,5 +1,5 @@
 ---
-title: Docker部署Waline(从leancloud迁移)
+title: Docker部署Waline（从leancloud迁移）
 index_img: https://static.kevinchu.top/blog/assets/img/cover_026.jpeg
 archive: false
 date: 2025-02-15 12:30:20

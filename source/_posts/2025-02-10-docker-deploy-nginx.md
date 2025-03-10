@@ -84,7 +84,7 @@ docker restart nginx
 ```
 参考这篇[踩坑文章](https://blog.kevinchu.top/2025/02/09/docker-mount-file-cannot-change/)。
 
-### 7.2.IP细节
+### 7.2 IP细节
 
 nginx配置反向代理时，往往需要填写其他服务的访问地址（ip+端口）。
 
