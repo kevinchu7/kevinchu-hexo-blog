@@ -1097,6 +1097,12 @@ links:
       avatar: "https://cdn.lusyoe.com/images/avatar.svg"
     }
     - {
+      title: "Liu Zijian's Blog",
+      intro: "Keep on going never give up",
+      link: "https://blog.liuzijian.com",
+      avatar: "https://blog.liuzijian.com/img/logo.jpg"
+    }
+    - {
       title: "【⚠️失联】Camill",
       intro: "Camill的博客",
       link: "https://camill.love",
