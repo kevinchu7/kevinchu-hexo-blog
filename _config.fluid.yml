@@ -1103,6 +1103,12 @@ links:
       avatar: "https://blog.liuzijian.com/img/logo.jpg"
     }
     - {
+      title: "ChasonWang的博客",
+      intro: "一个热爱摸鱼的OIer",
+      link: "https://ChasonWang2012.github.io",
+      avatar: "https://cdn.luogu.com.cn/upload/image_hosting/rl6d1w19.png"
+    }
+    - {
       title: "【⚠️失联】Camill",
       intro: "Camill的博客",
       link: "https://camill.love",
