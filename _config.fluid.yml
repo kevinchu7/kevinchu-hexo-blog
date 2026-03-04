@@ -1055,12 +1055,6 @@ links:
       avatar: "https://bu.dusays.com/2022/12/28/63ac2812183aa.png"
     }
     - {
-      title: "XiaoWangのBlog",
-      intro: "上进的运维工程师",
-      link: "https://wanghaiyang.cc",
-      avatar: "https://wanghaiyang.cc/static/img/fcc0e12eea3b4eb8accccef7b979d09d.touxiang.webp"
-    }
-    - {
       title: "Lafcadia's Blog",
       intro: "神秘主义的屋舍",
       link: "https://chuishen.xyz",
@@ -1071,12 +1065,6 @@ links:
       intro: "难离难舍，想抱紧些",
       link: "https://www.linexic.top",
       avatar: "https://github.com/LineXic.png"
-    }
-    - {
-      title: "viisaus（小欧同学）",
-      intro: "静水深流，笃志前行♨️♨️♨️",
-      link: "https://viisaus.tech",
-      avatar: "https://www.viisaus.tech/image/header.jpg"
     }
     - {
       title: "Jasper Hsu",
@@ -1149,6 +1137,20 @@ links:
       link: "https://5x0.cn/",
       avatar: ""
       # avatar: "https://5x0.cn/usr/uploads/favicon.png"
+    }
+    - {
+      title: "【⚠️失联】XiaoWangのBlog",
+      intro: "上进的运维工程师",
+      link: "https://wanghaiyang.cc",
+      avatar: ""
+      # avatar: "https://wanghaiyang.cc/static/img/fcc0e12eea3b4eb8accccef7b979d09d.touxiang.webp"
+    }
+    - {
+      title: "【⚠️失联】viisaus（小欧同学）",
+      intro: "静水深流，笃志前行♨️♨️♨️",
+      link: "https://viisaus.tech",
+      avatar: ""
+      # avatar: "https://www.viisaus.tech/image/header.jpg"
     }
     # - {
     #   title: "Fluid Blog",
