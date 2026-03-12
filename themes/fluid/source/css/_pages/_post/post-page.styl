@@ -2,18 +2,23 @@
   box-sizing border-box
   padding-left 10%
   padding-right 10%
-  overflow-y hidden
 
 @media (max-width: 767px)
   .post-content, post-custom
     padding-left 2rem
     padding-right 2rem
 
+  .page-content, .post-content
+    overflow hidden
+
 @media (max-width: 424px)
   .post-content, post-custom
     padding-left 1rem
     padding-right 1rem
-    
+
+  .page-content, .post-content
+    overflow hidden
+
   .anchorjs-link-left
     opacity 0 !important
 
@@ -21,16 +26,12 @@
   strong
     font-weight bold
 
-  & > *:first-child
+  & > *:nth-child(2)
     margin-top 0
 
   img
     object-fit cover
     max-width 100%
-
-@media (max-width: 767px)
-  .page-content, .post-content
-    overflow-x hidden
 
 .post-metas
   display flex

@@ -1,6 +1,6 @@
 /* global Fluid */
 
-HTMLElement.prototype.wrap = function(wrapper) {
+HTMLElement.prototype.wrap = function (wrapper) {
   this.parentNode.insertBefore(wrapper, this);
   this.parentNode.removeChild(this);
   wrapper.appendChild(this);
@@ -8,7 +8,7 @@ HTMLElement.prototype.wrap = function(wrapper) {
 
 Fluid.events = {
 
-  registerNavbarEvent: function() {
+  registerNavbarEvent: function () {
     var navbar = jQuery('#navbar');
     if (navbar.length === 0) {
       return;
@@ -18,7 +18,7 @@ Fluid.events = {
       navbar.removeClass('navbar-dark');
       submenu.removeClass('navbar-dark');
     }
-    Fluid.utils.listenScroll(function() {
+    Fluid.utils.listenScroll(function () {
       navbar[navbar.offset().top > 50 ? 'addClass' : 'removeClass']('top-nav-collapse');
       submenu[navbar.offset().top > 50 ? 'addClass' : 'removeClass']('dropdown-collapse');
       if (navbar.offset().top > 0) {
@@ -29,13 +29,27 @@ Fluid.events = {
         submenu.removeClass('navbar-dark');
       }
     });
-    jQuery('#navbar-toggler-btn').on('click', function() {
+
+    jQuery('#navbar-toggler-btn').on('click', function () {
+      var $this = jQuery(this);
+      if ($this.data('animating')) {
+        return;
+      }
+      $this.data('animating', true);
       jQuery('.animated-icon').toggleClass('open');
+
+
       jQuery('#navbar').toggleClass('navbar-col-show');
+
+
+      setTimeout(function () {
+        $this.data('animating', false);
+      }, 300);
     });
+
   },
 
-  registerParallaxEvent: function() {
+  registerParallaxEvent: function () {
     var ph = jQuery('#banner[parallax="true"]');
     if (ph.length === 0) {
       return;
@@ -44,7 +58,7 @@ Fluid.events = {
     if (board.length === 0) {
       return;
     }
-    var parallax = function() {
+    var parallax = function () {
       var pxv = jQuery(window).scrollTop() / 5;
       var offset = parseInt(board.css('margin-top'), 10);
       var max = 96 + offset;
@@ -64,12 +78,12 @@ Fluid.events = {
     Fluid.utils.listenScroll(parallax);
   },
 
-  registerScrollDownArrowEvent: function() {
+  registerScrollDownArrowEvent: function () {
     var scrollbar = jQuery('.scroll-down-bar');
     if (scrollbar.length === 0) {
       return;
     }
-    scrollbar.on('click', function() {
+    scrollbar.on('click', function () {
       Fluid.utils.scrollToElement('#board', -jQuery('#navbar').height());
     });
   },
@@ -125,7 +139,7 @@ Fluid.events = {
     });
   },
 
-  registerImageLoadedEvent: function() {
+  registerImageLoadedEvent: function () {
     if (!('NProgress' in window)) { return; }
 
     var bg = document.getElementById('banner');
@@ -133,8 +147,8 @@ Fluid.events = {
       var src = bg.style.backgroundImage;
       var url = src.match(/\((.*?)\)/)[1].replace(/(['"])/g, '');
       var img = new Image();
-      img.onload = function() {
-        window.NProgress && window.NProgress.inc(0.2);
+      img.onload = function () {
+        window.NProgress && window.NProgress.status !== null && window.NProgress.inc(0.2);
       };
       img.src = url;
       if (img.complete) { img.onload(); }
@@ -144,22 +158,22 @@ Fluid.events = {
     var total = notLazyImages.length;
     for (const img of notLazyImages) {
       const old = img.onload;
-      img.onload = function() {
+      img.onload = function () {
         old && old();
-        window.NProgress && window.NProgress.inc(0.5 / total);
+        window.NProgress && window.NProgress.status !== null && window.NProgress.inc(0.5 / total);
       };
       if (img.complete) { img.onload(); }
     }
   },
 
-  registerRefreshCallback: function(callback) {
+  registerRefreshCallback: function (callback) {
     if (!Array.isArray(Fluid.events._refreshCallbacks)) {
       Fluid.events._refreshCallbacks = [];
     }
     Fluid.events._refreshCallbacks.push(callback);
   },
 
-  refresh: function() {
+  refresh: function () {
     if (Array.isArray(Fluid.events._refreshCallbacks)) {
       for (var callback of Fluid.events._refreshCallbacks) {
         if (callback instanceof Function) {
@@ -169,33 +183,25 @@ Fluid.events = {
     }
   },
 
-  billboard: function() {
+  billboard: function () {
     if (!('console' in window)) {
       return;
     }
     // eslint-disable-next-line no-console
     console.log(`
-    ██ ▄█▀▓█████ ██▒   █▓ ██▓ ███▄    █ ██▓  ██████ 
-    ██▄█▒ ▓█   ▀▓██░   █▒▓██▒ ██ ▀█   █ █▒▒▒██    ▒ 
-   ▓███▄░ ▒███   ▓██  █▒░▒██▒▓██  ▀█ ██▒▓░ ░ ▓██▄   
-   ▓██ █▄ ▒▓█  ▄  ▒██ █░░░██░▓██▒  ▐▌██▒▒░   ▒   ██▒
-   ▒██▒ █▄░▒████▒  ▒▀█░  ░██░▒██░   ▓██░▒░▒██████▒▒
-   ▒ ▒▒ ▓▒░░ ▒░ ░  ░ ▐░  ░▓  ░ ▒░   ▒ ▒ ░  ▒ ▒▓▒ ▒ ░
-   ░ ░▒ ▒░ ░ ░  ░  ░ ░░   ▒ ░░ ░░   ░ ▒░   ░ ░▒  ░ ░
-   ░ ░░ ░    ░       ░░   ▒ ░   ░   ░ ░    ░  ░  ░  
-   ░  ░      ░  ░     ░   ░           ░          ░  
-                     ░                                    
-    ▄▄▄▄    ██▓     ▒█████    ▄████                       
-   ▓█████▄ ▓██▒    ▒██▒  ██▒ ██▒ ▀█▒                            
-   ▒██▒ ▄██▒██░    ▒██░  ██▒▒██░▄▄▄░                            
-   ▒██░█▀  ▒██░    ▒██   ██░░▓█  ██▓                            
-   ░▓█  ▀█▓░██████▒░ ████▓▒░░▒▓███▀▒                            
-   ░▒▓███▀▒░ ▒░▓  ░░ ▒░▒░▒░  ░▒   ▒                             
-   ▒░▒   ░ ░ ░ ▒  ░  ░ ▒ ▒░   ░   ░                             
-    ░    ░   ░ ░   ░ ░ ░ ▒  ░ ░   ░                             
-    ░          ░  ░    ░ ░        ░                             
-         ░                                                                  
-                          👉🏻: https://blog.kevinchu.top
+-------------------------------------------------
+|                                               |
+|      ________  __            _        __      |
+|     |_   __  |[  |          (_)      |  ]     |
+|       | |_ \\_| | | __   _   __   .--.| |      |
+|       |  _|    | |[  | | | [  |/ /'\`\\' |      |
+|      _| |_     | | | \\_/ |, | || \\__/  |      |
+|     |_____|   [___]'.__.'_/[___]'.__.;__]     |
+|                                               |
+|            Powered by Hexo x Fluid            |
+| https://github.com/fluid-dev/hexo-theme-fluid |
+|                                               |
+-------------------------------------------------
     `);
   }
 };

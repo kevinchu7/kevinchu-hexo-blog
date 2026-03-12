@@ -112,17 +112,15 @@ layout: about
   <thead>
     <tr>
       <th align="center" style="width: 240px;">
-        <a href="https://flowus.cn/share/eebf2144-8db7-4d68-b31e-bc2c116871de">
-          <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/32983588/243899272-092eeb46-9172-4c10-9e72-53561ff37a00.png" height="200px"><br>
-          <sub>首席赞助商 ORENCEAI</sub><br>
-          <sub>全新的 ChatGPT 人工智能对话平台</sub>
-        </a>
-      </th>
-      <th align="center" style="width: 240px;">
         <a href="https://www.jetbrains.com/?from=hexo-theme-fluid">
           <img src="https://raw.githubusercontent.com/fluid-dev/static/690616966f34a58d66aa15ac7b550dd7bbc03967/hexo-theme-fluid/jetbrains.svg" height="200px"><br>
           <sub>免费开发工具提供方 JetBrains</sub><br>
-          <sub>专注于创建智能开发工具</sub>
+        </a>
+      </th>
+      <th align="center" style="width: 240px;">
+        <a href="https://dartnode.com">
+          <img src="https://dartnode.com/branding/DN-Open-Source-sm.png" height="200px"><br>
+          <sub>免费 VPS 提供方 DartNode</sub><br>
         </a>
       </th>
     </tr>
@@ -135,7 +133,7 @@ layout: about
 
 英文文档翻译：[@EatRice](https://eatrice.top/) [@橙子杀手](https://ruru.eatrice.top) [@Sinetian](https://sinetian.github.io/)
 
-其他贡献：[@zhugaoqi](https://github.com/zhugaoqi) [@julydate](https://github.com/julydate)
+其他贡献：[@zhugaoqi](https://github.com/zhugaoqi) [@julydate](https://github.com/julydate) [@xiyuvi](https://xiyu.pro/)
 
 如你也想贡献代码，可参照[贡献指南](https://hexo.fluid-dev.com/docs/contribute/)
 
@@ -146,19 +144,10 @@ layout: about
 <table>
   <thead>
     <tr>
-      <th align="center" style="width: 240px;">
+      <th align="center" width="240">
         <div>
           <img src="https://github.com/fluid-dev/static/blob/master/hexo-theme-fluid/sponsor.png?s=200&v=4" height="200px" alt="微信赞赏码"><br>
           <sub>微信赞赏码</sub>
-        </div>
-      </th>
-      <th align="center" style="width: 240px;">
-        <div>
-          <a href="https://etherscan.io/address/0x0021395954710be29c0BFDCB3f98f4D2fa5A1448">
-            <img src="https://avatars.githubusercontent.com/u/6250754?s=200&v=4" height="200px" alt="ERC20 Token">
-          </a>
-          <br>
-          <sub>ERC20 Token: 0x0021395954710<br>be29c0BFDCB3f98f4D2fa5A1448</sub>
         </div>
       </th>
     </tr>

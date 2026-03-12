@@ -15,7 +15,7 @@
     </script>
   <% } %>
 
-  <% if (theme.web_analytics.google){ %>
+  <% if (theme.web_analytics.google && theme.web_analytics.google.measurement_id){ %>
     <!-- Google tag (gtag.js) -->
     <script async>
       if (!Fluid.ctx.dnt) {
@@ -25,8 +25,21 @@
             dataLayer.push(arguments);
           }
           gtag('js', new Date());
-          gtag('config', '<%- theme.web_analytics.google.measurement_id %>');
+          gtag('config', '<%= theme.web_analytics.google.measurement_id %>');
         });
+      }
+    </script>
+  <% } %>
+
+  <% if(theme.web_analytics.umami && theme.web_analytics.umami.src && theme.web_analytics.umami.website_id) { %>
+    <script async>
+      if (!Fluid.ctx.dnt) {
+        let umami = document.createElement('script');
+        umami.async = true;
+        umami.src = "<%= theme.web_analytics.umami.src %>";
+        umami.setAttribute("data-website-id", "<%= theme.web_analytics.umami.website_id %>");
+        umami.setAttribute("data-domains", "<%= theme.web_analytics.umami.domains %>");
+        document.head.appendChild(umami);
       }
     </script>
   <% } %>
@@ -51,25 +64,12 @@
     </script>
   <% } %>
 
-  <% if(theme.web_analytics.woyaola) { %>
-    <!-- 51.la Analytics -->
-    <script async>
-      if (!Fluid.ctx.dnt) {
-        Fluid.utils.createScript('//js.users.51.la/<%= theme.web_analytics.woyaola %>.js');
-      }
-    </script>
-  <% } %>
-
-  <% if(theme.web_analytics.cnzz) { %>
-    <!-- cnzz Analytics -->
-    <script async>
-      if (!Fluid.ctx.dnt) {
-        Fluid.utils.createScript('//s4.cnzz.com/z_stat.php?id=<%= theme.web_analytics.cnzz %>&show=pic');
-      }
-    </script>
-  <% } %>
-
   <% if(theme.web_analytics.leancloud && theme.web_analytics.leancloud.app_id && theme.web_analytics.leancloud.app_key) { %>
     <% import_js(theme.static_prefix.internal_js, 'leancloud.js', 'defer') %>
   <% } %>
+
+  <% if(theme.web_analytics.openkounter && theme.web_analytics.openkounter.server_url) { %>
+    <% import_js(theme.static_prefix.internal_js, 'openkounter.js', 'defer') %>
+  <% } %>
+
 <% } %>

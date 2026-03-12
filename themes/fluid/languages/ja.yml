@@ -57,6 +57,7 @@ post:
     SA: 'SA - Share-alike'
     NC: 'NC - Non-commercial'
     ND: 'ND - No derivative works'
+    ZERO: 'CC0 - No Copyright'
 
 footer:
   pv: '閲覧合計数: {}'
@@ -67,3 +68,7 @@ search:
   keyword: 'キーワード'
 
 noscript_warning: 'ブログは JavaScript を有効にすると最適に機能します'
+
+darkmode:
+  light: 'ライト'
+  dark: 'ダーク'

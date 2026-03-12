@@ -57,6 +57,7 @@ post:
     SA: 'SA - Share-alike'
     NC: 'NC - Non-commercial'
     ND: 'ND - No derivative works'
+    ZERO: 'CC0 - No Copyright'
 
 footer:
   pv: 'Vidoj: {}'
@@ -67,3 +68,7 @@ search:
   keyword: 'ŝlosivorto'
 
 noscript_warning: 'Blogo funkcias plej bone kun JavaScript ebligita'
+
+darkmode:
+  light: 'Hela'
+  dark: 'Malhela'

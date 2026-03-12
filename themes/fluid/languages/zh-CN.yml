@@ -42,7 +42,7 @@ post:
   toc: '目录'
   prev_post: '上一篇'
   next_post: '下一篇'
-  updated: '本文最后更新于：%s'
+  updated: '本文最后更新于 %s'
   meta:
     wordcount: '%s 字'
     min2read: '%s 分钟'
@@ -57,6 +57,7 @@ post:
     SA: 'SA - 相同方式共享'
     NC: 'NC - 非商业性使用'
     ND: 'ND - 禁止演绎'
+    ZERO: 'CC0 - 无版权'
 
 footer:
   pv: '总访问量 {} 次'
@@ -67,3 +68,7 @@ search:
   keyword: '关键词'
 
 noscript_warning: '博客在允许 JavaScript 运行的环境下浏览效果更佳'
+
+darkmode:
+  light: '开灯'
+  dark: '关灯'

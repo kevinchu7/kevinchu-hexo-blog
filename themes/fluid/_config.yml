@@ -24,7 +24,7 @@ favicon: /img/fluid.png
 # Icon for Apple touch
 apple_touch_icon: /img/fluid.png
 
-# 浏览器标签页中的标题分隔符，效果： 文章名 - 站点名
+# 浏览器标签页中的标题分隔符，效果：文章名 - 站点名
 # Title separator in browser tab, eg: article - site
 tab_title_separator: " - "
 
@@ -62,7 +62,7 @@ code:
     highlightjs:
       # 在链接中挑选 style 填入
       # Select a style in the link
-      # See: https://highlightjs.org/static/demo/
+      # See: https://highlightjs.org/demo/
       style: "github gist"
       style_dark: "dark"
 
@@ -109,8 +109,10 @@ fun_features:
     element: h1,h2,h3,h4,h5,h6
     # Options: left | right
     placement: left
-    # Options: hover | always | touch
+
+    # Options: hover | always
     visible: hover
+
     # Options: § | # | ❡
     icon: ""
 
@@ -128,7 +130,7 @@ fun_features:
 dark_mode:
   enable: true
   # 默认的选项（当用户手动切换后则不再按照默认模式），选择 `auto` 会优先遵循 prefers-color-scheme，其次按用户本地时间 18 点到次日 6 点之间进入暗色模式
-  # Default option (when the visitor switches manually, the default mode is no longer followed), choosing `auto` will give priority to prefers-color-scheme, and then enter the dark mode from 18:00 to 6:00 in the visitor’s local time
+  # Default option (when the visitor switches manually, the default mode is no longer followed), choosing `auto` will give priority to prefers-color-scheme, and then enter the dark mode from 18:00 to 6:00 in the visitor's local time
   # Options: auto | light | dark
   default: auto
 
@@ -154,7 +156,7 @@ color:
   navbar_text_color_dark: "#d0d0d0"
 
   # 副标题字体色
-  # Color of navigation bar text
+  # Color of subtitle text
   subtitle_color: "#fff"
   subtitle_color_dark: "#d0d0d0"
 
@@ -239,7 +241,7 @@ custom_css:
 
 # 网页访问统计
 # Analysis of website visitors
-web_analytics:  # 网页访问统计
+web_analytics:
   enable: false
 
   # 遵循访客浏览器"请勿追踪"的设置，如果开启则不统计其访问
@@ -265,16 +267,6 @@ web_analytics:  # 网页访问统计
     sid:
     cid:
 
-  # 51.la 站点统计 ID
-  # 51.la analytics
-  # See: https://www.51.la/user/site/index
-  woyaola:  # 51.la 站点统计 ID，参见
-
-  # 友盟/cnzz 站点统计 web_id
-  # cnzz analytics
-  # See: https://web.umeng.com/main.php?c=site&a=show
-  cnzz:
-
   # LeanCloud 计数统计，可用于 PV UV 展示，如果 `web_analytics: enable` 没有开启，PV UV 展示只会查询不会增加
   # LeanCloud count statistics, which can be used for PV UV display. If `web_analytics: enable` is false, PV UV display will only query and not increase
   leancloud:
@@ -289,6 +281,54 @@ web_analytics:  # 网页访问统计
     # 开启后不统计本地路径( localhost 与 127.0.0.1 )
     # If true, ignore localhost & 127.0.0.1
     ignore_local: false
+
+  # OpenKounter 计数统计（基于 EdgeOne Pages），可用于 PV UV 展示
+  # OpenKounter count statistics (based on EdgeOne Pages), which can be used for PV UV display
+  # See: https://github.com/Mintimate/open-kounter
+  openkounter:
+    # OpenKounter API 服务器地址
+    # OpenKounter API server URL
+    server_url: https://open-kounter.mintimate.cn
+    # 统计页面时获取路径的属性，通常使用 window.location.pathname
+    # Get the attribute of the page path during statistics
+    path: window.location.pathname
+    # 开启后不统计本地路径（localhost、127.0.0.1、[::1]）
+    # If true, ignore localhost & 127.0.0.1 & [::1]
+    ignore_local: false
+
+  # Umami Analytics，仅支持自部署。如果要展示 PV UV 需要填写所有配置项，否则只填写 `src` 和 `website_id` 即可
+  # Umami Analytics, only Self-host support. If you want to display PV UV need to set all config items, otherwise only set 'src' and 'website_id'
+  # See: https://umami.is/docs
+  umami:
+    # umami js 文件地址，需要在 umami 后台创建站点后获取
+    # umami js file url, get after create website in umami
+    src:
+
+    # umami 的 website id，需要在 umami 后台创建站点后获取
+    # umami website id, get after create website in umami
+    website_id:
+
+    # 如果你只想统计特定的域名可以填入此字段，多个域名通过逗号分隔，这可以避免统计 localhost。
+    # If you only want to tracker to specific domains you can fill in this field, multiple domain names are separated by commas, which can avoid tracker localhost
+    domains:
+
+    # 用于统计 PV UV 的开始时间，格式为 "YYYY-MM-DD"
+    # statistics on the start time, the format is "YYYY-MM-DD"
+    start_time: 2024-01-01
+
+    # 新建一个 umami viewOnly 用户，然后通过 login api 获取该用户 token
+    # create an umami viewOnly user, and then get user token through the login api
+    token:
+
+    # 填写 umami 部署的服务器地址，如 "https://umami.example.com"
+    # server url of umami deployment, such as "https://umami.example.com"
+    api_server:
+
+# Canonical 用于向 Google 搜索指定规范网址，开启前确保 hexo _config.yml 中配置 `url: http://yourdomain.com`
+# Canonical, to specify a canonical URL for Google Search, need to set up `url: http://yourdomain.com` in hexo _config.yml
+# See: https://support.google.com/webmasters/answer/139066
+canonical:
+  enable: false
 
 # 对页面中的图片和评论插件进行懒加载处理，可见范围外的元素不会提前加载
 # Lazy loading of images and comment plugin on the page
@@ -309,7 +349,7 @@ lazyload:
 
 # 图标库，包含了大量社交类图标，主题依赖的不包含在内，因此可自行修改，详见 https://hexo.fluid-dev.com/docs/icon/
 # Icon library, which includes many social icons, does not include those theme dependent, so your can modify link by yourself. See: https://hexo.fluid-dev.com/docs/en/icon/
-iconfont: //at.alicdn.com/t/font_1736178_lbnruvf0jn.css
+iconfont: //at.alicdn.com/t/c/font_1736178_k526ubmyhba.css
 
 
 #---------------------------
@@ -373,6 +413,10 @@ search:
 # 首屏图片的相关配置
 # Config of the big image on the first screen
 banner:
+  # 是否开启所有页面的随机头图，仅在页面对应 banner_img 为空时生效，将图片放在 source/img/random/ 目录下
+  # Enable random banner for all pages, only works when banner_img is empty, put images in the directory `source/img/random/`
+  random_img: false
+
   # 视差滚动，图片与板块会随着屏幕滚动产生视差效果
   # Scrolling parallax
   parallax: true
@@ -430,9 +474,9 @@ footer:
   statistics:
     enable: false
 
-    # 统计数据来源，使用 leancloud 需要设置 `web_analytics: leancloud` 中的参数；使用 busuanzi 不需要额外设置，但是有时不稳定，另外本地运行时 busuanzi 显示统计数据很大属于正常现象，部署后会正常
-    # Data source. If use leancloud, you need to set the parameter in `web_analytics: leancloud`
-    # Options: busuanzi | leancloud
+    # 统计数据来源，使用 leancloud, umami, openkounter 需要设置 `web_analytics` 中对应的参数；使用 busuanzi 不需要额外设置，但是有时不稳定，另外本地运行时 busuanzi 显示统计数据很大属于正常现象，部署后会正常
+    # Data source. If use leancloud, umami, openkounter, you need to set the parameter in `web_analytics`
+    # Options: busuanzi | leancloud | umami | openkounter
     source: "busuanzi"
 
   # 国内大陆服务器的备案信息
@@ -463,7 +507,7 @@ index:
   # Available: 0 - 100
   banner_img_height: 100
 
-  # 头图黑色蒙版的不透明度，available: 0 - 1.0， 1 是完全不透明
+  # 头图黑色蒙版的不透明度，available: 0 - 1.0，1 是完全不透明
   # Opacity of the banner mask, 1.0 is completely opaque
   # Available: 0 - 1.0
   banner_mask_alpha: 0.3
@@ -473,8 +517,8 @@ index:
   slogan:
     enable: true
 
-    # 为空则按 hexo config.subtitle 显示
-    # If empty, text based on `subtitle` in hexo config
+    # 为空则按 hexo config.subtitle 显示，支持列表格式来实现随机选择一行文字显示
+    # If empty, text based on `subtitle` in hexo config, support list format to random selection of a row for display
     text: "An elegant Material-Design theme for Hexo"
 
     # 通过 API 接口作为首页副标题的内容，必须返回的是 JSON 格式，如果请求失败则按 text 字段显示，该功能必须先开启 typing 打字机功能
@@ -575,7 +619,7 @@ post:
       enable: false
       # 统计数据来源
       # Data Source
-      # Options: busuanzi | leancloud
+      # Options: busuanzi | leancloud | umami
       source: "busuanzi"
 
   # 在文章开头显示文章更新时间，该时间默认是 md 文件更新时间，可通过 front-matter 中 `updated` 手动指定（和 date 一样格式）
@@ -624,6 +668,9 @@ post:
   # Table of contents (TOC) in the sidebar
   toc:
     enable: true
+    # 进入文章时是否默认展开全部目录
+    # Expand all TOC items on enter
+    expand_all: true
 
     # 置于板块的左侧或右侧
     # place in the board
@@ -644,7 +691,8 @@ post:
     enable: true
 
     # CreativeCommons license
-    # Options: BY | BY-SA | BY-ND | BY-NC | BY-NC-SA | BY-NC-ND
+    # See: https://creativecommons.org/share-your-work/cclicenses/
+    # Options: BY | BY-SA | BY-ND | BY-NC | BY-NC-SA | BY-NC-ND | ZERO
     license: 'BY'
 
     # 显示作者
@@ -752,11 +800,16 @@ utterances:
 # See: https://disqus.com
 disqus:
   shortname:
-  # 以下为 Disqusjs 支持, 国内用户如果想使用 Disqus 建议配合使用
-  # The following are Disqusjs configurations, please ignore if DisqusJS is not required
+  # 以下为 Disqusjs 支持, 国内用户如果想使用 Disqus 建议配合使用，支持填入多个 apikey，建议自行搭建 api 端点
+  # The following are Disqusjs configurations, please ignore if DisqusJS is not required, it supports filling in multiple apikeys, it is recommended to build the API endpoint by yourself
   # See: https://github.com/SukkaW/DisqusJS
   disqusjs: false
   apikey:
+    - 'KEY1'
+    #- 'KEY2'
+  api: https://disqus.skk.moe/disqus/
+  admin:
+  adminLabel:
 
 # Gitalk
 # 基于 GitHub Issues
@@ -955,7 +1008,7 @@ about:
   name: "Fluid"
   intro: "An elegant theme for Hexo"
   # 更多图标可从 https://hexo.fluid-dev.com/docs/icon/ 查找，`class` 代表图标的 css class，添加 `qrcode` 后，图标不再是链接而是悬浮二维码
-  # More icons can be found from https://hexo.fluid-dev.com/docs/en/icon/  `class` is the css class of the icon. If adding `qrcode`, The icon is no longer a link, but a hovering QR code
+  # More icons can be found from https://hexo.fluid-dev.com/docs/en/icon/  `class` is the css class of the icon. If adding `qrcode`, the icon is no longer a link, but a hovering QR code
   icons:
     - { class: "iconfont icon-github-fill", link: "https://github.com", tip: "GitHub" }
     - { class: "iconfont icon-douban-fill", link: "https://douban.com", tip: "豆瓣" }
@@ -1057,7 +1110,7 @@ static_prefix:
   internal_css: /css
   internal_img: /img
 
-  anchor: https://lib.baomitu.com/anchor-js/4.3.1/
+  anchor: https://lib.baomitu.com/anchor-js/5.0.0/
 
   github_markdown: https://lib.baomitu.com/github-markdown-css/4.0.0/
 
@@ -1087,7 +1140,7 @@ static_prefix:
 
   valine: https://lib.baomitu.com/valine/1.5.1/
 
-  waline: https://cdn.staticfile.org/waline/2.15.5/
+  waline: https://lib.baomitu.com/waline/3.6.0/
 
   gitalk: https://lib.baomitu.com/gitalk/1.8.0/
 
@@ -1098,3 +1151,5 @@ static_prefix:
   discuss: https://lib.baomitu.com/discuss/1.2.1/
 
   hint: https://lib.baomitu.com/hint.css/2.7.0/
+
+  moment: https://lib.baomitu.com/moment.js/2.29.4/

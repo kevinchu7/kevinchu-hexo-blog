@@ -666,6 +666,9 @@ post:
   # Table of contents (TOC) in the sidebar
   toc:
     enable: true
+    # 进入文章时是否默认展开全部目录
+    # Expand all TOC items on enter
+    expand_all: true
 
     # 置于板块的左侧或右侧
     # place in the board
@@ -1238,7 +1241,7 @@ static_prefix:
 
   valine: https://lib.baomitu.com/valine/1.4.16/
 
-  waline: https://cdn.staticfile.org/waline/2.15.5/
+  waline: https://lib.baomitu.com/waline/3.6.0/
 
   gitalk: https://lib.baomitu.com/gitalk/1.7.2/
 

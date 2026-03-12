@@ -57,6 +57,7 @@ post:
     SA: 'SA - Share-alike'
     NC: 'NC - Non-commercial'
     ND: 'ND - No derivative works'
+    ZERO: 'CC0 - No Copyright'
 
 footer:
   pv: 'Alle Aufrufe: {}'
@@ -67,3 +68,7 @@ search:
   keyword: 'Stichwort'
 
 noscript_warning: 'Blog funktioniert am besten mit aktiviertem JavaScript'
+
+darkmode:
+  light: 'Hell'
+  dark: 'Dunkel'

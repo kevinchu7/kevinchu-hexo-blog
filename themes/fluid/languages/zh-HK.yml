@@ -57,6 +57,7 @@ post:
     SA: 'SA - 相同方式共享'
     NC: 'NC - 非商業性使用'
     ND: 'ND - 禁止演繹'
+    ZERO: 'CC0 - 無著作權'
 
 footer:
   pv: '總訪問量 {} 次'
@@ -67,3 +68,7 @@ search:
   keyword: '關鍵字'
 
 noscript_warning: '博客在允許 JavaScript 運行的環境下瀏覽效果更佳'
+
+darkmode:
+  light: '開燈'
+  dark: '關燈'

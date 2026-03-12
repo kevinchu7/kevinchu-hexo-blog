@@ -16,14 +16,15 @@ const checkbox = (args) => {
 
   const checked = (args[1] || '').length > 0 && args[1].trim() !== 'false';
   const inline = (args[2] || '').length > 0 && args[2].trim() !== 'false';
-  const enabled = (args[3] || '').length > 0 && args[3].trim() === 'false';
+  const disabled = (args[3] || '').length > 0 && args[3].trim() !== 'false';
+  const content = hexo.render.renderSync({ text: text, engine: 'markdown' }).replace(/(<p>)|(<\/p>)/g, '').replace(/<br>/g, '');
 
   return `${!inline ? '<div>' : ''}
-            <input type="checkbox" ${enabled ? '' : 'disabled'} ${checked ? 'checked="checked"' : ''}>${text}
+            <input type="checkbox" ${disabled ? 'disabled' : ''} ${checked ? 'checked="checked"' : ''}>${content}
           ${!inline ? '</div>' : ''}`;
 
 };
 
-// {% cb text, checked?, inline? %}
+// {% cb text, checked?, inline?, disabled? %}
 hexo.extend.tag.register('checkbox', checkbox, { ends: false });
 hexo.extend.tag.register('cb', checkbox, { ends: false });
