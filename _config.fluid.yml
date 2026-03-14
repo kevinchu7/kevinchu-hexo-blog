@@ -363,20 +363,20 @@ navbar:
       ]
     }
     - {
-      key: '知识',
-      icon: 'iconfont icon-bookmark',
-      submenu: [
-        { key: "KODE", link: "https://kode.kevinchu.top", icon: "iconfont icon-book", target: "_blank" },
-        { key: "KMemos", link: "https://memos.kevinchu.top/explore?orderBy=asc", icon: "iconfont icon-pen", target: "_blank" }
-      ]
-    }
-    - {
       key: '收藏',
       icon: 'iconfont icon-briefcase',
       submenu: [
         { key: '导航', link: '/navigation/', icon: 'iconfont icon-map' },
         { key: '音乐', link: 'https://music.kevinchu.top', icon: 'iconfont icon-music', target: "_blank"},
         { key: '图库', link: '/gallery/', icon: 'iconfont icon-images' }
+      ]
+    }    
+    - {
+      key: '知识',
+      icon: 'iconfont icon-bookmark',
+      submenu: [
+        { key: "知识库", link: "https://kode.kevinchu.top", icon: "iconfont icon-book", target: "_blank" },
+        { key: "备忘录", link: "https://memos.kevinchu.top/explore?orderBy=asc", icon: "iconfont icon-pen", target: "_blank" }
       ]
     }
     - {
