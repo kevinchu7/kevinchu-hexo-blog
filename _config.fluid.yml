@@ -391,8 +391,8 @@ navbar:
       key: '传送',
       icon: 'iconfont icon-rocket',
       submenu: [
-        { key: "虫洞", link: "https://foreverblog.cn/go.html", icon: "iconfont icon-burst" },
-        { key: "开往", link: "https://www.travellings.cn/go.html", icon: "iconfont icon-train-subway" }
+        { key: "开往", link: "https://www.travellings.cn/go.html", icon: "iconfont icon-train-subway" },
+        { key: "虫洞", link: "https://foreverblog.cn/go.html", icon: "iconfont icon-burst" }
       ]
     }
     - { key: "about", link: "/about/", icon: "iconfont icon-user-fill" }
