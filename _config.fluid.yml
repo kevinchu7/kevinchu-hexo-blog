@@ -529,12 +529,12 @@ index:
 
     # 为空则按 hexo config.subtitle 显示，支持列表格式来实现随机选择一行文字显示
     # If empty, text based on `subtitle` in hexo config, support list format to random selection of a row for display
-    # text: "Repetition is the mother of learning."
-    text: [
-      "Repetition is the mother of learning.",
-      "路漫漫其修远兮，吾将上下而求索。",
-      "莫愁前路无知己，天下谁人不识君。"
-    ]
+    text: "Repetition is the mother of learning."
+    # text: [
+    #   "Repetition is the mother of learning.",
+    #   "路漫漫其修远兮，吾将上下而求索。",
+    #   "莫愁前路无知己，天下谁人不识君。"
+    # ]
 
     # 通过 API 接口作为首页副标题的内容，必须返回的是 JSON 格式，如果请求失败则按 text 字段显示，该功能必须先开启 typing 打字机功能
     # Subtitle of the homepage through the API, must be returned a JSON. If the request fails, it will be displayed in `text` value. This feature must first enable the typing animation
