@@ -6,7 +6,7 @@ updated: 2022-06-07 08:29:54
 tags:
     - Java
 categories:
-    - 学习记录
+    - 学习笔记
 ---
 >
 

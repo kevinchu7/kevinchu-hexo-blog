@@ -6,7 +6,7 @@ updated: 2022-03-28 01:52:12
 tags:
     - SpringBoot
 categories:
-    - 学习记录
+    - 学习笔记
 ---
 >本文转载自：https://www.cnblogs.com/qixuejia/p/4390086.html
 供本人学习积累用，详细内容请参考原博文

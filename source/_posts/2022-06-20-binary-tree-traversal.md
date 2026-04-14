@@ -7,7 +7,7 @@ tags:
     - Java
     - 算法
 categories:
-    - 学习记录
+    - 学习笔记
 ---
 
 ## 1 概念

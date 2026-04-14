@@ -6,7 +6,7 @@ updated: 2022-05-23 16:41:39
 tags:
     - Java
 categories:
-    - 学习记录
+    - 学习笔记
 ---
 
 ## 1.JDK和JRE有什么区别？
