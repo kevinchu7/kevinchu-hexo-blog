@@ -5,7 +5,7 @@ layout: "about"
 ## 🤖 关于我
 
 
-{% note success %}
+{% note info %}
 
 **一个敲代码的普通人**。
 
@@ -24,7 +24,7 @@ layout: "about"
 ## 🖥️ 关于本站
 **KEVIN'S BLOG** 开始于2020年夏。
 
-本站现基于[Hexo](https://hexo.io)主题[Fluid](https://github.com/fluid-dev/hexo-theme-fluid)魔改搭建，全站[开源](https://github.com/kevinchu7/kevinchu-hexo-blog)。
+主站点现基于[Hexo](https://hexo.io)主题[Fluid](https://github.com/fluid-dev/hexo-theme-fluid)魔改搭建，全站[开源](https://github.com/kevinchu7/kevinchu-hexo-blog)。
 
 建立本站用于积累经验、记录学习、~~思考技术~~、~~分享生活~~......
 
@@ -147,9 +147,7 @@ layout: "about"
 
 ## 📠 联系博主
 
-添加微信(请您备注说明来意)：
+微信(请您备注说明来意)：
 
 <img src="https://static.kevinchu.top/blog/assets/img/wechat_qrcode.jpg" width="150" height="150" alt="WeChat">
-
-
 

@@ -396,7 +396,6 @@ navbar:
       ]
     }
     - { key: "about", link: "/about/", icon: "iconfont icon-user-fill" }
-    
 
 # 搜索功能，基于 hexo-generator-search 插件，若已安装其他搜索插件请关闭此功能，以避免生成多余的索引文件
 # Search feature, based on hexo-generator-search. If you have installed other search plugins, please disable this feature to avoid generating redundant index files
@@ -1084,7 +1083,8 @@ links:
       title: "LineXic书屋",
       intro: "难离难舍，想抱紧些",
       link: "https://www.linexic.top",
-      avatar: "https://github.com/LineXic.png"
+      avatar: "https://www.linexic.top/_astro/avatar.CDlZlZCO_Z1KFxOP.webp"
+      # avatar: "https://github.com/LineXic.png"
     }
     - {
       title: "Jasper Hsu",
@@ -1102,7 +1102,8 @@ links:
       title: "青萍叙事",
       intro: "一个懂技术的产品汪🐶",
       link: "https://blog.lusyoe.com",
-      avatar: "https://cdn.lusyoe.com/images/avatar.svg"
+      avatar: "https://cdn.lusyoe.com/images/lusyoe-logo.webp"
+      # avatar: "https://cdn.lusyoe.com/images/avatar.svg"
     }
     - {
       title: "Liu Zijian's Blog",
@@ -1199,7 +1200,7 @@ links:
   # Custom content at the bottom of the links
   custom:
     enable: true
-    content: '<hr><p>远道而来的朋友，你好🐧！<br>你可以在下方留言来加入我的友链💖，提供的信息参考：</p><ul><li>名称：xxx博客</li><li>简介：xxxxxx</li><li>链接：https://xxx.com</li><li>图片：https://xxx/favicon.png</li></ul><p>本站信息请阅读评论区置顶👇🏻！<br>(PS：评论区偶尔出现加载卡顿的情况，请见谅哈~)<br>Anyway，祝你玩得开心🍊！</p>'
+    content: '<hr><p>Hi👋，终于等到你！<br>你可以在下方留言来加入我的友链💖，参考以下格式提供信息：</p><p><em><strong>本站信息：</strong></em>👇🏻</p><ul><li><strong>名称</strong> ：<code>KEVIN&#39;S BLOG</code></li><li><strong>简介</strong> ：<code>KEVIN的博客</code></li><li><strong>链接</strong> ：<code>https://blog.kevinchu.top</code></li><li><strong>图片</strong> ：<code>https://static.kevinchu.top/blog/assets/img/avatar_03.jpg</code></li></ul><p><em><strong>注意：</strong></em>1.链接必须支持https；2.头像图片小于200kb；3.网站内容必须遵守中国大陆法律法规。</p><p>Anyway，祝你玩得开心🍊!</p>'
 
   # 评论插件
   # Comment plugin
