@@ -1200,7 +1200,7 @@ links:
   # Custom content at the bottom of the links
   custom:
     enable: true
-    content: '<hr><p>Hi👋，终于等到你！<br>你可以在下方留言来加入我的友链💖，参考以下格式提供信息：</p><p><em><strong>本站信息：</strong></em>👇🏻</p><ul><li><strong>名称</strong> ：<code>KEVIN&#39;S BLOG</code></li><li><strong>简介</strong> ：<code>KEVIN的博客</code></li><li><strong>链接</strong> ：<code>https://blog.kevinchu.top</code></li><li><strong>图片</strong> ：<code>https://static.kevinchu.top/blog/assets/img/avatar_03.jpg</code></li></ul><p><em><strong>注意：</strong></em>1.链接必须支持https；2.头像图片小于200kb；3.网站内容必须遵守中国大陆法律法规。</p><p>Anyway，祝你玩得开心🍊!</p>'
+    content: "<hr><p>Hi👋，终于等到你🐧！<br>你可以在下方留言来加入我的友链💖，请参考以下格式提供信息👇🏻：</p><div class='note note-info'><p><em><strong>本站信息</strong></em></p> <ul> <li>名称：KEVIN'S BLOG</li> <li>简介：KEVIN的博客</li> <li>链接：https://blog.kevinchu.top</li> <li>图片：https://static.kevinchu.top/blog/assets/img/avatar_03.jpg</li></ul></div><div class='note note-warning'><p><em><strong>注意事项</strong></em></p> <ul> <li>链接必须支持https；</li> <li>头像图片小于200kb；</li> <li>网站内容必须遵守中国大陆法律法规；</li></ul></div><p>Anyway，祝你玩得开心🍊!</p>"
 
   # 评论插件
   # Comment plugin
