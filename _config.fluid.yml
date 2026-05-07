@@ -375,7 +375,8 @@ navbar:
       icon: 'iconfont icon-briefcase',
       submenu: [
         { key: '导航', link: '/navigation/', icon: 'iconfont icon-map' },
-        { key: '音乐', link: 'https://music.kevinchu.top', icon: 'iconfont icon-music', target: "_blank"},
+        { key: '游戏', link: 'https://game.kevinchu.top', icon: 'iconfont icon-switch-fill', target: "_blank" },
+        { key: '音乐', link: 'https://music.kevinchu.top', icon: 'iconfont icon-music', target: "_blank" },
         { key: '图库', link: '/gallery/', icon: 'iconfont icon-images' }
       ]
     }

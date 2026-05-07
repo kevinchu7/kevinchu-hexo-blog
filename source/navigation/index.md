@@ -132,7 +132,7 @@ banner_img: https://static.kevinchu.top/blog/assets/img/bg_018.jpg
 ---  -->
 
 
-<h1 class="module-title">🌏网站导航</h1>
+<h1 class="module-title">🌏站点收藏</h1>
 
 
 </div>

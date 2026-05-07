@@ -22,7 +22,7 @@ layout: "about"
 
 
 ## 🖥️ 关于本站
-**KEVIN'S BLOG** 开始于2020年夏。
+**KEVIN'S BLOG** 开始于2020年7月。
 
 主站点现基于[Hexo](https://hexo.io)主题[Fluid](https://github.com/fluid-dev/hexo-theme-fluid)魔改搭建，全站[开源](https://github.com/kevinchu7/kevinchu-hexo-blog)。
 
@@ -128,6 +128,15 @@ layout: "about"
   <a href="https://github.com/kevinchu7/kode" target="_blank" class="github-card">
     <div class="repo-name">kode</div>
     <div class="repo-desc">KODE = Keep on developing every day.<br>一个全栈开发知识库</div>
+    <div class="repo-stats">
+      <span>⭐ Star: 未来可期</span>
+      <span>🍴 Fork: 未来可期</span>
+    </div>
+  </a>
+
+  <a href="https://github.com/kevinchu7/kool-retro-hub" target="_blank" class="github-card">
+    <div class="repo-name">kool-retro-hub</div>
+    <div class="repo-desc">基于EmulatorJS的复古游戏模拟器网站，无需注册，多端畅玩，支持存档</div>
     <div class="repo-stats">
       <span>⭐ Star: 未来可期</span>
       <span>🍴 Fork: 未来可期</span>

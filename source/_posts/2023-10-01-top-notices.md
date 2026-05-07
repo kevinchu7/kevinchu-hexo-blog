@@ -9,7 +9,7 @@ updated: 2025-02-15 21:57:10
 excerpt: 欢迎来到我的博客😎，这里不定期分享一些技术文章、知识总结和建站经验，祝你玩得开心🥝！
 ---
 <style>
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* @import url("https://fonts.font.im/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"); */
 .hello {
   position: relative;
   font-family: "Poppins", sans-serif;
