@@ -32,7 +32,7 @@ categories:
 
 点击导入git仓库，当前支持以下几类git提供商：
 ![](https://static.kevinchu.top/blog/public/20260508155917.png)
-选择git仓库进行登录、授权、关联，完成后即可看到导入成功的仓库。
+选择git仓库进行登录、授权、关联，完成后即可看到导入成功的仓库（PS：CNB当前支持得并不好，仍需手动添加.cnb.yml）。
 注意：授权Repository access时，最好选择"Only select repositories"，不要默认"All repositories"。
 
 
