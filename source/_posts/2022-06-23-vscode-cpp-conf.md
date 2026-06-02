@@ -4,7 +4,7 @@ index_img: https://static.kevinchu.top/blog/assets/img/cover_027.jpeg
 date: 2022-06-23 00:14:25
 updated: 2022-06-23 00:14:25
 tags:
-    - VScode
+    - VS Code
     - C/C++
 categories:
     - 软件工具
