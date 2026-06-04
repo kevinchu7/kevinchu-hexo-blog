@@ -144,7 +144,7 @@ layout: "about"
 
   <a href="https://github.com/kevinchu7/kool-admin" target="_blank" class="github-card">
     <div class="repo-name">kool-admin</div>
-    <div class="repo-desc">基于SpringBoot3-Vue3的AI协作友好型Java快速开发管理系统框架</div>
+    <div class="repo-desc">基于SpringBoot3-Vue3的轻量级、AI协作友好型Java快速开发框架</div>
     <div class="repo-stats">
       <span>⭐ Star: 未来可期</span>
       <span>🍴 Fork: 未来可期</span>
