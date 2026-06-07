@@ -20,7 +20,7 @@ categories:
 
 ## 2 模型
 下面以一个时序图建立简单模型来描述上述对象在三层架构应用中的位置
-![(https://static.kevinchu.top/blog/public/springboot-objs-01.png)
+![](https://static.kevinchu.top/blog/public/springboot-objs-01.png)
 - 用户发出请求（可能是填写表单），表单的数据在展示层被匹配为VO。
 
 - 展示层把VO转换为服务层对应方法所要求的DTO，传送给服务层。
