@@ -1119,6 +1119,12 @@ links:
       avatar: "https://cdn.luogu.com.cn/upload/image_hosting/rl6d1w19.png"
     }
     - {
+      title: "MonkeyKe's Blog",
+      intro: "一个热爱探索的开发者",
+      link: "https://monkeyke.com",
+      avatar: "https://cravatar.cn/avatar/dee014ecea51d0dc08dbb1aaec046b47"
+    }
+    - {
       title: "【⚠️失联】Camill",
       intro: "Camill的博客",
       link: "https://camill.love",
